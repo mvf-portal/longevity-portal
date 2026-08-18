@@ -106,10 +106,16 @@ SYSTEM = (
 USER_TEMPLATE = """Unten stehen aktuelle PubMed-Abstracts (nach Datum sortiert).
 
 Waehle GENAU 6 Studien aus, die (a) das Altern, die Lebenserwartung oder die Versorgung aelterer Menschen untersuchen UND (b) im
-Abstract KONKRETE quantitative Ergebnisse nennen (Prozentwerte, Effektstaerken,
-Odds/Hazard Ratios, Zeit- oder Kostenwirkungen, Fallzahlen, p-Werte).
-Ueberspringe Studien ohne Abstract oder ohne konkrete Ergebnisse. Achte auf
-thematische Vielfalt.
+Abstract ein BENENNBARES ERGEBNIS berichten. Bei quantitativen Arbeiten heisst
+das: konkrete Zahlen (Prozentwerte, Effektstaerken, Odds/Hazard Ratios, Zeit-
+oder Kostenwirkungen, Fallzahlen, p-Werte) - und die gehoeren dann auch in die
+Zusammenfassung. Qualitative Studien (Interviews, Fokusgruppen) und
+Expertenpapiere sind ausdruecklich zugelassen; bei ihnen tritt an die Stelle
+der Zahl die klar benannte Kernaussage - welche Faktoren, welche Bedingungen,
+welche Empfehlung. Was NICHT genuegt, ist ein Abstract, der nur ankuendigt,
+was untersucht wurde, ohne zu sagen, was dabei herauskam.
+Ueberspringe Studien ohne Abstract oder ohne benennbares Ergebnis. Achte auf
+thematische Vielfalt und mische quantitative und qualitative Arbeiten.
 
 THEMATISCHE RANGFOLGE - in dieser Reihenfolge bevorzugen:
   1. Gewonnene Jahre und gewonnene Gesundheit: Massnahmen mit gemessener
@@ -133,7 +139,7 @@ zum Menschen, Assoziationsstudien ohne Endpunkt ("Biomarker X korreliert mit
 dem Alter"), Studien zu Nahrungsergaenzungsmitteln oder Anti-Aging-Angeboten
 ohne gemessenes Ergebnis, Querschnittsbefragungen ohne Bezugsgroesse, Arbeiten,
 die aeltere Menschen nur als Stichprobe fuer eine ganz andere Fragestellung
-verwenden, sowie Uebersichten ohne eigene Zahlen.
+verwenden, sowie Uebersichten, die nichts Eigenes berichten.
 
 HARTE REGELN ZUR ZUSAMMENSETZUNG (sie gehen der thematischen Rangfolge vor):
   1. MINDESTENS DREI der sechs Studien muessen aus Europa stammen oder ein
