@@ -1,1 +1,80 @@
-[]
+[
+ {
+  "pmid": "42607277",
+  "journal": "Age Ageing",
+  "year": "2026",
+  "author": "Drijver-Headley S et al.",
+  "pubdate": "03.08.2026",
+  "added": "17.08.2026",
+  "transfer": "SHARE und ELSA (Europa) direkt vergleichbar; USA/Mexiko zeigen Effekte unterschiedlicher Finanzierung und sozialer Ungleichheit.",
+  "title": "Frailty-Verteilung und Sterblichkeit in Europa: Ländervergleich zeigt höchste Last in USA und Südosteuropa",
+  "sum": "Vergleichende Analyse von Frailty-Indizes, Sterblichkeit und Frailty-Progression in 17 Ländern mit unterschiedlichen Gesundheitssystemen.",
+  "result": "In der USA, Mexiko und Südosteuropa war Gebrechlichkeit am höchsten, in Nord- und Zentraleuropa am niedrigsten; Sterblichkeit und Defizitakkumulation differierten erheblich zwischen Ländern, mit höchsten Werten in Mexiko. Meta-analytische Methoden zeigen, dass Frailty-Unterschiede zwischen Ländern wesentlich mit lokalen Einkommens- und Versorgungsstrukturen assoziiert sind.",
+  "aufgenommen": "2026-08-18"
+ },
+ {
+  "pmid": "42594078",
+  "journal": "PLoS Med",
+  "year": "2026",
+  "author": "Schrempft S et al.",
+  "pubdate": "13.08.2026",
+  "added": "13.08.2026",
+  "transfer": "England und Kanada – beide gemäßigte Einkommen und ähnliche Sozialversicherung; Unterschied verdeutlicht Bedeutung von Vermögen neben Systemfinanzierung.",
+  "title": "Funktionelles Altern und Vermögensungleichheit: England und Kanada zeigen unterschiedliche Ungleichheitsgradienten",
+  "sum": "Längsschnittstudie der Assoziation zwischen Vermögen und körperlicher Funktionsfähigkeit (Ganggeschwindigkeit, Griffstärke, Mobilitätseinschränkungen, ADL/IADL) in England und Kanada über 10 Jahre.",
+  "result": "Bei weniger Vermögen: 15 Jahre Funktionsverlust bei Ganggeschwindigkeit in England vs. 9 Jahre in Kanada; 20 Jahre Funktionsverlust bei ADL-Schwierigkeiten in England vs. 9 Jahre in Kanada. Vermögensungleichheiten in der Funktionsfähigkeit waren größer in England trotz ähnlicher Gesundheitssysteme, bleiben nach Anpassung für Komorbiditäten bestehen.",
+  "aufgenommen": "2026-08-18"
+ },
+ {
+  "pmid": "42568043",
+  "journal": "Aging Cell",
+  "year": "2026",
+  "author": "Saxler E et al.",
+  "pubdate": "Aug. 2026",
+  "added": "07.08.2026",
+  "transfer": "Deutschland (Bonn) – Populationsstichprobe, vergleichbare Versorgung, direkt auf Altenprävention übertragbar.",
+  "title": "Körperliche Aktivität schützt Nervenfasern im Gehirn – stärkster Effekt bei älteren und bewegungsarmen Personen",
+  "sum": "Querschnittsstudie von 4.188 Teilnehmern (mittleres Alter 55,4 Jahre) der Rhineland-Studie zur Assoziation zwischen Beschleunigungsmesser-gemessener körperlicher Aktivität und Mikrostruktur weißer Substanz (Diffusions-MRT) mit Vermittlung durch Körpergewicht und kardiometabolische Faktoren.",
+  "result": "Höherer Energieverbrauch assoziiert mit niedrigerem Richtungsdispersion-Index (β=–0,153 [–0,183 bis –0,122], p<0,001), quadratischer Effekt leveling off (β=0,034 [0,017–0,051], p<0,001). Mit zunehmendem Alter: körperliche Aktivität stärker mit höherer Neuritendichte und niedriger mittlerer Diffusivität assoziiert; Effekt am größten bei älteren und sedentären Personen, vermittelt durch Körpergewicht, kardiometabolische und entzündliche Faktoren.",
+  "aufgenommen": "2026-08-18"
+ },
+ {
+  "pmid": "42537629",
+  "journal": "Swiss Med Wkly",
+  "year": "2026",
+  "author": "Fehlmann CA et al.",
+  "pubdate": "26.06.2026",
+  "added": "31.07.2026",
+  "transfer": "Schweiz – dem deutschsprachigen Raum ähnliches System, vergleichbare Klinikdokumentation und Risikostratifizierung.",
+  "title": "Gebrechlichkeit verschlechtert Operationsergebnisse nach Notfall-Chirurgie bei älteren Erwachsenen um das Dreifache",
+  "sum": "Retrospektive Kohortenstudie der Assoziation zwischen Gebrechlichkeit (Clinical Frailty Scale ≥5) und einjähriger Mortalität, Komplikationen, Krankenhausaufenthalt und Entlassungsort bei älteren Patienten (≥65 Jahre) nach elektiven Notfall-Eingriffen.",
+  "result": "38,2 % waren gebrechlich; einjährige Mortalität 25,6 % (gebrechlich) vs. 6,6 % (nicht gebrechlich), adjustierte OR 3,0 [95%-KI 1,7–5,1]; Komplikationen OR 2,3 [1,5–3,6]; Krankenhausaufenthalt +46,4 % [26,8–69,0 %]; Entlassung nicht nach Hause OR 2,1 [1,4–3,2]. Frailty ist ein starker unabhängiger Risikofaktor für schlechte Ergebnisse.",
+  "aufgenommen": "2026-08-18"
+ },
+ {
+  "pmid": "42479895",
+  "journal": "Eur Stroke J",
+  "year": "2026",
+  "author": "Brigo F et al.",
+  "pubdate": "06.07.2026",
+  "added": "21.07.2026",
+  "transfer": "Alle europäischen Länder – direkt vergleichbar mit Deutschland; GBD-Daten ermöglichen Vergleich von Versorgungsqualität und Prevention.",
+  "title": "Schlaganfallmortalität in Europa: Zwei Jahrzehnte Rückgang getrieben durch bessere akute Versorgung, nicht durch Behinderungsreduktion",
+  "sum": "Analyse von Global Burden of Disease-Daten (1990–2023) zu Trends in Behinderungsjahren (DALYs), vorzeitige Todesfälle (YLLs) und Jahre mit Behinderung (YLDs) durch ischämische Schlaganfälle in europäischen Ländern.",
+  "result": "DALY-Raten sanken in allen europäischen Ländern; durchschnittliche jährliche prozentuale Veränderung (EAPC) –3,40 % [–3,74 bis –3,05]; YLL-Rückgang –1,26 % [–1,43 bis –1,09]; YLD-Rückgang –3,86 % [–4,26 bis –3,46]. Rückgang der vorzeitigen Mortalität war Haupttreiber; YLD-Fortschritt blieb heterogen und geringer, regionale Unterschiede in Zentral-/Westeuropa vs. Ost-/Südosteuropa.",
+  "aufgenommen": "2026-08-18"
+ },
+ {
+  "pmid": "42479140",
+  "journal": "Z Gerontol Geriatr",
+  "year": "2026",
+  "author": "Gosch M et al.",
+  "pubdate": "21.07.2026",
+  "added": "21.07.2026",
+  "transfer": "Deutschland – direkte Evidenz zur deutschen Versorgungssituation und politischen Handlungsfelder für Systemreformen.",
+  "title": "Geriatrisches Assessment und sektorenübergreifende Versorgung reduzieren Pflegebedürftigkeit: Deutscher Konsens zu modernem Altersmanagement",
+  "sum": "Expertenpapier deutscher Geriater zu aktuellem Stand, evidenzbasierter Praxis und Zukunft geriatrischer Medizin, einschließlich Effekte von umfassendem Assessment und multiprofessionellen Modellen.",
+  "result": "Zahlreiche Studien belegen: geriatrisches Assessment verbessert funktionelle Fähigkeiten, reduziert Pflegebedürftigkeit und verkürzt/verkürzt Krankenhausaufenthalte. Defizite bestehen in flächendeckender Versorgung, Finanzierung, Fachkräftemangel und Integration in andere Fachgebiete.",
+  "aufgenommen": "2026-08-18"
+ }
+]
