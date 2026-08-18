@@ -91,6 +91,18 @@ Mailchimp-Gruppe dieses Portals: `group[16140][16384]` („Studien Newsletter Lo
 - **Gold nur auf Knöpfen** — als Textfarbe erreicht `#BE9E53` nur 3,0:1. Knopfschrift auf Gold ist dunkles `#2A2207`.
 - **Das Logo wird im Dark Mode nicht umgefärbt**, sondern auf eine weiße Fläche gestellt.
 
+## Versand: Torwächter und Veto-Fenster
+
+Seit dem 18.08.2026 wird der Newsletter **nicht mehr von Hand freigegeben**. Der nächtliche Lauf legt den Entwurf an, `scripts/torwaechter.py` prüft ihn, und `mailchimp_entwurf.py` **terminiert** die Kampagne auf `TERMIN_UTC` (08:00 UTC = 10:00 Uhr deutscher Sommerzeit). Bis dahin lässt sie sich in Mailchimp mit einem Klick absagen — *Unschedule*.
+
+Der Grund für diese Bauweise: Versand ist der einzige Schritt der Kette, der sich nicht zurücknehmen lässt. Der Torwächter fängt **mechanischen** Unfug (fehlende Felder, Platzhalter, erfundene Zeitschriften — gegen PubMed geprüft, englisch gebliebene Zusammenfassungen, Dubletten, leeres Empfängersegment). Er fängt **nicht** die Zusammenfassung, die flüssig klingt und die Studie falsch wiedergibt; dafür ist das Zeitfenster da.
+
+**Schlägt eine Prüfung an, wird nicht terminiert.** Der Entwurf bleibt liegen, die Redaktion bekommt die Testausgabe mit Freigabekasten, und der Grund steht in `versand-status.json`. Lieber ein Tag ohne Newsletter als ein falscher.
+
+`versand-status.json` wird vom Workflow mitcommittet. Das Repo `mvf-portal/knowledge-hubs` liest sie von allen Portalen ein und macht daraus **eine** GitHub-Issue statt fünf E-Mails (`scripts/versand_bericht.py`, täglich 04:45 UTC).
+
+Qualitative Interviewstudien und Expertenpapiere sind ausdrücklich **zugelassen** — der Torwächter verlangt deshalb Substanz im Ergebnisfeld, aber keine Zahl.
+
 ## Fallstricke
 
 - **`const` vor seiner Definition benutzen legt die ganze Seite lahm.** Das gesamte JS liegt in einem Block; ein `ReferenceError` verhindert, dass Kacheln *und* Studien gerendert werden. Nach Skriptänderungen immer die Browser-Konsole prüfen.
