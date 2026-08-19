@@ -1,0 +1,39 @@
+# Probelauf der Studienauswahl - fragt ab, schreibt nichts.
+#
+# Ruft `update_studies.py --probe` auf: PubMed abfragen, das Modell auswaehlen
+# lassen, Anzahl und Felder melden. Kein Commit, kein Push, kein Newsletter -
+# der Lauf ist deshalb auch an einem Tag gefahrlos, an dem die Ausgabe schon
+# terminiert ist.
+#
+# Gedacht zum Pruefen von Schema- und Prompt-Aenderungen, bevor sie nachts
+# scharf laufen. Nur von Hand startbar, kein Zeitplan.
+name: Schema-Probe (nur von Hand)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read            # bewusst nur lesen - dieser Lauf darf nichts aendern
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhängigkeiten installieren
+        run: pip install --quiet "anthropic>=0.40" requests tzdata
+
+      - name: Auswahl probeweise abfragen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.LONGEVITYHUB }}
+          MODEL: claude-haiku-4-5
+        run: python scripts/update_studies.py --probe

@@ -105,7 +105,7 @@ SYSTEM = (
 
 USER_TEMPLATE = """Unten stehen aktuelle PubMed-Abstracts (nach Datum sortiert).
 
-Waehle GENAU 6 Studien aus, die (a) das Altern, die Lebenserwartung oder die Versorgung aelterer Menschen untersuchen UND (b) im
+Waehle 6 Studien aus - nur wenn nicht genug taugliche Kandidaten dabei sind, duerfen es 5 sein. Gesucht sind Studien, die (a) das Altern, die Lebenserwartung oder die Versorgung aelterer Menschen untersuchen UND (b) im
 Abstract ein BENENNBARES ERGEBNIS berichten. Bei quantitativen Arbeiten heisst
 das: konkrete Zahlen (Prozentwerte, Effektstaerken, Odds/Hazard Ratios, Zeit-
 oder Kostenwirkungen, Fallzahlen, p-Werte) - und die gehoeren dann auch in die
