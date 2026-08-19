@@ -1,5 +1,31 @@
 [
  {
+  "pmid": "42595986",
+  "journal": "BMC Public Health",
+  "year": "2026",
+  "author": "Peng L et al.",
+  "pubdate": "25.07.2026",
+  "added": "14.08.2026",
+  "transfer": "HRS, ELSA, SHARE, CHARLS, KLoSA – europäische und non-europäische Daten, jedoch nur weil robust repliziert",
+  "title": "Frailty und kognitive Beeinträchtigung: Prospektive Assoziationen in fünf multinationalen Kohorten mit gepoolten Hazard Ratios",
+  "sum": "Länderübergreifende Metaanalyse von fünf Longitudinal-Kohorten (USA, England, Europa, China, Korea) mit insgesamt 47429 Teilnehmern zur Assoziation zwischen Baseline-Frailty-Status und kognitiver Beeinträchtigung sowie Frailty-Trajektorien und kognitiven Outcomes über 4–10 Jahre.",
+  "result": "Pre-Frailty: gepoolte adjustierte HR 1,25 (95% CI 1,18–1,33) für kognitive Beeinträchtigung; Frailty: HR 1,69 (95% CI 1,50–1,90). Frailty-Trajektorien waren signifikant mit kognitiven Outcomes assoziiert (höhere Trajektorie: OR 1,45–4,37 für kognitive Beeinträchtigung; niedrigere: OR 0,46–0,72 protektiv). Befunde konsistent über alle Kohorten.",
+  "aufgenommen": "2026-08-19"
+ },
+ {
+  "pmid": "42563704",
+  "journal": "Dan Med J",
+  "year": "2026",
+  "author": "Brockhattingen KK et al.",
+  "pubdate": "02.07.2026",
+  "added": "07.08.2026",
+  "transfer": "Dänemark, europäisches Gesundheitssystem, vergleichbar mit deutschem Modell",
+  "title": "Akutgeriatrische Versorgungsmodelle in Dänemark: Nationale Bestandsaufnahme und Variabilität der Assessment-Praktiken",
+  "sum": "Nationale Querschnittsbefragung aller 20 Krankenhaus-Geriatriestationen in Dänemark zur Struktur, Teamzusammensetzung und Assessment-Funktionen in akutgeriatrischen Modellen für Patienten ≥65 Jahre mit akuter medizinischer Erkrankung.",
+  "result": "Zwölf von 20 Stationen (60%) melden aktive akutgeriatrische Funktionen. Alle 12 führen diagnostische Bewertung, patientenzentrierte Evaluation und Basis-Assessments durch. Andere Elemente variabel: EKG (n=4–10/12), Ultraschall, Frailty-Assessment, interdisziplinäre Review, Koordination mit Community-Care (4–10/12). Erkenntnis: Große Variation in Struktur und Inhalten trotz Flächendeckung.",
+  "aufgenommen": "2026-08-19"
+ },
+ {
   "pmid": "42607277",
   "journal": "Age Ageing",
   "year": "2026",
