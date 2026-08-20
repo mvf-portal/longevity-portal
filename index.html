@@ -1060,62 +1060,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "19. Aug. 2026, 07:17 Uhr";
+const SNAP_DATE = "20. Aug. 2026, 07:19 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
+  {
+    journal:"BMC Health Serv Res", year:"2026", pmid:"42613606",
+    author:"Bikova M et al.", pubdate:"14.08.2026",
+    added:"19.08.2026",
+    title:"Konzept des gesunden Alterns in Norwegen: Qualitative Analyse von Perspektiven älterer Menschen, Fachkräfte und Entscheidungsträger",
+    sum:"Qualitative Studie mit 23 semi-strukturierten Interviews (ältere Menschen, Fachkräfte, Entscheidungsträger) zur Interpretation des UN-Jahrzehnts des gesunden Alterns in einer norwegischen Kommune.",
+    result:"Drei zentrale Themen: Strategien zur Bewältigung, gemischte Alterswahrnehmungen, Gesundheitsdienste. Ergebnis: Altern wird als kollektive Verantwortung betont, aber zunehmend Älteren selbst übertragen; Digitalisierung ist Barriere für vulnerable Gruppen; kommunale Dienste werden als qualitativ hochwertig, aber ressourcengeprägt wahrgenommen. Schnelle Digitalisierung und Individualisierung verschärfen Ungleichheiten.",
+    transfer:"Norwegen, skandinavisches Wohlfahrtssystem; Befunde zu Digitalisierungsbarrieren und Equity-Risiken übertragbar auf vergleichbare europäische Kontexte."
+  },
   {
     journal:"PLoS Med", year:"2026", pmid:"42594078",
     author:"Schrempft S et al.", pubdate:"13.08.2026",
     added:"13.08.2026",
-    title:"Vermögen und funktionelle Gesundheit im Alter: Wohlfahrtsunterschiede senken Mobilität und Alltagsfähigkeit in England stärker als Kanada",
-    sum:"Ländervergleichende Longitudinalanalyse der Assoziationen zwischen Haushaltsvermögen und neun Funktionsindikatoren (Ganggeschwindigkeit, Handkraft, Mobilitätsfähigkeiten, ADL) an 8511 Personen in England (ELSA) und 22605 in Kanada (CLSA) über je 11–9 Jahre.",
-    result:"Wohlfahrtsunterschiede in funktioneller Gesundheit waren in England größer als in Kanada (z.B. Ganggeschwindigkeit: 15 vs. 9 Lebensjahre Funktionsverlust bei 60-Jährigen; ADL-Schwierigkeiten: 20 vs. 9 Jahre). Weniger vermögende Personen zeigten konsistent schlechtere Funktionen und größeren Rückgang mit dem Alter; dieser Zusammenhang blieb nach Anpassung für chronische Erkrankungen, Gewicht und Gesundheitsverhalten bestehen.",
-    transfer:"England und Kanada direkt, vergleichbare öffentliche Gesundheitssysteme mit unterschiedlicher Wohlfahrtspolitik"
+    title:"Sozioökonomische Ungleichheiten in der funktionalen Alterungsbiografie: England und Kanada zeigen größere Disparitäten in der Vermögensverteilung",
+    sum:"Vergleich von Vermögenseffekten auf körperliche Funktionsfähigkeit in England und Kanada an 8511 bzw. 22605 Personen über 50 Jahren mit bis zu 11 Jahren Nachbeobachtung.",
+    result:"In England führte fehlender Wohlstand zu 15 verlorenen Jahren Gehfähigkeit im Alter von 60 Jahren (95%-KI [12,2–17,8]), in Kanada zu 9 Jahren ([8,6–9,4]); Ungleichheiten in England insgesamt größer. Vermögensunterschiede blieben nach Adjustment für Chronische Erkrankungen, Lebensstilfaktoren und soziale Verbindungen bestehen, zeigten aber Abschwächung. Geschlechtsspezifische Unterschiede: Frauen mit geringsten Vermögen mehr Mobilitätsprobleme und ADL-Schwierigkeiten, aber bessere Lungenfunktion.",
+    transfer:"England und Kanada, vergleichbare Wohlfahrtssysteme mit unterschiedlicher Ausprägung; Befund zur Vermögensgradienten übertragbar auf deutsches System mit ähnlichen Einkommenseffekten."
+  },
+  {
+    journal:"PLoS One", year:"2026", pmid:"42555548",
+    author:"Oliveira VR et al.", pubdate:"05.08.2026",
+    added:"05.08.2026",
+    title:"Funktionale Performance im WHO-ICOPE-Rahmen: Brasilien und Europa zeigen zehn Jahre Unterschied in Funktionsverlust",
+    sum:"Vergleich von Determinanten der Funktionsfähigkeit (BADL/IADL) anhand von ELSI-Brasil (n=4825) und SHARE (n=25978) mit Analyse intrinsischer Kapazitätsdimensionen nach WHO-ICOPE-Modell.",
+    result:"Funktioneller Rückgang beginnt in Brasilien eine Dekade früher als in Europa. Risikomuster differieren: Mobilität–Handkraft schützender in Europa, Gehgeschwindigkeit Risikofaktor nur in Brasilien (OR 1,16); Depression höheres Risiko in Europa (OR 1,67–1,71) vs. Brasilien (OR 1,26–1,53); schlechte Selbsteinschätzung der Gesundheit stärkerer BADL-Risikofaktor in Brasilien (OR 2,72 vs. 2,07).",
+    transfer:"Brasilien und Europa (SHARE), unterschiedliche Sozioökonomie; Befund zeigt kontextabhängige Risikofaktoren; ICOPE-Strategien müssen sozioökonomischen Unterschieden Rechnung tragen."
   },
   {
     journal:"Age Ageing", year:"2026", pmid:"42607277",
     author:"Drijver-Headley S et al.", pubdate:"03.08.2026",
     added:"17.08.2026",
-    title:"Funktionelle Alternsverläufe und sozioökonomische Unterschiede: Sterblichkeit und Frailty-Progression in 17 Ländern",
-    sum:"Vergleichende Analyse der Frailty-Verteilung, Sterblichkeit und Defizitakkumulation über 17 Länder mit standardisiertem 31-Item-Frailty-Index an 4–5 Jahren Nachverfolgung.",
-    result:"Sterblichkeit und Frailty-Progression differierten erheblich zwischen Ländern: Mexiko zeigte höchste Mortalität und schnellste Defizitakkumulation, Schweiz und skandinavische Länder niedrigste (EAPC -3,40% für Frailty-DALYs). Innerhalb-Länder-Ungleichheiten erklären unterschiedliche Zero-State-Outcomes zwischen USA/UK (günstige Zero-State-Ergebnisse, aber schnelle Progression bei höherem Baseline-Frailty) und anderen Nationen.",
-    transfer:"HRS, ELSA, SHARE-Daten, europäische Länder direkt einbezogen, methodisch hochgradig vergleichbar"
-  },
-  {
-    journal:"BMC Public Health", year:"2026", pmid:"42595986",
-    author:"Peng L et al.", pubdate:"25.07.2026",
-    added:"14.08.2026",
-    title:"Frailty und kognitive Beeinträchtigung: Prospektive Assoziationen in fünf multinationalen Kohorten mit gepoolten Hazard Ratios",
-    sum:"Länderübergreifende Metaanalyse von fünf Longitudinal-Kohorten (USA, England, Europa, China, Korea) mit insgesamt 47429 Teilnehmern zur Assoziation zwischen Baseline-Frailty-Status und kognitiver Beeinträchtigung sowie Frailty-Trajektorien und kognitiven Outcomes über 4–10 Jahre.",
-    result:"Pre-Frailty: gepoolte adjustierte HR 1,25 (95% CI 1,18–1,33) für kognitive Beeinträchtigung; Frailty: HR 1,69 (95% CI 1,50–1,90). Frailty-Trajektorien waren signifikant mit kognitiven Outcomes assoziiert (höhere Trajektorie: OR 1,45–4,37 für kognitive Beeinträchtigung; niedrigere: OR 0,46–0,72 protektiv). Befunde konsistent über alle Kohorten.",
-    transfer:"HRS, ELSA, SHARE, CHARLS, KLoSA – europäische und non-europäische Daten, jedoch nur weil robust repliziert"
-  },
-  {
-    journal:"Eur Stroke J", year:"2026", pmid:"42479895",
-    author:"Brigo F et al.", pubdate:"06.07.2026",
-    added:"21.07.2026",
-    title:"Ischämischer Schlaganfall in Europa: Mortalitäts- und Behinderungstrends 1990–2023 mit regionalen Disparitäten",
-    sum:"Analyse von 34 europäischen Ländern mit Global Burden of Disease-2023-Schätzungen zu Mortalität (YLL), Behinderung (YLD) und DALYs für ischämischen Schlaganfall über 33 Jahre mit länder- und regionsspezifischen jährlichen prozentualen Veränderungen.",
-    result:"DALYs rückläufig in allen europäischen Ländern (EAPC -3,40% [95% CI -3,74 bis -3,05]). Steilste Rückgänge in Zentral- und Westeuropa, bescheidenere in Ost- und Südosteuropa. YLL-Rückgang (EAPC -3,81%) überwog YLD-Rückgang (-0,86%), d.h. weniger Todesfälle treiben Besserung, Behinderung stagniert. Regionale Disparitäten persistieren.",
-    transfer:"34 europäische Länder mit standardisierter Methodik, direkt auf deutsche Trends übertragbar"
+    title:"Frailty-Index-Verteilung, Mortalität und Frailty-Dynamik: 17 Länder zeigen unterschiedliche Sterblichkeit und Defizitakkumulation",
+    sum:"Harmonisierte Längsschnittdaten aus fünf internationalen Kohortensurveys (HRS, SHARE, ELSA, CHARLS, MHAS) zu Frailty-Verteilung und -Progression in 17 Ländern mit 31-Item-Frailty-Index.",
+    result:"Frailty variierte stark: höchste Prävalenz in USA, Mexiko, Süd-/Osteuropa; niedrigste in Nord-/Zentraleuropa. Mortalitätsrisiko und Defizitakkumulation unterschieden sich erheblich: Mexiko zeigte höchste Mortalität und schnellste Akkumulation, Schweiz und Skandinavien niedrigste. USA und UK zeigten günstige Outcomes bei Baseline-Frailty=0, aber rasche Progression bei höheren Ausgangswerten.",
+    transfer:"17 Länder inkl. Schweiz, Skandinavien, Deutschland-Partner (SHARE); regionale Disparitäten widerspiegeln Wohlfahrtsniveaus und Lebenserwartungsmuster Europas."
   },
   {
     journal:"Dan Med J", year:"2026", pmid:"42563704",
     author:"Brockhattingen KK et al.", pubdate:"02.07.2026",
     added:"07.08.2026",
-    title:"Akutgeriatrische Versorgungsmodelle in Dänemark: Nationale Bestandsaufnahme und Variabilität der Assessment-Praktiken",
-    sum:"Nationale Querschnittsbefragung aller 20 Krankenhaus-Geriatriestationen in Dänemark zur Struktur, Teamzusammensetzung und Assessment-Funktionen in akutgeriatrischen Modellen für Patienten ≥65 Jahre mit akuter medizinischer Erkrankung.",
-    result:"Zwölf von 20 Stationen (60%) melden aktive akutgeriatrische Funktionen. Alle 12 führen diagnostische Bewertung, patientenzentrierte Evaluation und Basis-Assessments durch. Andere Elemente variabel: EKG (n=4–10/12), Ultraschall, Frailty-Assessment, interdisziplinäre Review, Koordination mit Community-Care (4–10/12). Erkenntnis: Große Variation in Struktur und Inhalten trotz Flächendeckung.",
-    transfer:"Dänemark, europäisches Gesundheitssystem, vergleichbar mit deutschem Modell"
+    title:"Akutgeriatrische Versorgungsmodelle in Dänemark: Kartierung von Struktur und Assessment-Elementen",
+    sum:"Querschnitt-Befragung aller 20 dänischen Universitäts-Krankenhaus-Gerontologie-Abteilungen 2025 zu aktiven akutgeriatrischen Modellen, deren Struktur und Assessment-Einsatz.",
+    result:"12 von 20 Abteilungen berichten aktive akutgeriatrische Funktionen. Alle 12 führten diagnostisches Assessment, patientenzentrierte Evaluierung und Behandlung durch. Andere Elemente (EKG, Ultraschall, Frailty-Assessment, interdisziplinäre Übersicht, Koordination mit Kommunalversorgung) variabel (n=4–10 von 12). Weit verbreitete Variabilität in Besuchspraxis, Teamzusammensetzung und Follow-up.",
+    transfer:"Dänemark, skandinavisches Gesundheitssystem; Mapping von akutgeriatrischen Strukturen und Variation in Assessment-Praktiken relevant für Vergleich mit deutschen Notfallstrukturen."
   },
   {
     journal:"Swiss Med Wkly", year:"2026", pmid:"42537629",
     author:"Fehlmann CA et al.", pubdate:"26.06.2026",
     added:"31.07.2026",
-    title:"Frailty bei Notfalloperierten älteren Menschen: Klinischer Frailty-Score sagt Mortalität und Komplikationen nach Akutchirurgie voraus",
-    sum:"Retrospektive Kohortenstudie an 683 Patienten ≥65 Jahren mit Notfall-Bauchchirurgie (Laparotomie, Darmresektion u.ä.) an Schweizer Universitätsklinik, Frailty mit Clinical Frailty Scale (CFS ≥5) retrospektiv assessiert, Endpunkte: 1-Jahres-Mortalität, Komplikationen, Aufenthaltsdauer, Entlassungsziel.",
-    result:"38,2% mit Frailty (CFS ≥5). Ein-Jahres-Mortalität frail vs. nicht-frail: 25,6% vs. 6,6% (aOR 3,0; 95% CI 1,7–5,1). Frailty assoziiert mit Komplikationen (aOR 2,3; 95% CI 1,5–3,6), verlängertem Aufenthalt (+46,4%; 95% CI 26,8–69,0%) und Entlassung nicht nach Hause (aOR 2,1; 95% CI 1,4–3,2).",
-    transfer:"Schweizer Klinikdaten, deutschsprachig, comparable Dokumentation und Klassifikationsstandards"
+    title:"Frailty bei älteren Notfallpatienten unter Notfall-Operation: Quote und Outcomes verglichen",
+    sum:"Retrospektive Kohortenstudie mit 683 Patienten ≥65 Jahren in Genf, die 2016–2019 notfallmäßig operiert wurden; Frailty mit Clinical Frailty Scale (CFS) rückwirkend beurteilt.",
+    result:"38,2 % lebten mit Frailty (CFS ≥5). Ein-Jahres-Mortalität bei Frailty 25,6 % vs. ohne Frailty 6,6 % (adjustierte OR 3,0; 95%-KI 1,7–5,1). Komplikationen häufiger (aOR 2,3), Krankenhausliegedauer +46,4 %, Entlassung nach Hause weniger häufig (aOR 2,1).",
+    transfer:"Schweiz, deutschsprachig und sozialversicherungsbasiert; Befund zum Frailty-Effekt auf notfall-chirurgische Outcomes direkt auf Deutschland übertragbar."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
