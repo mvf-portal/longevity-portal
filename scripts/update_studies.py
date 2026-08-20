@@ -30,8 +30,8 @@ import requests
 # Auswahlregeln, Anzahl. Diese Datei bleibt in allen Portalen wortgleich; wer
 # hier etwas korrigiert, kann es mit vorlage-abgleich.py in die Schwesterportale
 # uebernehmen. Wer das Thema aendert, aendert thema.py.
-from thema import (ANZAHL_MIN, ANZAHL_SOLL, EUROPA_ZUERST, NCBI_TOOL,
-                   POOL_ALLGEMEIN, POOL_EUROPA, SYSTEM, TERM, TERM_DE,
+from thema import (ANZAHL_MAX, ANZAHL_MIN, ANZAHL_SOLL, EUROPA_ZUERST, KAPPEN,
+                   NCBI_TOOL, POOL_ALLGEMEIN, POOL_EUROPA, SYSTEM, TERM, TERM_DE,
                    USER_TEMPLATE)
 
 # GitHub gibt ein Secret genau so weiter, wie es eingefuegt wurde - mit einem
@@ -60,40 +60,37 @@ ARCHIVE = "studien-archiv.json"   # Vollstaendige Historie; die Seite laedt sie 
 MONTHS = {1: "Jan.", 2: "Feb.", 3: "März", 4: "Apr.", 5: "Mai", 6: "Juni",
           7: "Juli", 8: "Aug.", 9: "Sept.", 10: "Okt.", 11: "Nov.", 12: "Dez."}
 
-# Eine Studie. Steht fuer sich, weil SCHEMA sie mehrfach einsetzt.
-_STUDIE = {
-    "type": "object",
-    "additionalProperties": False,
-    "required": ["journal", "year", "pmid", "title", "sum", "result", "transfer"],
-    "properties": {
-        "journal": {"type": "string"},
-        "year": {"type": "string"},
-        "pmid": {"type": "string"},
-        "title": {"type": "string"},
-        "sum": {"type": "string"},
-        "result": {"type": "string"},
-        # Kurze Begruendung, warum das Ergebnis auf Deutschland
-        # uebertragbar ist - oder warum nur bedingt.
-        "transfer": {"type": "string"},
-    },
-}
-
-# **Die Anzahl laesst sich an einer Liste nicht begrenzen.** Am 17.08.2026
-# nacheinander ausprobiert und beide Male mit HTTP 400 abgelehnt:
-#   minItems -> "values other than 0 or 1 are not supported"
-#   maxItems -> "property 'maxItems' is not supported"
-# Feste Felder koennen es doch: studie_1..studie_ANZAHL_MIN sind Pflicht, die
-# uebrigen bis ANZAHL_SOLL optional. Damit erzwingt das Schema, was der Prompt
-# vorher nur erbitten konnte - am 19.08.2026 lieferte das Modell trotz
-# "waehle GENAU 6" zwoelf Stueck und brachte einen Lauf zu Fall.
-FELDER = [f"studie_{i}" for i in range(1, ANZAHL_SOLL + 1)]
 SCHEMA = {
     "type": "object",
     "additionalProperties": False,
-    "required": FELDER[:ANZAHL_MIN],
-    "properties": {feld: _STUDIE for feld in FELDER},
+    "required": ["studies"],
+    "properties": {
+        "studies": {
+            "type": "array",
+            # **Hier keine Laengenbegrenzung eintragen.** Am 17.08.2026 nacheinander
+            # ausprobiert und beide Male mit HTTP 400 abgelehnt:
+            #   minItems -> "values other than 0 or 1 are not supported"
+            #   maxItems -> "property 'maxItems' is not supported"
+            # Die Anzahl wird deshalb in pick_studies() geregelt, nicht im Schema.
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": ["journal", "year", "pmid", "title", "sum", "result", "transfer"],
+                "properties": {
+                    "journal": {"type": "string"},
+                    "year": {"type": "string"},
+                    "pmid": {"type": "string"},
+                    "title": {"type": "string"},
+                    "sum": {"type": "string"},
+                    "result": {"type": "string"},
+                    # Kurze Begruendung, warum das Ergebnis auf Deutschland
+                    # uebertragbar ist - oder warum nur bedingt.
+                    "transfer": {"type": "string"},
+                },
+            },
+        }
+    },
 }
-
 
 def _get(path: str, params: dict, timeout: int) -> requests.Response:
     """GET mit drei Versuchen - PubMed ist gelegentlich kurz nicht erreichbar."""
@@ -113,10 +110,20 @@ def _get(path: str, params: dict, timeout: int) -> requests.Response:
     raise RuntimeError(f"PubMed nicht erreichbar: {last}")
 
 
+# Publikationstypen, die nie in eine Ausgabe gehoeren. Eine Berichtigung
+# ("Corrigendum to ...") traegt keine eigenen Ergebnisse; das Modell waehlt sie
+# trotzdem, wenn sie im Pool liegt, und schreibt dann Platzhalter in die Felder.
+# Am 20.08.2026 im Versorgungsforschungs-Portal passiert (PMID 42617323).
+# Der Ausschluss steht hier und nicht im Prompt: Was gar nicht erst im Pool
+# liegt, kann auch nicht ausgewaehlt werden.
+AUSSCHLUSS = ('NOT ("Published Erratum"[pt] OR "Retraction of Publication"[pt] '
+              'OR "Retracted Publication"[pt] OR "Duplicate Publication"[pt])')
+
+
 def _suche(term: str, anzahl: int) -> list[str]:
     r = _get(
         "esearch.fcgi",
-        {"db": "pubmed", "term": term, "sort": "date",
+        {"db": "pubmed", "term": f"({term}) {AUSSCHLUSS}", "sort": "date",
          "retmax": str(anzahl), "retmode": "json"},
         timeout=30,
     )
@@ -268,12 +275,20 @@ def pick_studies(abstracts: str) -> list[dict]:
         messages=[{"role": "user", "content": USER_TEMPLATE.format(abstracts=abstracts)}],
     )
     text = next(b.text for b in resp.content if b.type == "text")
-    daten = json.loads(text)
-    # Reihenfolge der Felder ist die Reihenfolge der Auswahl. Die Pflichtfelder
-    # garantiert das Schema, die optionalen fehlen an duennen Tagen einfach -
-    # deshalb wird hier nichts geprueft und nichts gekappt.
-    studies = [daten[feld] for feld in FELDER if feld in daten]
-    print(f"{len(studies)} Studien ausgewaehlt (Schema: {ANZAHL_MIN} bis {ANZAHL_SOLL}).")
+    studies = json.loads(text)["studies"]
+    # Zu viele ist kein Grund abzubrechen: Die Auswahl ist nach Relevanz
+    # geordnet, die vorderen sechs sind brauchbar. Am 17.08.2026 lieferte das
+    # Modell trotz "waehle GENAU 6" neun Stueck - und weil das Schema keine
+    # Laengenbegrenzung zulaesst (siehe SCHEMA), wird hier gekappt.
+    if len(studies) > ANZAHL_MAX:
+        if not KAPPEN:
+            raise RuntimeError(f"Unerwartete Studienanzahl: {len(studies)}")
+        print(f"{len(studies)} Studien geliefert - auf die ersten {ANZAHL_SOLL} gekuerzt.")
+        studies = studies[:ANZAHL_SOLL]
+    # Zu wenige dagegen heisst, dass etwas grundsaetzlich schieflief - dann
+    # lieber sichtbar scheitern als eine duenne Auswahl veroeffentlichen.
+    if len(studies) < ANZAHL_MIN:
+        raise RuntimeError(f"Unerwartete Studienanzahl: {len(studies)}")
     return studies
 
 
@@ -355,32 +370,7 @@ def update_archive(studies: list[dict]) -> int:
     return len(entries)
 
 
-def probe() -> int:
-    """Fragt PubMed und das Modell ab und meldet nur, was zurueckkam.
-
-    Es wird nichts geschrieben, nichts committet und kein Newsletter
-    angelegt - der Lauf ist damit an jedem Tag gefahrlos, auch wenn die
-    Ausgabe des Tages schon terminiert ist. Gedacht zum Pruefen von
-    Schema- und Prompt-Aenderungen, bevor sie nachts scharf laufen.
-    """
-    studies = pick_studies(fetch_pubmed())
-    print()
-    print(f"--- Probelauf: {len(studies)} Studien ---")
-    for i, s in enumerate(studies, 1):
-        fehlend = [f for f in _STUDIE["required"] if not s.get(f)]
-        print(f"{i}. PMID {s.get('pmid', '?')} - {s.get('journal', '?')} "
-              f"{s.get('year', '?')}" + (f"  FEHLEND: {fehlend}" if fehlend else ""))
-        print(f"   {s.get('title', '')[:100]}")
-    if len(studies) < ANZAHL_MIN or len(studies) > ANZAHL_SOLL:
-        print(f"FEHLER: {len(studies)} liegt ausserhalb {ANZAHL_MIN}..{ANZAHL_SOLL}")
-        return 1
-    print("Anzahl und Felder in Ordnung. Es wurde nichts geschrieben.")
-    return 0
-
-
 def main() -> int:
-    if "--probe" in sys.argv:
-        return probe()
     abstracts = fetch_pubmed()
     studies = pick_studies(abstracts)
     meta = fetch_meta([s["pmid"] for s in studies])
