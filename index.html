@@ -1060,62 +1060,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "22. Aug. 2026, 07:04 Uhr";
+const SNAP_DATE = "23. Aug. 2026, 07:16 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
     journal:"Nat Commun", year:"2026", pmid:"42624836",
     author:"Wang X et al.", pubdate:"20.08.2026",
     added:"20.08.2026",
-    title:"Loneliness and social isolation verringern die verbleibenden gesunden Lebensjahre deutlicher als physische Erkrankungen",
-    sum:"Querschnittanalyse von 277.489 britischen Erwachsenen ohne Erkrankungen zum Zusammenhang zwischen Einsamkeit, sozialer Isolation und der Lebensdauer frei von Krankheit.",
-    result:"Frauen mit Einsamkeit und sozialer Isolation verlieren 2,4 Jahre physisch krankheitsfrei und 3,7 Jahre mental krankheitsfrei; Männer verlieren 1,7 bzw. 5,8 Jahre. Soziale Isolation lässt sich durch gesunde Lebensstile teilweise ausgleichen (signifikant), nicht aber Einsamkeit.",
-    transfer:"UK Biobank, vergleichbare Altersstruktur und Sozialversicherung; übertragbar auf deutsche Verhältnisse."
+    title:"Lebenserwartung ohne psychische Erkrankung: Auswirkungen von Einsamkeit und sozialer Isolation im Vergleich zu körperlichen Erkrankungen",
+    sum:"Studie untersuchte an 277.489 Erwachsenen aus der UK Biobank, wie Einsamkeit und soziale Isolation die krankheitsfreie Lebenserwartung beeinflussen.",
+    result:"Frauen und Männer mit sowohl Einsamkeit als auch sozialer Isolation lebten im Alter von 50 Jahren 2,4 bzw. 1,7 Jahre weniger ohne körperliche Erkrankungen und 3,7 bzw. 5,8 Jahre weniger ohne psychische Störungen als nicht betroffene Personen. Soziale Isolation korrelierte stärker mit verlorenen Jahren ohne psychische Störungen als ohne körperliche Erkrankungen.",
+    transfer:"UK Biobank, transferierbar auf westeuropäische Bevölkerungen mit ähnlicher Lebenserwartung"
   },
   {
     journal:"BMC Health Serv Res", year:"2026", pmid:"42613606",
     author:"Bikova M et al.", pubdate:"14.08.2026",
     added:"19.08.2026",
-    title:"UN-Dekade für gesundes Altern in Norwegen: Qualitative Perspektiven von Älteren, Fachleuten und Entscheidungsträgern",
-    sum:"Qualitative Studie mit 23 halbstrukturierten Interviews in einer norwegischen Großgemeinde zu Verständnis und Umsetzung der vier Aktionsfelder der UN-Dekade (Ageismus, altersgerechte Umgebung, integrierte Versorgung, Langzeitpflege).",
-    result:"Schlüsselbefunde: Vorbereitung auf Alter als gemeinsame Verantwortung, wachsende Erwartung von Eigenverantwortung Älterer; Digitalisierung als Barrier für Inklusion; Kommunaldienste als qualitativ gut aber ressourcenknapp. Vulnerable Gruppen ohne Netzwerke drohen marginalisiert zu werden.",
-    transfer:"Norwegisches System, vergleichbar mit deutschem Sozialversicherungsmodell und föderalem Aufbau."
+    title:"Verständnis von gesundem Altern in Norwegen: qualitative Studie mit Älteren, Fachkräften und Entscheidungsträgern",
+    sum:"Qualitative Studie mit 23 semi-strukturierten Interviews in einer großen norwegischen Gemeinde untersuchte Verständnis und Interpretation von gesundem Altern in Kontext der UN-Dekade für gesundes Altern.",
+    result:"Drei Hauptthemen identifiziert: (1) Strategien zur Bewältigung erfordern gemeinsame Verantwortung, doch Ältere sollen zunehmend selbst vorsorgen – mit Risiko der Marginalisierung vulnerabler Gruppen; (2) Digitalisierung ist significante Barriere für inklusive Partizipation; (3) Kommunale Gesundheitsdienste gelten als hochwertig, aber ressourcenabhängig mit Unsicherheit für Ältere. Gesundes Altern wird zunehmend um Partizipation und Selbstverantwortung definiert, doch Individualisierung und fehlende Inklusion können Inequitäten verstärken.",
+    transfer:"Norwegen, vergleichbar mit Deutschland (skandinavisches Sozialsystem mit öffentlicher Versorgung)"
   },
   {
     journal:"PLoS Med", year:"2026", pmid:"42594078",
     author:"Schrempft S et al.", pubdate:"13.08.2026",
     added:"13.08.2026",
-    title:"Vermögensungleichheit verschärft funktionalen Verfall stärker in England als Kanada",
-    sum:"Längsschnittvergleich von 8.511 Engländern und 22.605 Kanadiern (50–85 Jahre) über 11 Jahre zur Assoziation zwischen Vermögen und Funktionsfähigkeit (Ganggeschwindigkeit, Griffstärke, Alltagsfunktion).",
-    result:"In England verliert weniger wohlhabende Person bei Alter 60 Jahren 15 Jahre Gangfähigkeit vs. 9 Jahre in Kanada; bei Alltagsaktivitäten 20 vs. 9 Jahre. Wealthungleichgewichte persistieren nach Kontrolle für chronische Erkrankungen, Gewicht und Verhalten.",
-    transfer:"Vergleichbare Wohlfahrtsstaaten, aber England zeigt stärkere Ungleichheit – relevant für deutsche Debatte über Vermögenseffekte."
+    title:"Soziökonomische Ungleichheiten in funktionalen Altersverläufen: England und Kanada im Vergleich",
+    sum:"Longitudinale Kohortenstudie verglich Assoziationen zwischen Vermögen und körperliche Funktionsfähigkeit in ELSA (England, 8.511 Personen, 2012-2023) und CLSA (Kanada, 22.605 Personen, 2012-2021).",
+    result:"Geringeres Vermögen war in beiden Kohorten mit schlechterer Funktionsfähigkeit und stärkerem Rückgang von Mobilität und ADL-Fähigkeiten assoziiert. Vermögensungleichheiten in der Funktionsfähigkeit waren größer in England als Kanada: Gesamtverlust funktionaler Jahre im Alter 60 bei niedriger Vermögensgruppe betrug 15 Jahre (95%-KI 12,2-17,8) für Gehgeschwindigkeit in ELSA versus 9 Jahre (8,6-9,4) in CLSA. Unterschiede blieben nach Anpassung für chronische Erkrankungen, Gewicht, Gesundheitsverhalten und soziale Kontakte bestehen.",
+    transfer:"England vergleichbar mit Deutschland, Kanada validierungskohorte; Sozialsystem bedingt Unterschied größer als methodisch"
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42625706",
-    author:"Liang D et al.", pubdate:"06.08.2026",
+    journal:"Front Public Health", year:"2026", pmid:"42625570",
+    author:"Wypych-Ślusarska A et al.", pubdate:"06.08.2026",
     added:"21.08.2026",
-    title:"Körperliches Training reduziert kognitive Gebrechlichkeit zu 35 % über Stärkung der Selbstwirksamkeit",
-    sum:"Querschnittbefragung von 563 Gemeindemitbewohnern (≥60 J.) in Henan, China zu Zusammenhang zwischen körperlichem Training, Selbstwirksamkeit und kognitiver Gebrechlichkeit (Frailty + Kognition).",
-    result:"Prävalenz kognitive Gebrechlichkeit 21,3 %. Körperliches Training assoziiert mit weniger kognitiver Gebrechlichkeit; Selbstwirksamkeit mediiert 35,17 % dieses Effekts. Vollständiges Mediationsmodell unterstützt indirekten Weg über Selbstvertrauen.",
-    transfer:"China-Studie mit großer Stichprobe, aber kulturelle und Gesundheitssystem-Unterschiede beachten – Mechanismus (Selbstwirksamkeit) transnational relevant."
+    title:"Psychosoziale und wirtschaftliche Faktoren gesunden Alterns in Europa: systematische Übersicht mit Syntheserahmen",
+    sum:"Systematische Übersicht europäischer Studien (2019-2024) zur Evidenz für psychosoziale und sozioökonomische Determinanten gesunden Alterns bei Älteren ≥65 Jahren in Europa.",
+    result:"Konsistente Evidenz für Schutzfunktion von sozialen Netzen, sozialer Integration und verminderter Einsamkeit für Gesundheit, Wohlbefinden und kognitive Funktionsfähigkeit. Autonomie und Unabhängigkeit traten als zentrale Elemente positiven Alterns hervor, ebenso Engagement in sozialen, physischen und beruflichen Aktivitäten. Literatur unterstreicht Bedarf für Public-Health-Politiken und Gemeindeumgebungen, die positives Altern durch integrierte physische, psychosoziale und soziale Strategien unterstützen. Die beiden übergeordneten Themenbereiche: psychosoziale und wirtschaftliche Determinanten, und soziale Programme/gemeindegestützte Interventionen.",
+    transfer:"Europäische Studienbasis einschließlich Deutschland, vergleichbare Sozialversicherungssysteme"
   },
   {
     journal:"Age Ageing", year:"2026", pmid:"42607277",
     author:"Drijver-Headley S et al.", pubdate:"03.08.2026",
     added:"17.08.2026",
-    title:"Frailty-Verteilung und Defizitakkumulation unterscheiden sich stark zwischen 17 Ländern",
-    sum:"Harmonisierte Längsschnittstudie über fünf Kohorten (USA, Europa, China, Mexiko, Schweiz) mit 31-Item-Frailty-Index, Verfolgung über vier Jahre zur Mortalität und Defizitakkumulation.",
-    result:"Frailty höchste in USA, Mexiko und Süd-/Osteuropa, niedrigste in Skandinavien und Schweiz. Mortalität und Defizitakkumulation massiv unterschiedlich: Mexiko höchste Raten, Schweiz und Skandinavien niedrigste. Analysen des Zero-State (minimale Defizite) zeigen größere Länderunterschiede, aber weniger statistische Power.",
-    transfer:"Europäische Daten direkt eingebunden, zeigen Systemunterschiede – skandinavische und schweizerische Systeme relevanterweise als Referenz."
+    title:"Frailty-Verläufe und Sterblichkeit: Ländervergleich mittels harmonisierter Alterungskohortendata",
+    sum:"Verglich Frailty-Verteilung, Sterblichkeit und Defizitakkumulation über 4 Jahre in 17 Ländern anhand harmonisierter Daten von über 47.000 Älteren.",
+    result:"USA, Mexiko und Süd-/Osteuropa zeigten höchste Ausgangs-Frailty; Schweiz und skandinavische Länder niedrigste. Mexiko hatte höchste Mortalität und schnellste Defizitakkumulation (Gesamtsterblichkeit 12-Monats-Inzidenz); Skandinavien niedrigste. Zero-State-Analyse (Personen mit &lt;2 Defiziten) zeigte größere Ländergradienten, spiegelte aber Muster bei höherer Ausgangsfrailty nicht vollständig wider.",
+    transfer:"Multinationale Kohortendaten (SHARE, HRS, ELSA, CHARLS, MHAS), valide auch für Deutschland als europäisches Versicherungssystem"
+  },
+  {
+    journal:"Dan Med J", year:"2026", pmid:"42563704",
+    author:"Brockhattingen KK et al.", pubdate:"02.07.2026",
+    added:"07.08.2026",
+    title:"Akutgeriatrische Versorgungsmodelle in Dänemark: Umfrage zu Struktur und Assessment",
+    sum:"Fragebogenstudie erfasste alle 20 Krankenhausgeriatrien Dänemarks zu vorhandenen akutgeriatrischen Modellen, Teamstruktur und Assessmentkomponenten.",
+    result:"12 von 20 Krankenhausgeriatrien berichten akutgeriatrische Funktion. Alle 12 (100%) führten diagnostische Bewertung, patientenorientierte Evaluierung und Behandlungselemente des umfassenden geriatrischen Assessments durch. Weitere Elemente (EKG, Ultraschall, Frailty-Screening, interdisziplinäre Fallbesprechung, Versorgungskoordination mit Gemeindediensten) variieren zwischen 4-10 von 12 Einrichtungen (33-83%). Akutgeriatrische Modelle sind landesweit präsent, zeigen aber erhebliche Variabilität in Ausführung, Teamzusammensetzung und Follow-up.",
+    transfer:"Dänemark als skandinavisches Gesundheitssystem, strukturell vergleichbar mit Deutschland"
   },
   {
     journal:"Swiss Med Wkly", year:"2026", pmid:"42537629",
     author:"Fehlmann CA et al.", pubdate:"26.06.2026",
     added:"31.07.2026",
-    title:"Frailty bei Notfalleingriffen: stark erhöhte Ein-Jahres-Mortalität und Komplikationen im Schweizer Krankenhaus",
-    sum:"Retrospektive Kohortenstudie von 683 älteren Patienten (≥65 J.) mit Notfallchirurgie (2016–2019) in Schweizer Tertiary Hospital; Frailty mit Clinical Frailty Scale retrospektiv beurteilt.",
-    result:"38,2 % mit Frailty (CFS ≥5). Ein-Jahres-Mortalität: 25,6 % (Frail) vs. 6,6 % (robust), aOR 3,0 (95%-KI 1,7–5,1). Komplikationen aOR 2,3, verlängerte Liegedauer +46,4 %, Entlassung in Heim aOR 2,1.",
-    transfer:"Schweizer Hochleistungssystem, ähnliche Dokumentation wie Deutschland, direkt anwendbar."
+    title:"Frailty vorhersagt Sterblichkeit und Komplikationen nach Notfallchirurgie: Kohortenstudie bei älteren Patienten",
+    sum:"Retrospektive Kohortenstudie von 683 Patienten ≥65 Jahren, die zwischen 2016-2019 notfallchirurgische Eingriffe erhielten, untersuchte Assoziationen zwischen Frailty und 1-Jahres-Mortalität sowie Morbidität.",
+    result:"38,2% der Patienten wiesen Frailty auf (Clinical Frailty Scale ≥5). 1-Jahres-Mortalität war bei frail vs. nicht-frail 25,6% vs. 6,6% (adjustierte OR 3,0; 95%-KI 1,7-5,1). Frailty war assoziiert mit erhöhtem Komplikationsrisiko (aOR 2,3; 1,5-3,6), verlängertem Krankenhausaufenthalt (+46,4%; 26,8-69,0%) und Entlassung an anderer Lokalität als Heimat (aOR 2,1; 1,4-3,2). Routinefrailty-Screening könnte Risikostratifikation und patientenzentrierte Operationsentscheidungen verbessern.",
+    transfer:"Schweiz, Gesundheitssystem vergleichbar mit Deutschland, klinische Daten validiert"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
