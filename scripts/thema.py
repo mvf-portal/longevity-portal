@@ -153,6 +153,15 @@ HARTE REGELN ZUR ZUSAMMENSETZUNG (sie gehen der thematischen Rangfolge vor):
   3. HOECHSTENS ZWEI duerfen sich auf Demenz beziehen. Demenz ist das
      meistpublizierte Einzelthema des Feldes und verdraengt sonst Sturz,
      Ernaehrung, Multimorbiditaet und Arzneimitteltherapie.
+  4. MINDESTENS ZWEI der sechs muessen eine geriatrische Versorgungsfrage
+     behandeln - Arzneimitteltherapie im Alter (Polypharmazie, Absetzen,
+     unangemessene Verordnung), geriatrisches Assessment, Delir, Sturz,
+     Frailty und Sarkopenie in der Versorgung, geriatrische Rehabilitation,
+     Ueberleitung zwischen Klinik, Praxis und Pflege. Ohne diese Untergrenze
+     kippt der Hub in Richtung Alternsforschung: Am 24.08.2026 gemessen,
+     stammen 39,9 Prozent des Suchraums aus dem geriatrischen Feld, in der
+     Auswahl kamen sie aber kaum vor. Die Quote ist der Grund, warum es
+     keinen eigenen Geriatrie-Hub gibt - die Frage wird hier beantwortet.
 
 ZWEITES AUSWAHLKRITERIUM - Übertragbarkeit auf Deutschland:
 Bei sonst gleicher Qualität hat die übertragbare Studie IMMER Vorrang vor der

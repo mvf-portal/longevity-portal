@@ -55,10 +55,10 @@
   "STARTBEGRIFF_HTML": "Lebenserwartung",
   "PLATZHALTER_HTML": "z. B. Gebrechlichkeit, gesunde Lebensjahre, healthspan …",
   "STUDIEN_HINWEIS_HTML": "Gesucht wird nach Arbeiten zu Altern, Lebenserwartung und der Versorgung älterer Menschen. Ausgewählt wird nach Übertragbarkeit auf Deutschland: Vorrang haben Arbeiten aus vergleichbaren Gesundheitssystemen und solche, die eine Maßnahme mit gemessener Wirkung untersuchen — nicht die Grundlagenforschung an Modellorganismen ohne Bezug zum Menschen.",
-  "N_DB": "91",
-  "N_LIVE": "48",
-  "N_PORTAL": "37",
+  "N_DB": "99",
+  "N_LIVE": "51",
+  "N_PORTAL": "42",
   "N_LIZENZ": "6",
   "N_RUBRIKEN": "11",
-  "N_GLOSSAR": "211"
+  "N_GLOSSAR": "219"
 }
