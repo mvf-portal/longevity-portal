@@ -1068,71 +1068,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "24. Aug. 2026, 07:58 Uhr";
+const SNAP_DATE = "25. Aug. 2026, 07:00 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
     journal:"Nat Commun", year:"2026", pmid:"42624836",
     author:"Wang X et al.", pubdate:"20.08.2026",
     added:"20.08.2026",
-    title:"Einsamkeit und soziale Isolation reduzieren Lebenserwartung ohne psychische Erkrankung um 2,4–5,8 Jahre im Vergleich zu Altersgenossen",
-    sum:"UK-Biobank-Studie an 277.489 Erwachsenen untersucht, wie Einsamkeit und soziale Isolation die Lebenserwartung frei von Krankheit beeinflussen, differenziert nach psychischen und physischen Erkrankungen.",
-    result:"Frauen mit Einsamkeit und Isolation leben ab 50 Jahren 3,7 Jahre weniger frei von psychischer Erkrankung und 2,4 Jahre weniger frei von physischer Erkrankung als nicht betroffene Frauen; Männer 5,8 bzw. 1,7 Jahre weniger. Ein gesunder Lebensstil moderiert die Auswirkungen auf die physische, nicht aber auf die psychische Lebenserwartung.",
-    transfer:"UK-Daten, repräsentativ für europäische Sozialversicherungssysteme, direkt auf Deutschland übertragbar."
+    title:"Einsamkeit und soziale Isolation: Verlust von krankheitsfreien Lebensjahren bei älteren Erwachsenen",
+    sum:"UK Biobank-Studie zu Auswirkungen von Einsamkeit und sozialer Isolation auf die Lebenserwartung ohne kardiovaskuläre und psychische Erkrankungen bei Personen ab 50 Jahren.",
+    result:"Frauen mit Einsamkeit und sozialer Isolation verlieren gegenüber nicht betroffenen Frauen 2,4 Jahre krankheitsfreies Leben (Physik) und 3,7 Jahre ohne Depressionen/Angststörungen; Männer verlieren 1,7 und 5,8 Jahre. Der Effekt der Isolation verringert sich mit gesunderen Lebensstilen, nicht aber der Einsamkeitseffekt.",
+    transfer:"Großbritannien, vergleichbares Gesundheitssystem, europäische Bevölkerung."
   },
   {
     journal:"BMC Health Serv Res", year:"2026", pmid:"42613606",
     author:"Bikova M et al.", pubdate:"14.08.2026",
     added:"19.08.2026",
-    title:"Konzeption von gesundem Altern in Norwegen: Qualitative Studie zu Perspektiven von älteren Menschen, Fachpersonen und Entscheidungsträgern",
-    sum:"23 semi-strukturierte Interviews in einer norwegischen Kommune explorieren, wie gesundes Altern im Kontext der UN-Dekade verstanden und implementiert wird – Fokus auf vier Aktionsbereiche der UN.",
-    result:"Hauptthemen: Strategien zum Erwerben von Bewältigung, gemischte Altersbilder, Gesundheitsversorgung. Während Alternsvorbereitung als kollektive Verantwortung gilt, wird Ältere zunehmend selbst für Vorbereitung verantwortlich gemacht – Risiko, vulnerable Gruppen zu marginalisieren. Schnelle Digitalisierung ist Barriere für Teilhabe; Gemeindedienste gelten als qualitativ hochwertig, aber mit Ressourcenherausforderungen.",
-    transfer:"Norwegen, skandinavisches Sozialsystem mit universeller Krankenversicherung – Erkenntnisse zu Partizipation und Digitalisierung relevant für deutschsprachigen Raum."
+    title:"Gesundes Altern in Norwegen: Perspektiven von Älteren, Fachpersonen und Entscheidungsträgern",
+    sum:"Qualitative Fallstudie mit 23 Interviews zu Verständnis von gesundem Altern im Kontext der UN Decade of Healthy Ageing in einer norwegischen Kommune.",
+    result:"Drei zentrale Themen: Altern wird als gemeinsame Verantwortung verstanden, verschiebt sich aber zunehmend zu Eigenverantwortung Älterer; schnelle Digitalisierung ist Barriere für Teilhabe, besonders für vulnerable Gruppen; Kommunale Gesundheitsdienste gelten als hochwertig, aber ressourcengefährdet. Notwendig: digitale Inklusion, intergenerative Ansätze, Investitionen und Ageism-Bekämpfung.",
+    transfer:"Norwegen, nordeuropäisches Versorgungssystem, qualitativ begründete Empfehlungen für Versorgungsgestaltung."
   },
   {
     journal:"PLoS Med", year:"2026", pmid:"42594078",
     author:"Schrempft S et al.", pubdate:"13.08.2026",
     added:"13.08.2026",
-    title:"Vermögensungleichheiten in funktionaler Alterung größer in England als in Kanada; beide zeigen stark vermögensstratifizierte Funktionsfähigkeit",
-    sum:"Längsschnittvergleich von 8.511 älteren Engländern und 22.605 Kanadiern untersucht Assoziationen zwischen Haushaltvermögen und körperlicher Funktionsfähigkeit über 11–9 Jahre.",
-    result:"Niedriges Vermögen assoziiert mit schlechterer Funktionsfähigkeit und stärkerem Funktionsverlust mit Alter in beiden Ländern. Vermögensungleichheiten größer in ELSA: 15 Jahren Ganggeschwindigkeit verloren (Alter 60) versus 9 Jahren in Kanada; 20 Jahren ADL-Verlust versus 9 Jahren. Assoziationen bleiben nach Adjustment für Erkrankungen, Bewegung, Ernährung teilweise erhalten – weist auf sozialpolitische Faktoren hin.",
-    transfer:"England und Kanada mit vergleichbaren, aber nicht identischen Sozialsystemen; größere Ungleichheit in England könnte deutschem System relevant sein."
-  },
-  {
-    journal:"Front Public Health", year:"2026", pmid:"42625570",
-    author:"Wypych-Ślusarska A et al.", pubdate:"06.08.2026",
-    added:"21.08.2026",
-    title:"Psychosoziale und wirtschaftliche Faktoren für gesundes Altern: Systematische Überblicksarbeit zu europäischem Forschungsstand 2019–2024",
-    sum:"Systematische Überblicksarbeit mit 36 Studien zu psychosozialen und sozioökonomischen Bestimmungsfaktoren für gesundes Altern bei ≥65-Jährigen in Europa.",
-    result:"Zwei Themenschwerpunkte: (1) Psychosoziale/ökonomische Faktoren – konsistente Schutzrolle sozialer Netzwerke, sozialer Integration, geringerer Einsamkeit für Gesundheit und kognitives Funktionieren; Autonomie und Unabhängigkeit zentral für Lebensqualität. (2) Lokale Programme und interventionen – Engagement in sozialen, physischen und beruflichen Aktivitäten unterstützt Ressourcenerhalt. Ergebnisse zeigen Need für integrierte Policies, die soziale Determinanten modifizieren.",
-    transfer:"Europäische Studien 2019–2024, primär DACH und Westeuropa – direkt auf deutsches Gesundheitswesen übertragbar."
+    title:"Sozioökonomische Ungleichheiten im funktionalen Altern: England vs. Kanada",
+    sum:"Vergleichende Längsschnittstudie der Funktionsfähigkeit in Abhängigkeit vom Haushaltsvermögen in zwei anglo-amerikanischen Kohorten (ELSA, CLSA) über 8–11 Jahre.",
+    result:"Geringeres Vermögen war in beiden Ländern mit niedrigerem Funktionsniveau und schnellerem Verfall assoziiert. Vermögensungleichheiten waren in England größer als in Kanada: Gangsicherheit-Unterschied 15 Jahre (ELSA) vs. 9 Jahre (CLSA), ADL-Abhängigkeit 20 Jahre (ELSA) vs. 9 Jahre (CLSA). Unterschiede blieben auch nach Anpassung an Komorbiditäten, Gewicht und Gesundheitsverhalten bestehen.",
+    transfer:"England und Kanada, Sozialversicherungssysteme strukturell ähnlich, aber unterschiedliche Ungleichheiten."
   },
   {
     journal:"Age Ageing", year:"2026", pmid:"42632917",
     author:"Walsh B et al.", pubdate:"03.08.2026",
     added:"23.08.2026",
-    title:"Frailty-bedingte Nachfrage nach Gemeindeversorgung in England 2025–2040: Simulationen zeigen Potenzial von Frailty-Prävention, aber anhaltende Steigerung der Leistungsnutzung",
-    sum:"Simulationsmodellierung auf englischen Routinedaten projiziert die Nachfrage nach psychosozialer Unterstützung, Gemeindegesundheit und Sozialhilfe für Menschen ≥50 Jahren mit Frailty bis 2040.",
-    result:"Mentale Gesundheit, Gemeindegesundheit und kommunale Sozialhilfe werden bis 2040 um 16 %, 30 % bzw. 30 % zunehmen. Senkung der Frailty-Inzidenz könnte zwischen 2025 und 2040 mentale Gesundheitskontakte um 1,4 Mio., Gemeindegesundheitskontakte um 10 Mio. und Sozialhilfefallanfragen um 400.000 reduzieren. Nachfrage wird trotz Prävention weiter wachsen, da bereits viele Menschen mit milder bis moderater Frailty leben.",
-    transfer:"Englische NHS-Daten, die Ergebnisse sind für deutsches Gesundheitswesen gut übertragbar bezüglich Versorgungsplanung älter werdender Bevölkerung."
+    title:"Künftige Nachfrage nach Pflege- und Gesundheitsdiensten: Frailty-Szenarien für England 2025–2040",
+    sum:"Simulationsmodellierung zur Prognose der Nachfrage nach ambulanten Gesundheits- und Sozialdiensten bei Menschen ab 50 Jahren mit Frailty in England.",
+    result:"Eine Senkung der Frailty-Inzidenz könnte zwischen 2025 und 2040 die Inanspruchnahme von psychischer Gesundheitsversorgung um 1,4 Mio., Gesundheitsdiensten um 10 Mio. und kommunalen Sozialdiensten um 400.000 Kontakte verringern. Die Verzögerung von Frailty-Progression könnte die Kontakte um 2,8 Mio. (Psyche), 45,3 Mio. (Gesundheit) und 2 Mio. (Soziales) senken. Ohne Intervention wächst die Nachfrage um 16 % bis 30 % über 16 Jahre.",
+    transfer:"England, routinedaten zum elektronischen Frailty Index verfügbar."
   },
   {
-    journal:"Age Ageing", year:"2026", pmid:"42607277",
-    author:"Drijver-Headley S et al.", pubdate:"03.08.2026",
-    added:"17.08.2026",
-    title:"Frailty-Verteilung und Sterblichkeit unterscheiden sich stark zwischen 17 Ländern; Zero-State-Analyse zeigt Potenzial als Gesundheitsindikator",
-    sum:"Harmonisierte Längsschnittdaten aus fünf internationalen Kohorten vergleichen Frailty-Progression, Mortalität und Defizitaufbau in 17 Ländern mittlerer bis hoher Einkommen.",
-    result:"Frailty-Prävalenz höchst in USA, Mexiko und Süd-/Osteuropa, niedrigst in Nord-/Zentraleuropa. Mortalität und Defizitaufbau variieren stark (Mexico mit höchstem Risiko, Skandinavien/Schweiz mit niedrigstem). Zero-State-Analysen (minima Defizite) zeigen größere Länderunterschiede, aber niedrigere statistische Power als Analysen mit höherer Baseline-Frailty.",
-    transfer:"Harmonisierte multikohorten-Daten aus USA, England, Europa, China, Mexiko zeigen Länderunterschiede – für Deutschland relevant wegen Vergleich europäischer Länder mit unterschiedlicher Wirtschaftslage."
+    journal:"Age Ageing", year:"2026", pmid:"42632919",
+    author:"Egbujie BA et al.", pubdate:"03.08.2026",
+    added:"23.08.2026",
+    title:"Langzeitverläufe der intrinsischen Kapazität vorhersagen Pflegeheimaufnahme und Mortalität",
+    sum:"Kanadische Populationsstudie zu Längsmustern der intrinsischen Kapazität (Mobilität, Vitalität, Kognition, Psychisches, Sensorik) bei 302.467 Patienten häuslicher Pflege und Vorhersage von Outcomes.",
+    result:"Fünf distinkte Trajektorienmuster identifiziert; kognitive Beeinträchtigung war mit ungünstigen Trajectories assoziiert. Wichtig: Baseline-Kapazität allein war prognostisch unzureichend. Personen mit mäßiger Baseline-Kapazität zeigten höhere LTC-Einweisung als Personen mit niedriger Kapazität, die sich verbesserten (48,4 % vs. 38,1 %).",
+    transfer:"Kanada, interRAI Home Care Routinedaten, Ansatz auf deutsches Assessment übertragbar."
   },
   {
-    journal:"BMC Health Serv Res", year:"2026", pmid:"42527915",
-    author:"Lindmark T et al.", pubdate:"29.07.2026",
-    added:"29.07.2026",
-    title:"Temporäre Mitarbeitende in der schwedischen Altenhilfe erschweren Kontinuität und belasten Stammpersonal: qualitative Managerstudie",
-    sum:"16 qualitative Interviews mit Managern auf vier Ebenen der schwedischen Altenhilfe (Heime, Ambulante Dienste, Administration) zu Chancen und Herausforderungen temporärer Beschäftigung.",
-    result:"Drei Themen: Balance zwischen Personaldeckung und Improvisation, Mangel an lokaler Kontrollierbarkeit der Rekrutierung, Spannung zwischen Flexibilität und Stabilität. Temporäre Mitarbeitende decken Lücken, erhöhen aber die Last auf Stammpersonal und erschweren Kontinuität. Erste-Linie-Manager fokussieren auf Tagesdeckung und Mitarbeiterschutz, höhere Manager auf Langzeitplanung. Zentrale Personalentscheidungen bevorzugen kurzfristige Deckung über Stabilität.",
-    transfer:"Schweden, nordisches Sozialsystem mit öffentlicher Altenhilfe – Befunde zu Personalmanagement übertragbar auf Deutschland."
+    journal:"Alzheimers Dement", year:"2026", pmid:"42630086",
+    author:"Yin X et al.", pubdate:"Aug. 2026",
+    added:"22.08.2026",
+    title:"Gemeinsamer Gedächtnis- und Kognitionsverfall erhöht Risiko für Funktionsabhängigkeit im Alter",
+    sum:"Harmonisierte Längsschnittanalyse von vier Kohorten (China, USA, England, Europa) zur Vorhersage funktioneller Abhängigkeit durch gleichzeitige Veränderungen subjektiver und objektiver kognitiver Parameter.",
+    result:"Unter 62.329 Teilnehmern mit vollständiger Analyse war gleichzeitiger kognitiver Verfall am stärksten mit funktioneller Abhängigkeit assoziiert (Hazard Ratio 1,47; 95%-KI 1,38–1,57), stärker als einzelne Defizite (subjektiv-nur HR 1,22; objektiv-nur HR 1,12). In Konkurrenzrisiko-Analysen blieb der Zusammenhang robust (gepoolte HR 1,39; 95%-KI 1,27–1,51).",
+    transfer:"Vier Kontinente, bevölkerungsrepräsentative Kohorten mit konsistenten Mustern."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
