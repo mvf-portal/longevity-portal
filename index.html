@@ -1068,62 +1068,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "25. Aug. 2026, 07:00 Uhr";
+const SNAP_DATE = "26. Aug. 2026, 07:02 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Nat Commun", year:"2026", pmid:"42624836",
-    author:"Wang X et al.", pubdate:"20.08.2026",
-    added:"20.08.2026",
-    title:"Einsamkeit und soziale Isolation: Verlust von krankheitsfreien Lebensjahren bei älteren Erwachsenen",
-    sum:"UK Biobank-Studie zu Auswirkungen von Einsamkeit und sozialer Isolation auf die Lebenserwartung ohne kardiovaskuläre und psychische Erkrankungen bei Personen ab 50 Jahren.",
-    result:"Frauen mit Einsamkeit und sozialer Isolation verlieren gegenüber nicht betroffenen Frauen 2,4 Jahre krankheitsfreies Leben (Physik) und 3,7 Jahre ohne Depressionen/Angststörungen; Männer verlieren 1,7 und 5,8 Jahre. Der Effekt der Isolation verringert sich mit gesunderen Lebensstilen, nicht aber der Einsamkeitseffekt.",
-    transfer:"Großbritannien, vergleichbares Gesundheitssystem, europäische Bevölkerung."
-  },
-  {
-    journal:"BMC Health Serv Res", year:"2026", pmid:"42613606",
-    author:"Bikova M et al.", pubdate:"14.08.2026",
-    added:"19.08.2026",
-    title:"Gesundes Altern in Norwegen: Perspektiven von Älteren, Fachpersonen und Entscheidungsträgern",
-    sum:"Qualitative Fallstudie mit 23 Interviews zu Verständnis von gesundem Altern im Kontext der UN Decade of Healthy Ageing in einer norwegischen Kommune.",
-    result:"Drei zentrale Themen: Altern wird als gemeinsame Verantwortung verstanden, verschiebt sich aber zunehmend zu Eigenverantwortung Älterer; schnelle Digitalisierung ist Barriere für Teilhabe, besonders für vulnerable Gruppen; Kommunale Gesundheitsdienste gelten als hochwertig, aber ressourcengefährdet. Notwendig: digitale Inklusion, intergenerative Ansätze, Investitionen und Ageism-Bekämpfung.",
-    transfer:"Norwegen, nordeuropäisches Versorgungssystem, qualitativ begründete Empfehlungen für Versorgungsgestaltung."
+    journal:"Ir Med J", year:"2026", pmid:"42640196",
+    author:"Ahmed R et al.", pubdate:"20.08.2026",
+    added:"25.08.2026",
+    title:"Geriatrisches Assessment senkt Aufenthaltsdauer bei älteren Krankenhauspatienten",
+    sum:"Evaluierung eines neu eingeführten spezialistischen Geriatrie-Service mit Comprehensive Geriatric Assessment (CGA) in einem irischen Privatspital bei Patienten ab 75 Jahren.",
+    result:"84% der Patienten (42/50) wurden innerhalb von 48 Stunden geriatrisch untersucht (Median 29 Stunden). Multidisziplinäres Team-Engagement stieg von 45% auf 70%, Aufenthaltsdauer sank um 22% (von 8,7 auf 6,8 Tage), 66% wurden direkt nach Hause entlassen, 30-Tage-Wiederaufnahmen 10%.",
+    transfer:"Irland, vergleichbare europäische Privatklinik-Strukturen, HSE-Qualitätsstandards"
   },
   {
     journal:"PLoS Med", year:"2026", pmid:"42594078",
     author:"Schrempft S et al.", pubdate:"13.08.2026",
     added:"13.08.2026",
-    title:"Sozioökonomische Ungleichheiten im funktionalen Altern: England vs. Kanada",
-    sum:"Vergleichende Längsschnittstudie der Funktionsfähigkeit in Abhängigkeit vom Haushaltsvermögen in zwei anglo-amerikanischen Kohorten (ELSA, CLSA) über 8–11 Jahre.",
-    result:"Geringeres Vermögen war in beiden Ländern mit niedrigerem Funktionsniveau und schnellerem Verfall assoziiert. Vermögensungleichheiten waren in England größer als in Kanada: Gangsicherheit-Unterschied 15 Jahre (ELSA) vs. 9 Jahre (CLSA), ADL-Abhängigkeit 20 Jahre (ELSA) vs. 9 Jahre (CLSA). Unterschiede blieben auch nach Anpassung an Komorbiditäten, Gewicht und Gesundheitsverhalten bestehen.",
-    transfer:"England und Kanada, Sozialversicherungssysteme strukturell ähnlich, aber unterschiedliche Ungleichheiten."
+    title:"Wohlstand mindert Funktionsabbau im Alter stärker in England als Kanada",
+    sum:"Ländervergleichende Kohortenstudie (ELSA, CLSA) mit 31.116 Teilnehmern über 11 Jahre zu Vermögen und funktionellem Altern (Ganggeschwindigkeit, Griffstärke, Beweglichkeit, ADL).",
+    result:"Niedriger Vermögen assoziiert mit schlechterer Funktion und stärkerem Funktionsabbau mit Alter in beiden Ländern. Wohlstands-Ungleichheiten größer in England: bei 60 Jahren 15 verlorene Lebensjahre Gangfunktion (KI 12,2-17,8) versus 9 in Kanada (KI 8,6-9,4); ADL-Schwierigkeiten 20 (19,5-20,4) versus 9 (8,6-9,4).",
+    transfer:"Kanada, ähnliche Sozialversicherungssysteme; zeigt Relevanz Systembedingungen"
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42625570",
+    author:"Wypych-Ślusarska A et al.", pubdate:"06.08.2026",
+    added:"21.08.2026",
+    title:"Soziale Netzwerke und Autonomie schützen kognitives Altern in Europa",
+    sum:"Systematischer Review europäischer Studien 2019-2024 zur psychosozialen und sozioökonomischen Bestimmtheit gesunden Alterns bei über 65-Jährigen.",
+    result:"Konsistente Evidenz zeigt: Soziale Netzwerke, Integration und reduzierte Einsamkeit schützen Gesundheit, Wohlbefinden und Kognition. Autonomie und Unabhängigkeit zentral für Selbstbestimmung und Lebensqualität. Soziale, physische und berufliche Aktivitäten stützen Ressourcenerhaltung im Alter.",
+    transfer:"Europa, qualitative und quantitative europäische Primärstudien, lokale Sozialsysteme"
   },
   {
     journal:"Age Ageing", year:"2026", pmid:"42632917",
     author:"Walsh B et al.", pubdate:"03.08.2026",
     added:"23.08.2026",
-    title:"Künftige Nachfrage nach Pflege- und Gesundheitsdiensten: Frailty-Szenarien für England 2025–2040",
-    sum:"Simulationsmodellierung zur Prognose der Nachfrage nach ambulanten Gesundheits- und Sozialdiensten bei Menschen ab 50 Jahren mit Frailty in England.",
-    result:"Eine Senkung der Frailty-Inzidenz könnte zwischen 2025 und 2040 die Inanspruchnahme von psychischer Gesundheitsversorgung um 1,4 Mio., Gesundheitsdiensten um 10 Mio. und kommunalen Sozialdiensten um 400.000 Kontakte verringern. Die Verzögerung von Frailty-Progression könnte die Kontakte um 2,8 Mio. (Psyche), 45,3 Mio. (Gesundheit) und 2 Mio. (Soziales) senken. Ohne Intervention wächst die Nachfrage um 16 % bis 30 % über 16 Jahre.",
-    transfer:"England, routinedaten zum elektronischen Frailty Index verfügbar."
+    title:"Frailty senkt Nachfrage nach gemeindegestützten Pflege- und Sozialleistungen",
+    sum:"System-Dynamics-Simulation der englischen Versorgungsnachfrage durch Frailty bei über 50-Jährigen 2025-2040 basierend auf Daten der Elektronischen Frailty Index.",
+    result:"Psychische Gesundheit, Gemeindegesundheit und kommunale Sozialleistungen steigen um 16%, 30% bzw. 30%. Senkung der Frailty-Inzidenz würde 1,4 Mio. Kontakte zur psychischen Gesundheit, 10 Mio. Gemeindegesundheit und 400.000 Sozialleistungskontakte bis 2040 vermeiden.",
+    transfer:"England, NHS-Dokumentation und Finanzierungsstrukturen übertragbar auf Deutschland"
   },
   {
     journal:"Age Ageing", year:"2026", pmid:"42632919",
     author:"Egbujie BA et al.", pubdate:"03.08.2026",
     added:"23.08.2026",
-    title:"Langzeitverläufe der intrinsischen Kapazität vorhersagen Pflegeheimaufnahme und Mortalität",
-    sum:"Kanadische Populationsstudie zu Längsmustern der intrinsischen Kapazität (Mobilität, Vitalität, Kognition, Psychisches, Sensorik) bei 302.467 Patienten häuslicher Pflege und Vorhersage von Outcomes.",
-    result:"Fünf distinkte Trajektorienmuster identifiziert; kognitive Beeinträchtigung war mit ungünstigen Trajectories assoziiert. Wichtig: Baseline-Kapazität allein war prognostisch unzureichend. Personen mit mäßiger Baseline-Kapazität zeigten höhere LTC-Einweisung als Personen mit niedriger Kapazität, die sich verbesserten (48,4 % vs. 38,1 %).",
-    transfer:"Kanada, interRAI Home Care Routinedaten, Ansatz auf deutsches Assessment übertragbar."
+    title:"Intrinsic-Capacity-Verläufe zeigen Prognose bei Homecare besser als Status allein",
+    sum:"Kanadische bevölkerungsbewusste Kohorte von 302.467 Homecare-Empfängern mit interRAI-Daten und Klassifizierung in fünf Intrinsic-Capacity-Trajektorien über mehrere Assessments.",
+    result:"Fünf unterschiedliche Trajektorien identifiziert, zeigen Heterogenität funktionellen Alterns. Baseline-Niveau allein reichte nicht zur Risikostratifizierung: Personen mit moderatem Baseline-IC hatten höhere Pflegeheim-Aufnahme als solche mit niedrigem IC, die sich verbesserten (48,4% vs. 38,1%). Kognitive Beeinträchtigung mit nachteiligen Trajektorien assoziiert.",
+    transfer:"Kanada, interRAI-Dokumentationssystem auch in deutschen Pflegeinrichtungen einsetzbar"
   },
   {
     journal:"Alzheimers Dement", year:"2026", pmid:"42630086",
     author:"Yin X et al.", pubdate:"Aug. 2026",
     added:"22.08.2026",
-    title:"Gemeinsamer Gedächtnis- und Kognitionsverfall erhöht Risiko für Funktionsabhängigkeit im Alter",
-    sum:"Harmonisierte Längsschnittanalyse von vier Kohorten (China, USA, England, Europa) zur Vorhersage funktioneller Abhängigkeit durch gleichzeitige Veränderungen subjektiver und objektiver kognitiver Parameter.",
-    result:"Unter 62.329 Teilnehmern mit vollständiger Analyse war gleichzeitiger kognitiver Verfall am stärksten mit funktioneller Abhängigkeit assoziiert (Hazard Ratio 1,47; 95%-KI 1,38–1,57), stärker als einzelne Defizite (subjektiv-nur HR 1,22; objektiv-nur HR 1,12). In Konkurrenzrisiko-Analysen blieb der Zusammenhang robust (gepoolte HR 1,39; 95%-KI 1,27–1,51).",
-    transfer:"Vier Kontinente, bevölkerungsrepräsentative Kohorten mit konsistenten Mustern."
+    title:"Gemeinsamer kognitiver Verfall steigert Risiko funktioneller Abhängigkeit",
+    sum:"Harmonisierte Analyse von vier Altenstudie-Kohorten (CHARLS, HRS, ELSA, SHARE) mit 86.562 Teilnehmern zur Vorhersagekraft gleichzeitiger subjektiver und objektiver kognitiver Veränderungen auf funktionelle Abhängigkeit.",
+    result:"Gleichzeitiger kognitiver Rückgang zeigt stärkste Assoziation mit funktioneller Abhängigkeit (HR 1,47; 95%-KI 1,38-1,57). Nur subjektiver Rückgang (HR 1,22) oder nur objektiver Rückgang (HR 1,12) weniger aussagekräftig. Befund bleibt in Konkurrenzzielmodellen stabil (HR 1,39).",
+    transfer:"Deutschland und europäische Versicherungssysteme, vier etablierte Kohorten"
+  },
+  {
+    journal:"Swiss Med Wkly", year:"2026", pmid:"42537629",
+    author:"Fehlmann CA et al.", pubdate:"26.06.2026",
+    added:"31.07.2026",
+    title:"Frailty verdreifacht Mortalität nach Notfall-Bauchoperation",
+    sum:"Retrospektive Kohorte von 683 älteren Patienten (ab 65 Jahren) in Schweizer Universitätsspital, die zwischen 2016 und 2019 Notfall-Bauchoperationen erhielten; Frailty-Einschätzung mittels Clinical Frailty Scale.",
+    result:"38,2% lebten mit Frailty (CFS ≥5). Einjahres-Mortalität 25,6% (Frailty) versus 6,6% (robust); adjustierte OR 3,0 (95%-KI 1,7-5,1). Komplikationen 2,3-fach häufiger, Aufenthalt 46,4% länger, Entlassung nach Hause 2,1-fach seltener.",
+    transfer:"Schweiz und Deutschland, Notfallchirurgie-Dokumentation vergleichbar"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
