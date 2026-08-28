@@ -1075,71 +1075,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "27. Aug. 2026, 10:36 Uhr";
+const SNAP_DATE = "28. Aug. 2026, 09:00 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Vaccine", year:"2026", pmid:"42594637",
-    author:"Addario A et al.", pubdate:"17.09.2026",
-    added:"13.08.2026",
-    title:"Impfbotschaften im Fokus \"gesundes Altern\" erhöhen Impfintention bei älteren Erwachsenen",
-    sum:"Querschnittsumfrage bei 2416 Personen ≥60 Jahren in Frankreich zu Effektivität von Impfbotschaften unter Einsatz von Social Marketing; drei Verhaltensadhärenz-Profile.",
-    result:"Zustimmung zu 'Impfung trägt zu gesundem Altern bei' stieg von 3% (niedrige Adhärenz) auf 56% (mittlere) und 78% (hohe). Botschaften zu Schlaganfall- und Herzinfarktreduktion zeigten höchste Impfabsicht (69% und 67% in hoher-Adhärenz-Gruppe). Vertrauenswürdige Gesundheitsfachleute waren Informationsquelle Nr. 1 (93–95%). Impfgutscheine: 57% (mittlere) bis 81% (hohe Adhärenz) würden sich impfen lassen.",
-    transfer:"Frankreich, europäisches Gesundheitssystem; Transfer für Kommunikationsstrategie hoch"
+    journal:"PLoS One", year:"2026", pmid:"42616754",
+    author:"Harrison J et al.", pubdate:"19.08.2026",
+    added:"19.08.2026",
+    title:"Lebenserwartung und Gesundheitslebensjahre von Migranten in England und Wales",
+    sum:"Vergleich der Lebenserwartung und behinderungsfreien Lebensjahre bei 37 Ländern von Geburtsort in England und Wales über drei Zeitpunkte (2000–02, 2010–12, 2020–22) mittels Lebenstafeln und Sullivan-Methode.",
+    result:"Heterogene Muster: Die meisten Migrantengruppen zeigten höhere Lebenserwartung und behinderungsfreie Lebensjahre als in England und Wales geborene; einige der größten Migrantengruppen (Schottland, Irland, Polen, Litauen) zeigten niedrigere Lebenserwartung und höhere Behinderungslasten. Frauen aus Pakistan und Bangladesch lebten länger, aber mit mehr Behinderung.",
+    transfer:"Großbritannien, nationale Zensus- und Mortalitätsdaten, vergleichbares Versicherungssystem"
   },
   {
-    journal:"Front Neurol", year:"2026", pmid:"42643260",
-    author:"Zhai Z et al.", pubdate:"11.08.2026",
+    journal:"J Neurol", year:"2026", pmid:"42581283",
+    author:"Kuhlenbäumer G et al.", pubdate:"11.08.2026",
+    added:"11.08.2026",
+    title:"Milde Bewegungstremor korreliert mit kognitiver Beeinträchtigung im Alter",
+    sum:"Querschnittsanalyse der KORA-Age-Studie (65–93 Jahre) zur Assoziation zwischen Tremorschweregrad (Archimedes-Spiral-Rating) und kognitiver Leistung (TICS-m) unter Verwendung multivariater Regression.",
+    result:"Tremorschweregrad war unabhängig mit kognitiver Leistung assoziiert. Im finalen Modell waren wichtigste Prädiktoren: Alter, Geschlecht, Parkinson-Score, Frailty und Tremor. Sensitivitätsanalysen unter Ausschluss wahrscheinlich pathologischer Tremoren attenuierten die Assoziation nicht. Altersbedingte Hirnveränderungen könnten gemeinsame Ursache sein.",
+    transfer:"Deutschland, KORA-Bevölkerungskohort, nationale Datengrundlage"
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42644078",
+    author:"Cheng M et al.", pubdate:"11.08.2026",
     added:"26.08.2026",
-    title:"Gebrechlichkeit und periphere Schwindel-Inzidenz: Dosis-Wirkungs-Befund in UK Biobank",
-    sum:"489266 UK-Biobank-Teilnehmer wurden auf Assoziationen zwischen Frailty-Status (Fried-Phänotyp) und Inzidenz von Schwindel (Vertigo) über 13,2 Jahre Nachverfolgung untersucht.",
-    result:"Präfrailty (HR 1,36; 95%-KI 1,26–1,48) und Frailty (HR 2,05; 95%-KI 1,77–2,37) waren unabhängig mit erhöhtem Schwindel-Risiko assoziiert. Linearer Dosis-Wirkungs-Trend: jeder Punkt Frailty-Score erhöhte Risiko um 24% (95%-KI 19–29%). Effekt stärker bei Frauen.",
-    transfer:"UK Biobank, vergleichbare Dokumentation; relevanter Befund für Sturzrisiko-Assessment"
+    title:"Kognitive Frailty bei älteren Herzinsuffizienzpatienten: systematische Übersicht",
+    sum:"Systematische Übersicht und Metaanalyse von 22 Kohortenstudien (8.892 Patienten ≥65 Jahre mit Herzinsuffizienz) zur Prävalenz und Faktoren kognitiver Frailty.",
+    result:"Gepoolte Prävalenz kognitiver Frailty: 32 % (95%-KI 27–37 %). Bei Frauen 37 %, bei Männern 31 %. Nach NYHA-Klassifikation bei Klasse IV 44 %, Klasse II–III 28 %. Mit COPD-Komorbidität 46 %. Höheres Alter (bereinigt OR 1,12, 95%-KI 1,06–1,18) und Depression assoziiert mit höheren Odds; körperliche Aktivität und intellektuelle Aktivität mit niedrigeren Odds.",
+    transfer:"Mehrländerstudie, überwiegend observativ, Versorgungsrelevanz für Herzinsuffizienz"
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42638665",
-    author:"Kong S et al.", pubdate:"10.08.2026",
-    added:"25.08.2026",
-    title:"Mobiltelefonnutzung und körperliche Gebrechlichkeit: temporale Querschnittsanalyse ohne kausale Assoziation",
-    sum:"5533 Personen der UK Biobank (40–70 Jahre) wurden über drei Wellen auf zeitliche Beziehungen zwischen wöchentlicher Telefonanrufdauer und vier Dimensionen von Frailty untersucht.",
-    result:"Nach Korrektur für multiples Testen (FDR) zeigten sich nur zwei schwache, intermittierende Assoziationen: psychische Frailty T1→Telefonzeit T2 (β 0,086, p_FDR 0,048) und soziale Frailty T2→Telefonzeit T3 (β 0,078, p_FDR 0,033). Keine robusten bidirektionalen Effekte.",
-    transfer:"UK Biobank, aber Ergebnis negativ (keine Effekt); Übertragbarkeit für Aussage 'kein Zusammenhang' gegeben"
+    journal:"Econ Hum Biol", year:"2026", pmid:"42617339",
+    author:"Ardito C et al.", pubdate:"10.08.2026",
+    added:"19.08.2026",
+    title:"Erhöhte Arbeitsunfälle durch verzögerte Pensionierung im Alter",
+    sum:"Evaluation des Effekts der italienischen Rentenreform 2012 (Erhöhung der Anspruchsaltersgrenze) auf Arbeitsunfallrisiken bei älteren Erwerbstätigen mittels administrativer Daten aus der Privatwirtschaft.",
+    result:"Verzögerte Pensionierung führte zu statistisch signifikantem Anstieg krankheitsbedingter Abwesenheit durch Arbeitsunfälle um 2,6 % gegenüber dem Ausgangswert. Der Effekt konzentriert sich auf Kleinbetriebe (unter 15 Angestellten) und körperlich oder kognitiv fordernde Sektoren wie Fertigung. Kein Spillover-Effekt auf Arbeitskollegen.",
+    transfer:"Italien, administrative Privatwirtschaftsdaten, vergleichbare Sozialversicherungssysteme"
   },
   {
-    journal:"Epidemiol Psychiatr Sci", year:"2026", pmid:"42552948",
-    author:"Maddock J et al.", pubdate:"05.08.2026",
-    added:"05.08.2026",
-    title:"Renteneintritt und psychische Gesundheit: Kurzfristig besser, langfristig Erholung begrenzt",
-    sum:"Multilevel und instrumentale Variable Analyse bei 10698 Personen (48815 Beobachtungen) aus Survey of Health, Ageing and Retirement in Europe über 20 Jahre (10 Länder); Renteneintritt und Depressivität (EURO-D-Skala).",
-    result:"Spline-Modelle: minimal Veränderung vor Rente. Bei Renteneintritt leichte EURO-D-Reduktion (–0,07 Punkte/Jahr; 95%-KI –0,13 bis –0,0003), dann ab 2 Jahre post-Rente Anstieg (0,09/Jahr; 95%-KI 0,02–0,16). IV-Analyse: Rente assoziiert mit weniger Depressionssymptomen (–0,26; 95%-KI –0,45 bis –0,07). Alleinstehende berichteten höhere Depressivität, aber Wohnstatus moderierte Effekt nicht.",
-    transfer:"10 europäische Länder, vergleichbare Rentensysteme; Evidenz für deutsche Sozialversicherung relevant"
+    journal:"Int J Environ Res Public Health", year:"2026", pmid:"42652263",
+    author:"Maccheroni C et al.", pubdate:"23.07.2026",
+    added:"27.08.2026",
+    title:"Territoriale Ungleichheiten von Gebrechlichkeit und Langlebigkeit in Italien",
+    sum:"Analyse der geografischen Verteilung von Frailty, funktionalen Einschränkungen und Anspruch auf öffentliche Unterstützung in 21 italienischen Regionen auf Basis von Istat-, Eurostat- und INPS-Daten.",
+    result:"Italien zeigt hohe Lebenserwartung (Frauen 85,4, Männer 81,4 Jahre), aber gesunde Lebensjahre von nur 69,6 bzw. 68,5 Jahren. Der Süden und die Inseln weisen deutlich höhere Frailty-Prävalenz, mehr funktionale Einschränkungen und höhere Ansprüche auf öffentliche Hilfe auf als Zentrum-Nord. Frauen erleben längere Leben mit mehr Behinderung und Abhängigkeit.",
+    transfer:"Italien, vollständige nationale Registeranalyse, europäisches Wohlfahrtssystem"
   },
   {
-    journal:"Maturitas", year:"2026", pmid:"42570528",
-    author:"Máximo RO et al.", pubdate:"04.08.2026",
-    added:"08.08.2026",
-    title:"Chair-Stand-Test als Mortalitätsprädiktor bei hochfunktionalen älteren Erwachsenen",
-    sum:"2747 hochfunktionale ältere Erwachsene (Gehgeschwindigkeit &gt;0,8 oder &gt;1,0 m/s) der English Longitudinal Study of Ageing wurden 15 Jahre lang verfolgt; Mortalität nach Chair Stand Test und SPPB verglichen.",
-    result:"Mortalitätsraten: CST &gt;15 s: 41,4 pro 1000 Personenjahre vs. ≤15 s: 21,9. HR für CST &gt;15 s: 1,36 (95%-KI 1,13–1,62); für SPPB ≤10: HR 1,31 (95%-KI 1,12–1,54). Bei Gehgeschwindigkeit &gt;1,0 m/s: CST-HR 1,75 (95%-KI 1,30–2,36). CST ist einfacher anwendbar.",
-    transfer:"England, vergleichbare Klinikpopulationen; schnelles, praktisches Test-Screening"
-  },
-  {
-    journal:"JAMA Netw Open", year:"2026", pmid:"42646838",
-    author:"Reed ER et al.", pubdate:"03.08.2026",
-    added:"26.08.2026",
-    title:"Verzögerte Sterblichkeit und Multimorbiditätsaufbau bei Nachkommen von Hundertjährigen",
-    sum:"Studie an drei unabhängigen Kohorten (LonGenity, NECS, UK Biobank) verglich Sterblichkeit und Erkrankungsbeginn bei Nachkommen von Hundertjährigen (≥100 Jahre) mit Kontrollpersonen.",
-    result:"Hundertjährige-Nachkommen zeigten reduzierte Mortalität (HR 0,58; 95%-KI 0,41–0,81), verzögerter Beginn von Herzerkrankungen (HR 0,67) und Hypertonie (HR 0,68; Verzögerung 5,21 Jahre). Der Effekt ist konsistent über drei Länder und zeigt, dass Longevität familial transmittiert wird.",
-    transfer:"USA und Großbritannien; Generalisierbarkeit durch multiple Länder hoch"
-  },
-  {
-    journal:"Age Ageing", year:"2026", pmid:"42506889",
-    author:"Kocurkova A et al.", pubdate:"02.07.2026",
-    added:"27.07.2026",
-    title:"Sexuelle Gesundheit älterer Menschen in Hausarztpraxen: Barrieren und Handlungsempfehlungen",
-    sum:"Qualitative Studie (16 halbstrukturierte Interviews) mit NHS-Hausarztfachkräften in England zur Erfahrung bei Gesprächen über Sexualität mit älteren Patienten.",
-    result:"Drei Hauptthemen identifiziert: (1) Unbewusste Annahmen, Fachleute-Unbehagen und Zeitmangel begrenzen Diskussionen; (2) körperliche Symptome sind 'natürliche Öffner', Gespräche bleiben aber medizinisch-fokussiert; (3) minimale Nutzung von Leitlinien, stattdessen Intuition/Erfahrung. Fachkräfte fordern klare, prägnante, psychologisch informierte Werkzeuge und Training. Sexuelle Gesundheit wird nicht als Qualitätsaspekt im Alter normalisiert.",
-    transfer:"England, NHS-Setting; Befunde zu Versorgungspraxen direkt übertragbar"
+    journal:"Adv Gerontol", year:"2026", pmid:"42502926",
+    author:"Runikhina NK et al.", pubdate:"2026",
+    added:"26.07.2026",
+    title:"Geriatrische Rehabilitation verbessert Funktionalität bei Mangelernährungsrisiko",
+    sum:"Evaluierung von 21-Tage-Rehabilitationsprogrammen bei 482 älteren Patienten (60+ Jahre) mit (96, 19,9 %) und ohne Mangelernährungsrisiko durch umfassende geriatrische Bewertung vor und nach Intervention.",
+    result:"Beide Gruppen verbesserten sich signifikant in Funktionalität, kognitiver Leistung und Schmerz/Schlaf/Depression. Patienten mit Mangelernährungsrisiko waren älter (80,3 vs. 78,2 Jahre), hatten mehr Frailty (52,1 % vs. 30,9 %), mehr Stürze (36,8 % vs. 25,3 %) und Depression (40,6 % vs. 20,8 %). Diese Gruppe zeigte deutlich größere Verbesserungen in basaler und instrumenteller Funktionalität.",
+    transfer:"Russland, Pirogov-Universitätsklinik, europäischer Gesundheitsauftrag vergleichbar"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
