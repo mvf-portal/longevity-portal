@@ -1209,62 +1209,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "29. Aug. 2026, 09:00 Uhr";
+const SNAP_DATE = "30. Aug. 2026, 05:26 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42642794",
-    author:"Kamo T et al.", pubdate:"Sept. 2026",
+    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42665870",
+    author:"Peng D et al.", pubdate:"Sept. 2026",
+    added:"29.08.2026",
+    title:"Gastrointestinale Erkrankungen und funktioneller Verfall im Alter: CHARLS und ELSA",
+    sum:"Longitudinale Analyse in zwei Kohorten (CHARLS China; ELSA England) untersuchte, ob wiederholte Meldungen gastrointestinaler Erkrankungen mit kognitiven, ADL- oder depressiven Verschlechterungen assoziiert sind.",
+    result:"CHARLS (n=9.555): wiederholte Meldung war mit 6–10 % erhöhtem Relativrisiko für Multidomain-Verschlechterung assoziiert (aRR 1,06–1,10). ELSA-Schätzungen waren richtungsgleich aber weniger präzise (aOR 1,21; 95%-KI 0,90–1,63). Gastrointestinale Exposition bot geringe diskriminative Aussagekraft.",
+    transfer:"China und Großbritannien; Ergebnisse konsistent aber schwach, begrenzte Übertragbarkeit"
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42666459",
+    author:"Li J et al.", pubdate:"14.08.2026",
+    added:"29.08.2026",
+    title:"Frailty und Ernährung bei Herzinsuffizienz im Alter: prognostische Faktoren",
+    sum:"Retrospektive Studie an 200 älteren Patienten mit Herzinsuffizienz untersuchte Frailty und Ernährungsstatus als Prognosefaktoren für 6-Monats-Ergebnisse.",
+    result:"Bei gebrechlichen Patienten (n=92) waren Mortalität (4,35 % vs. 0,93 %) und Rehospitalisierungsrate (14,13 % vs. 1,85 %) höher als bei nicht gebrechlichen (n=108). Unter gebrechlichen Patienten stieg die Ereignisrate mit Mangelernährung: moderat-schwer 26,19 %, mild 16,13 %, normal 5,26 %. GNRI und HDL waren unabhängig mit ungünstiger Prognose assoziiert.",
+    transfer:"China, internationales Instrument (Fried-Kriterien), begrenzte Direktübertragung auf Deutschland"
+  },
+  {
+    journal:"Brain Behav", year:"2026", pmid:"42644837",
+    author:"Li Y et al.", pubdate:"Aug. 2026",
     added:"26.08.2026",
-    title:"Frailty verdoppelt Mortalität und Pflegebedarf bei hospitalisierten Älteren",
-    sum:"Systematische Übersicht und Metaanalyse von 57 Kohortenstudien zu Auswirkungen von Frailty auf Aktivitäten des täglichen Lebens und klinische Outcomes bei hospitalisierten älteren Erwachsenen (≥65 Jahre).",
-    result:"Frailty war assoziiert mit schlechterer ADL-Funktionsfähigkeit (SMD –1,04), höherer Mortalität (RR 2,26), niedrigerer Wahrscheinlichkeit von Entlassung nach Hause (RR 0,79) und höherem Wiederaufnahmerisiko in 30 Tagen (RR 1,47). Diese Effekte waren konsistent über Studien hinweg.",
-    transfer:"Überwiegend anglo-amerikanische und europäische Studien; Frailty-Screening ist systemübergreifend anwendbar"
+    title:"Schlafqualität und Sturzrisiko im Alter: prospektive Kohortenstudie",
+    sum:"Prospektive Kohorte mit 3.224 Personen (≥50 Jahre) aus der English Longitudinal Study of Ageing; Schlafroutenuntersuchung über 4 Jahre mit Analyse der Assoziation zwischen Schlafqualität und neuaufgetretenen Stürzen.",
+    result:"Schlechtere Schlafqualität war mit höherem Sturzrisiko assoziiert (OR 1,04; 95%-KI 1,01–1,07). Depressive Symptome vermittelten 28,2 % dieser Assoziation. Dosisabhängige Beziehung zwischen Schlafqualität und Sturzrisiko.",
+    transfer:"Großbritannien, vergleichbare Gesundheitsversorgung und Altersstruktur"
   },
   {
-    journal:"Proc Natl Acad Sci U S A", year:"2026", pmid:"42550905",
-    author:"Zhu C et al.", pubdate:"11.08.2026",
-    added:"04.08.2026",
-    title:"Frühe Zuckerrestriktion reduziert Krebsrisiko um 30–70% und verlangsamt biologisches Altern",
-    sum:"Kausalitätsanalyse mittels natürliches Experiment (Ende der UK-Zuckerrationierung 1953) mit 64.761 Biobank-Teilnehmern geboren 1951–1956, zur Langzeitwirkung früher Zuckerexposition auf Krebsinzidenz und biologisches Altern.",
-    result:"Geburtskohortenunter Rationierung zeigten dosisabhängig reduzierte Krebsraten: Leber (HR 0,31), Rektum (HR 0,60), Lunge (HR 0,59), Prostata (HR 0,48), Brust (HR 0,64). Mechanismen: Persistente gesündere Ernährungsgewohnheiten (verhaltoral) und längere Telomere (2,2 Jahre weniger biologisches Altern), niedrigeres Granzym B. Kausalitätsevidenzen für frühe Ernährungsprägung.",
-    transfer:"Großbritannien, vergleichbare Geburtskohortenstruktur; Befund zu prägenden Effekten früher Ernährung fundamental, aber Realisierbarkeit in Deutschland unterschiedlich"
+    journal:"BMC Nephrol", year:"2026", pmid:"42493781",
+    author:"Schulte-Kemna L et al.", pubdate:"22.07.2026",
+    added:"23.07.2026",
+    title:"Frailty im Hämodialyse: Visuelle Analogskala vereinfacht Screening",
+    sum:"Studie untersuchte die Genauigkeit einer Selbst-Rating-Skala (VAS) zur Frailty-Früherkennung bei 122 Hämodialysepatienten und identifizierte klinische Prädiktoren der Gebrechlichkeit anhand modifizierter Fried-Kriterien.",
+    result:"Die VAS hatte gute Spezifität (94,3%), übersah aber viele gebrechliche Patienten (Sensitivität 36,5%). Ein Modell mit Routineparametern zeigte gute Vorhersageleistung (AUC 0,816). Patienten mit Fried-Frailty hatten häufiger zentrale Venenkatheter, niedrigere Diurese, Kreatinin und Albumin sowie mehr Herz-Kreislauf-Erkrankungen.",
+    transfer:"Deutsche Kliniken, vergleichbare Dialysedokumentation und Versorgungsstrukturen"
   },
   {
-    journal:"Alzheimers Dement", year:"2026", pmid:"42625502",
-    author:"Goll J et al.", pubdate:"Aug. 2026",
-    added:"21.08.2026",
-    title:"Plasma-Biomarker p-tau217 bei älteren Patienten: Nierenfunktion erklärt mehr Varianz als Gebrechlichkeit",
-    sum:"Querschnittsuntersuchung von 283 älteren Patienten (Norfrail- und Dementia-Cohort) zur Assoziation zwischen Gebrechlichkeit und Plasma-Biomarkern (p-tau217, Neurofilament-Leichte-Kette, GFAP) für Alzheimer-Pathologie.",
-    result:"Keine signifikante Assoziation zwischen p-tau217 und Gebrechlichkeit; die eGFR erklärte 27% der p-tau217-Varianz (p &lt; 0,001). Neurofilament-Leichte-Kette war einziger Biomarker signifikant mit Gebrechlichkeit assoziiert (p &lt; 0,01). Kliniker müssen Nierenfunktion bei Interpretation berücksichtigen.",
-    transfer:"Norwegen, europäisches Gesundheitssystem; Befund zum Niereneinflusses auf Blutbiomarker ist systemunabhängig"
+    journal:"Nutrients", year:"2026", pmid:"42514344",
+    author:"Vărzaru AA", pubdate:"11.07.2026",
+    added:"28.07.2026",
+    title:"Lebensstil, Übergewicht und Lebenserwartung in der EU: Systemanalyse",
+    sum:"Querschnittsanalyse von 27 EU-Ländern mittels EHIS und Eurostat untersuchte Assoziationen zwischen Ernährung, körperlicher Aktivität, Rauchen, Übergewicht und Lebenserwartung sowie Healthy Life Years.",
+    result:"Gesunde Ernährung korrelierte mit Lebenserwartung (r=0,459; p=0,016), ebenso körperliche Aktivität (r=0,435; p=0,023). Übergewichtsprävalenz war invers mit Lebenserwartung assoziiert (r=−0,505; p=0,007). Das reduzierte Modell erklärte 47,4 % der Varianz in der Lebenserwartung. Clusteranalyse identifizierte drei Lebensstil-Gesundheits-Profile mit unterschiedlichen Outcomes.",
+    transfer:"EU-weit, direkt auf deutsches Gesundheitssystem übertragbar"
   },
   {
-    journal:"BMJ Open", year:"2026", pmid:"42442804",
-    author:"Bachmann M et al.", pubdate:"13.07.2026",
-    added:"13.07.2026",
-    title:"Gesunde Lebensjahre regional stark abhängig von Einkommen und sozialen Faktoren",
-    sum:"Querschnittsanalyse zur Variabilität der gesunden Lebenserwartung (HLE) und Risikofaktoren in 128 kleinen geografischen Bereichen eines britischen integrierten Versorgungssystems.",
-    result:"HLE betrug durchschnittlich 66,5 Jahre (Männer, Spannweite 52–73) und 67,5 Jahre (Frauen, Spannweite 56–74). £100 höheres Wocheneinkommen war assoziiert mit 4,4 (95% KI 3,5–5,2) beziehungsweise 4,6 (95% KI 3,8–5,4) zusätzlichen HLE-Jahren. Alleinsein älterer Personen, körperliche Inaktivität und Deprivation zeigten starke Assoziationen mit niedrigerer HLE.",
-    transfer:"Großbritannien, NHS-ähnliche Systeme; Ungleichheitsmessung direkt auf deutsche Regionen übertragbar"
+    journal:"BMJ Open Diabetes Res Care", year:"2026", pmid:"42431705",
+    author:"Wibaek R et al.", pubdate:"10.07.2026",
+    added:"10.07.2026",
+    title:"Diabetes-Epidemiologie in Dänemark: Trends von 1996 bis 2024",
+    sum:"Nationale Register-Kohortenstudie (1996–2024) quantifizierte Trends in Prävalenz, Inzidenz, Mortalität und Lebensjahren verloren durch Diabetes in Dänemark.",
+    result:"Diabetes-Prävalenz verdreifachte sich auf 6,1 % (366.174 Personen); Typ 2 Diabetes stieg jährlich ~4,1 %. Typ 1 Inzidenz sank um 1,1 % pro Jahr. Mortalität sank bis 2012, dann Stabilisierung. Standardisierte Mortalitätsquoten sanken für Typ 1 (nach 2008), stiegen aber für Typ 2. Männer hatten höhere Typ 2 Inzidenz als Frauen.",
+    transfer:"Skandinavien, vergleichbares Sozialversicherungssystem und Datenzugang"
   },
   {
-    journal:"Age Ageing", year:"2026", pmid:"42462204",
-    author:"Reddin C et al.", pubdate:"02.07.2026",
-    added:"16.07.2026",
-    title:"Immediate orthostatic hypotension zeigt keine Assoziation mit Stürzen und Synkopen im Alter",
-    sum:"Querschnitts- und prospektive Kohortenstudie mit 4.596 älteren Erwachsenen über 8 Jahre, die die Assoziation von orthosensitiver Hypotonie (OH) und unmittelbarer OH mit Stürzen und Synkopen untersuchte.",
-    result:"Unmittelbare OH kam bei 20,7% vor und war nicht signifikant mit Stürzen/Synkopen assoziiert (OR 1,22, 95% KI 0,93–1,57); hingegen war persistente OH assoziiert (OR 1,31, 95% KI 1,04–1,66, p &lt; 0,05). Die Unterscheidung zwischen beiden Varianten ist klinisch relevant.",
-    transfer:"Irland, vergleichbares europäisches Gesundheitssystem, bevölkerungsrepräsentative Stichprobe"
-  },
-  {
-    journal:"Eur J Public Health", year:"2026", pmid:"42452852",
-    author:"Aicardi T et al.", pubdate:"10.06.2026",
-    added:"15.07.2026",
-    title:"Gebrechlichkeit in etablierten Surveys messbar – ein Framework für nationale Monitoring in Europa",
-    sum:"Querschnittsstudie mit drei etablierten Frailty-Indikatoren (Tilburg, Groningen, Edmonton) in vier italienischen Bevölkerungssurveillance-Datensätzen (SHARE, EU-SILC, EHIS, AVQ).",
-    result:"Der Groningen Frailty Indicator war am replizierbaren über Surveys hinweg; die Edmonton Frail Scale zeigte stärkste Vorhersagekraft. EHIS-Daten waren optimal für Messungen geeignet. Gebrechlichkeit erklärte Gesundheitsoutcomes besser als Chronologisches Alter allein; klarer Nord-Süd-Gradient in Italien (p &lt; 0,001).",
-    transfer:"Italien, EU-Mitgliedstaaten, vergleichbare Datensysteme mit Deutschland übertragbar"
+    journal:"Nat Commun", year:"2026", pmid:"42420265",
+    author:"Vilar Geraldi M et al.", pubdate:"08.07.2026",
+    added:"08.07.2026",
+    title:"Darmmikrobiota und Frailty bei älteren Frauen: europäische Validierung",
+    sum:"Studie analysierte Darmmetagenomik-Profile bei 2.081 schwedischen Frauen (75-80 Jahre) im Bezug auf einen entwickelten Frailty-Mortality-Index (FMI) und validierte Ergebnisse in einer chinesischen Kohorte.",
+    result:"FMI war invers assoziiert mit mikrobieller Diversität, Genreichtum und funktionaler Kapazität. 404 Bakterienarten waren signifikant mit FMI assoziiert; die meisten zeigten konsistente Assoziationen in der chinesischen Kohorte (n=1.448). Mikrobielle Signaturen waren mit Mortalität und funktioneller Einschränkung verknüpft.",
+    transfer:"Skandinavien, ähnliche Sozialversicherung und Alterspopulation"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1280,7 +1289,7 @@ const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-09-22", "2026-09-02", 
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "29.08.2026";
+const NEWS_STAND = "30.08.2026";
 const NEWS = [
   {titel:"Erster Landes-Demenzplan für Mecklenburg-Vorpommern vorgestellt", datum:"2026-08-12", url:"https://www.monitor-versorgungsforschung.de/news/erster-landes-demenzplan-fuer-mecklenburg-vorpommern-vorgestellt/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
