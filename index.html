@@ -1415,87 +1415,78 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "30. Aug. 2026, 05:26 Uhr";
+const SNAP_DATE = "31. Aug. 2026, 05:27 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42665870",
-    author:"Peng D et al.", pubdate:"Sept. 2026",
-    added:"29.08.2026",
-    title:"Gastrointestinale Erkrankungen und funktioneller Verfall im Alter: CHARLS und ELSA",
-    sum:"Longitudinale Analyse in zwei Kohorten (CHARLS China; ELSA England) untersuchte, ob wiederholte Meldungen gastrointestinaler Erkrankungen mit kognitiven, ADL- oder depressiven Verschlechterungen assoziiert sind.",
-    result:"CHARLS (n=9.555): wiederholte Meldung war mit 6–10 % erhöhtem Relativrisiko für Multidomain-Verschlechterung assoziiert (aRR 1,06–1,10). ELSA-Schätzungen waren richtungsgleich aber weniger präzise (aOR 1,21; 95%-KI 0,90–1,63). Gastrointestinale Exposition bot geringe diskriminative Aussagekraft.",
-    transfer:"China und Großbritannien; Ergebnisse konsistent aber schwach, begrenzte Übertragbarkeit"
+    journal:"J Int Med Res", year:"2026", pmid:"42530895",
+    author:"Luo F et al.", pubdate:"30.07.2026",
+    added:"30.07.2026",
+    title:"Triglyceride-Cholesterin-Körpergewicht-Index vorhersagt Hypertonie-Risiko bei älteren Menschen",
+    sum:"Longitudinalanalyse der English Longitudinal Study of Ageing mit 5.731 älteren Erwachsenen über 12 Jahre zur Assoziation eines Stoffwechsel-Indexes mit Hypertonie-Inzidenz.",
+    result:"Jede Einheit Anstieg des log-transformierten Index war mit 43% höherer Hypertonie-Odds assoziiert (OR=1,43; 95% KI: 1,31–1,55). Prospektiv: adjustierte HR=1,16 (1,05–1,28). Trajektorien zeigten dosisabhängige Risikoerhöhung (hohe vs. niedrige Gruppe: OR=1,69, p&lt;0,001).",
+    transfer:"England, demografische und epidemiologische Parallelität mit Deutschland gegeben."
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42666459",
-    author:"Li J et al.", pubdate:"14.08.2026",
-    added:"29.08.2026",
-    title:"Frailty und Ernährung bei Herzinsuffizienz im Alter: prognostische Faktoren",
-    sum:"Retrospektive Studie an 200 älteren Patienten mit Herzinsuffizienz untersuchte Frailty und Ernährungsstatus als Prognosefaktoren für 6-Monats-Ergebnisse.",
-    result:"Bei gebrechlichen Patienten (n=92) waren Mortalität (4,35 % vs. 0,93 %) und Rehospitalisierungsrate (14,13 % vs. 1,85 %) höher als bei nicht gebrechlichen (n=108). Unter gebrechlichen Patienten stieg die Ereignisrate mit Mangelernährung: moderat-schwer 26,19 %, mild 16,13 %, normal 5,26 %. GNRI und HDL waren unabhängig mit ungünstiger Prognose assoziiert.",
-    transfer:"China, internationales Instrument (Fried-Kriterien), begrenzte Direktübertragung auf Deutschland"
+    journal:"PLoS One", year:"2026", pmid:"42525585",
+    author:"Steel N et al.", pubdate:"29.07.2026",
+    added:"29.07.2026",
+    title:"Gesundheitliche Behandlungspräferenzen Älterer: Alters- und Geschlechtsunterschiede in England",
+    sum:"Querschnittsanalyse der English Longitudinal Study of Ageing (Wave 8, 2016/17) zu Präferenzen von über 50-Jährigen bei sechs Gesundheitsfragen (Risikobereitschaft, Zeitorientierung, Qualität vs. Länge des Lebens).",
+    result:"Frauen delegierten Entscheidungen weniger häufig an Ärzte und priorisierten Lebensqualität über Lebensdauer. Personen über 75 Jahre bevorzugten mehr Risikominderung und Delegierung. Substanzielle Variabilität zwischen Personen, systematische Unterschiede nach Alter und Geschlecht unterstützen strukturiertes Elicitierungsgesprächs-Protokoll.",
+    transfer:"Großbritannien; übertragbar auf deutsches Versorgungssystem mit ähnlichen Partizipationsnormen."
   },
   {
-    journal:"Brain Behav", year:"2026", pmid:"42644837",
-    author:"Li Y et al.", pubdate:"Aug. 2026",
-    added:"26.08.2026",
-    title:"Schlafqualität und Sturzrisiko im Alter: prospektive Kohortenstudie",
-    sum:"Prospektive Kohorte mit 3.224 Personen (≥50 Jahre) aus der English Longitudinal Study of Ageing; Schlafroutenuntersuchung über 4 Jahre mit Analyse der Assoziation zwischen Schlafqualität und neuaufgetretenen Stürzen.",
-    result:"Schlechtere Schlafqualität war mit höherem Sturzrisiko assoziiert (OR 1,04; 95%-KI 1,01–1,07). Depressive Symptome vermittelten 28,2 % dieser Assoziation. Dosisabhängige Beziehung zwischen Schlafqualität und Sturzrisiko.",
-    transfer:"Großbritannien, vergleichbare Gesundheitsversorgung und Altersstruktur"
+    journal:"Psychol Med", year:"2026", pmid:"42522229",
+    author:"Miao J et al.", pubdate:"29.07.2026",
+    added:"29.07.2026",
+    title:"Depressive Symptome von Ehepartnern zeigen stabiles Muster, aber schwache prospektive Kopplung im Alter",
+    sum:"Harmonisierte Längsschnittanalyse aus CHARLS (China), HRS (USA) und ELSA (England) mit insgesamt 7.759 Paaren über 5–9 Wellen zu Depressionen, Aktivitätseinschränkungen und Partnereffekte.",
+    result:"Hohe Konkordanz depressiver Symptome zwischen Partnern (r=0,14–0,43) über alle Kohorten. Prospektive Cross-Spouse-Assoziationen waren nach Kontrolle stabiler Ähnlichkeiten schwach und nur in ELSA und multipel-imputierter HRS signifikant. Bidirektionale Depression-Funktionsstörung-Kopplung in westlichen Kohorten stärker, unterstützt kombinierte Behandlung und Rehabilitation.",
+    transfer:"ELSA ist englische Bevölkerungsstichprobe; Ergebnisse auf deutsches Versorgungssystem moderat übertragbar."
   },
   {
-    journal:"BMC Nephrol", year:"2026", pmid:"42493781",
-    author:"Schulte-Kemna L et al.", pubdate:"22.07.2026",
-    added:"23.07.2026",
-    title:"Frailty im Hämodialyse: Visuelle Analogskala vereinfacht Screening",
-    sum:"Studie untersuchte die Genauigkeit einer Selbst-Rating-Skala (VAS) zur Frailty-Früherkennung bei 122 Hämodialysepatienten und identifizierte klinische Prädiktoren der Gebrechlichkeit anhand modifizierter Fried-Kriterien.",
-    result:"Die VAS hatte gute Spezifität (94,3%), übersah aber viele gebrechliche Patienten (Sensitivität 36,5%). Ein Modell mit Routineparametern zeigte gute Vorhersageleistung (AUC 0,816). Patienten mit Fried-Frailty hatten häufiger zentrale Venenkatheter, niedrigere Diurese, Kreatinin und Albumin sowie mehr Herz-Kreislauf-Erkrankungen.",
-    transfer:"Deutsche Kliniken, vergleichbare Dialysedokumentation und Versorgungsstrukturen"
+    journal:"Soins Gerontol", year:"2026", pmid:"42542357",
+    author:"Beernaert L et al.", pubdate:"20.07.2026",
+    added:"01.08.2026",
+    title:"Gezieltes Geriatrie-Training in Intensivstationen verbessert Fachkompetenz des Personals",
+    sum:"Pilottudie zur Wirksamkeit gezielter Schulung von Pflegekräften und Paramedizinern in Geriatrie-Kompetenzen auf Intensivstationen.",
+    result:"Gezielte Schulungen führten zu signifikanten Verbesserungen der Geriatrie-Kenntnisse des Personals. Die Studie unterstützt den Wert kontinuierlicher Fortbildung, sollte aber durch multizentrische Studien bestätigt werden.",
+    transfer:"Belgisches Universitätsspital, konzeptuell auf deutschsprachige Kliniken übertragbar."
   },
   {
-    journal:"Nutrients", year:"2026", pmid:"42514344",
-    author:"Vărzaru AA", pubdate:"11.07.2026",
+    journal:"Front Public Health", year:"2026", pmid:"42518591",
+    author:"Mikolič Brence P et al.", pubdate:"06.07.2026",
     added:"28.07.2026",
-    title:"Lebensstil, Übergewicht und Lebenserwartung in der EU: Systemanalyse",
-    sum:"Querschnittsanalyse von 27 EU-Ländern mittels EHIS und Eurostat untersuchte Assoziationen zwischen Ernährung, körperlicher Aktivität, Rauchen, Übergewicht und Lebenserwartung sowie Healthy Life Years.",
-    result:"Gesunde Ernährung korrelierte mit Lebenserwartung (r=0,459; p=0,016), ebenso körperliche Aktivität (r=0,435; p=0,023). Übergewichtsprävalenz war invers mit Lebenserwartung assoziiert (r=−0,505; p=0,007). Das reduzierte Modell erklärte 47,4 % der Varianz in der Lebenserwartung. Clusteranalyse identifizierte drei Lebensstil-Gesundheits-Profile mit unterschiedlichen Outcomes.",
-    transfer:"EU-weit, direkt auf deutsches Gesundheitssystem übertragbar"
+    title:"Frailty und psychische Gesundheit bei älteren Menschen: Längsschnittstudie aus Slowenien",
+    sum:"Studienprotokoll einer prospektiven Kohortenstudie mit Erwachsenen ≥50 Jahren (geplant n=5.000, 2026–2028) zu Assoziationen zwischen Frailty und mentalen Gesundheitsfaktoren (Wohlbefinden, Resilienz, soziale Kohäsion).",
+    result:"Studie noch nicht abgeschlossen; das Protokoll wird zur Seite gelegt, da keine Ergebnisse vorliegen.",
+    transfer:"Nicht anwendbar – Protokoll ohne Befunde."
   },
   {
-    journal:"BMJ Open Diabetes Res Care", year:"2026", pmid:"42431705",
-    author:"Wibaek R et al.", pubdate:"10.07.2026",
-    added:"10.07.2026",
-    title:"Diabetes-Epidemiologie in Dänemark: Trends von 1996 bis 2024",
-    sum:"Nationale Register-Kohortenstudie (1996–2024) quantifizierte Trends in Prävalenz, Inzidenz, Mortalität und Lebensjahren verloren durch Diabetes in Dänemark.",
-    result:"Diabetes-Prävalenz verdreifachte sich auf 6,1 % (366.174 Personen); Typ 2 Diabetes stieg jährlich ~4,1 %. Typ 1 Inzidenz sank um 1,1 % pro Jahr. Mortalität sank bis 2012, dann Stabilisierung. Standardisierte Mortalitätsquoten sanken für Typ 1 (nach 2008), stiegen aber für Typ 2. Männer hatten höhere Typ 2 Inzidenz als Frauen.",
-    transfer:"Skandinavien, vergleichbares Sozialversicherungssystem und Datenzugang"
-  },
-  {
-    journal:"Nat Commun", year:"2026", pmid:"42420265",
-    author:"Vilar Geraldi M et al.", pubdate:"08.07.2026",
-    added:"08.07.2026",
-    title:"Darmmikrobiota und Frailty bei älteren Frauen: europäische Validierung",
-    sum:"Studie analysierte Darmmetagenomik-Profile bei 2.081 schwedischen Frauen (75-80 Jahre) im Bezug auf einen entwickelten Frailty-Mortality-Index (FMI) und validierte Ergebnisse in einer chinesischen Kohorte.",
-    result:"FMI war invers assoziiert mit mikrobieller Diversität, Genreichtum und funktionaler Kapazität. 404 Bakterienarten waren signifikant mit FMI assoziiert; die meisten zeigten konsistente Assoziationen in der chinesischen Kohorte (n=1.448). Mikrobielle Signaturen waren mit Mortalität und funktioneller Einschränkung verknüpft.",
-    transfer:"Skandinavien, ähnliche Sozialversicherung und Alterspopulation"
+    journal:"Adv Gerontol", year:"2026", pmid:"42502942",
+    author:"Rukavishnikov AS et al.", pubdate:"2026",
+    added:"26.07.2026",
+    title:"Lockdown-bedingte Immobilität beschleunigt Frailty: Sechs-Monats-Progression bei älteren Erwachsenen",
+    sum:"Quasiexperimentelle Studie mit 525 älteren Patienten (65–74 Jahre) in Pflege-Wohneinrichtungen während COVID-19-Lockdown; Geriatrisches Assessment mit Handgriffkraft und Sechs-Minuten-Gehtest zu Baseline, 1 und 6 Monaten.",
+    result:"Prävalenz der Präfrailty sank von 35,8% auf 14,1%, Frailty nahm von 49,5% auf 72% zu. Milde, moderate und schwere Frailty-Formen nahmen jeweils um 11,6%, 6,1% und 4,4% zu. Verlängerte Immobilität und soziale Isolation waren signifikante Beschleuniger der Frailty-Progression und Funktionsverschlechterung.",
+    transfer:"Russland (Sankt-Petersburg); Befunde zur Dekonditionierung durch Immobilität universal, aber Pflegeheim-Setting unterscheidet sich von deutschem Versorgungskontext."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
 
 // Offene Foerderausschreibungen zum Thema — taeglich von scripts/radar_hinweis.py
 // === RADAR-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const RADAR_STAND = "28.08.2026";
+const RADAR_STAND = "31.08.2026";
 const RADAR_URL = "https://wissen.m-vf.de/ausschreibungen.html#longevity";
 const RADAR_EIGENES = 4;
 const RADAR_ZUHAUSE = false;
-const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-09-22", "2026-09-02", "2026-09-02", "2026-09-14", "2026-09-23"], [], ["2026-09-14", "2026-09-23", "2026-10-28", "2026-10-06", "2026-10-02", "2026-10-09", "2026-10-19", "2026-10-19"], [], ["2026-09-29", "2026-10-15"], [], [], ["2026-10-06", "2026-09-30", "2026-09-30", "2026-09-02", "2026-10-05", "2026-10-14", "2026-09-18", "2026-09-18"], [], ["2026-10-09", "2026-10-09", "2026-10-20"], [], ["2026-09-07", "2026-09-07", "2026-09-07", "2026-09-07", "2026-08-31", "2026-10-15"]];
+const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-09-22", "2026-09-02", "2026-09-02", "2026-09-07", "2026-09-07"], [], ["2026-09-14", "2026-10-28", "2026-09-23", "2026-10-06", "2026-10-02", "2026-10-09", "2026-10-19", "2026-10-19"], [], ["2026-09-29", "2026-10-15", "2026-09-25", "2026-09-07", "2026-09-07", "2026-09-04"], [], [], ["2026-09-18", "2026-09-18", "2026-09-18", "2026-10-05", "2026-09-02", "2026-09-30", "2026-10-06"], [], ["2026-10-09", "2026-10-09", "2026-10-20"], [], ["2026-09-07", "2026-09-07", "2026-09-07", "2026-09-07", "2026-10-15"]];
 // === RADAR-BLOCK-ENDE ===
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "30.08.2026";
+const NEWS_STAND = "31.08.2026";
 const NEWS = [
   {titel:"Erster Landes-Demenzplan für Mecklenburg-Vorpommern vorgestellt", datum:"2026-08-12", url:"https://www.monitor-versorgungsforschung.de/news/erster-landes-demenzplan-fuer-mecklenburg-vorpommern-vorgestellt/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
