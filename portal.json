@@ -2,6 +2,7 @@
   "_": "Themenprofil Gesundes Altern & Longevity. Angelegt am 18.08.2026. Alle live-Links wurden am selben Tag zweimal abgerufen (echter Begriff gegen Phantasiewort); byte-gleiche Antworten stehen auf portal. bioRxiv steht auf live, obwohl der Abruf mit 403 endet: Die Sperre trifft medRxiv genauso, und medRxiv ist in allen Portalen als live gefuehrt - im Browser funktioniert beides.",
   "_PUBMED": "Trefferzahl der Abfrage am 18.08.2026: 127.894 gesamt, 6.234 in den letzten zwoelf Monaten, 251 in den letzten 30 Tagen. Ueberschneidung mit den vier bestehenden Hubs: 9,3 % (KI 4,1 / Pflege 3,2 / VF 1,3 / Klima 1,2).",
   "DOMAIN": "longevity.m-vf.de",
+  "HUB": "longevity",
   "REPO": "mvf-portal/longevity-portal",
   "TITEL": "Knowledge-Hub Gesundes Altern & Longevity",
   "TITEL_KURZ": "Longevity",
