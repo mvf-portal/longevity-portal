@@ -1415,71 +1415,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "1. Sept. 2026, 05:32 Uhr";
+const SNAP_DATE = "2. Sept. 2026, 05:31 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Vasa", year:"2026", pmid:"42669422",
-    author:"Kolb G et al.", pubdate:"Sept. 2026",
-    added:"30.08.2026",
-    title:"Geriatrisches Assessment vor Gefäßinterventionen senkt perioperative Risiken bei älteren Patienten",
-    sum:"Positionspapier dreier Fachgesellschaften zur Notwendigkeit geriatrischer Assessments vor gefäßmedizinischen Eingriffen bei älteren Menschen, da Frailty die Outcomes nach Gefäßchirurgie und Interventionen bestimmt.",
-    result:"Frailty-Status bestimmt Komplikationen und Outcomes nach Gefäßinterventionen; geriatrisches Assessment wird zur Risikostratifizierung empfohlen, konkrete Zahlen zu Outcome-Verbesserungen durch das Positionspapier nicht genannt.",
-    transfer:"Deutschland: Stellungnahmen deutscher Fachgesellschaften, direkt relevant für Versorgungspraxis."
-  },
-  {
-    journal:"Nat Commun", year:"2026", pmid:"42668319",
-    author:"Tavares JF et al.", pubdate:"29.08.2026",
-    added:"29.08.2026",
-    title:"Gesunde Ernährung verlangsamt epigenetisches Altern unabhängig von Ernährungsstil",
-    sum:"Zwei bevölkerungsbasierte Kohorten zeigten, dass Adhärenz zu gesunden Ernährungsmustern mit verlangsamtem epigenetischem Altern assoziiert ist, obwohl verschiedene Ernährungsstile unterschiedliche epigenetische Profile aufweisen.",
-    result:"Zehn verschiedene Ernährungsbewertungsindizes: minimale Überschneidung in der höchsten Adhärenz-Quartile, aber alle mit reduziertem epigenetischen Altern assoziiert; verschiedene Ernährungsstile konvergierten auf gleiche biologische Signalwege.",
-    transfer:"Deutschland und deutschsprachiger Raum: Rhineland-Studie, vergleichbare Populationsstruktur, externe Validierung mit EPIC-Potsdam."
-  },
-  {
-    journal:"Scand J Work Environ Health", year:"2026", pmid:"42563557",
-    author:"Holmgren R et al.", pubdate:"01.09.2026",
-    added:"07.08.2026",
-    title:"Arbeitsplatzgewalt verkürzt die Erwerbstätigkeit älterer Arbeitnehmer um bis zu sieben Monate",
-    sum:"Prospektive schwedische Kohortenstudie mit multistate Markov-Modellen zur Assoziation von Mobbing und Gewalt am Arbeitsplatz mit der verbleibenden Erwerbstätigkeit von über 50-Jährigen.",
-    result:"Exposition gegenüber Arbeitsplatzgewalt/Drohungen verkürzte die Erwerbstätigkeit ab 50 Jahren um 0,56 Jahre (95%-KI: −1,02–−0,10); Mobbing zeigte ähnliche Effektgröße (−0,63 Jahre, 95%-KI: −1,39–0,14), war aber nicht statistisch signifikant.",
-    transfer:"Schweden, vergleichbares Sozialversicherungssystem, Längsschnitt-Follow-up 2008–2020."
-  },
-  {
-    journal:"J Gerontol A Biol Sci Med Sci", year:"2026", pmid:"42550179",
-    author:"Cavanaugh R et al.", pubdate:"04.08.2026",
-    added:"04.08.2026",
-    title:"Frailty-Messung mit elektronischen Daten ist kontextabhängig und zeigt begrenzte Übertragbarkeit",
-    sum:"Internationale Vergleichsstudie zweier elektronischer Frailty-Indizes (VAFI, eFI) über fünf Datenbanken zeigte inkonsistente Frailty-Prävalenzen je nach Land und lokalen Kodierungsverhalten.",
-    result:"USA-Datenbanken: VAFI identifizierte höhere Frailty-Raten (All of Us: 10,3% vs. 2,5% eFI; Pharmetrics: 9,6% vs. 2%); UK-Datenbanken zeigten umgekehrtes Muster (eFI höher); FI-Messungen stark abhängig vom Entwicklungskontext und lokalen Kodierungsinzentiven.",
-    transfer:"USA und UK: Warnung vor direkter Anwendung außerhalb des Entwicklungskontextes; deutsche Systeme benötigen eigene Validierung."
-  },
-  {
-    journal:"J Viral Hepat", year:"2026", pmid:"42438144",
-    author:"Etoori D et al.", pubdate:"Aug. 2026",
+    journal:"J Gerontol A Biol Sci Med Sci", year:"2026", pmid:"42440338",
+    author:"Gauß KF et al.", pubdate:"04.08.2026",
     added:"13.07.2026",
-    title:"Direkt wirkende Antivirale bei Hepatitis C verlängern Lebenserwartung um bis zu neun Jahre",
-    sum:"Englische Überwachungs- und Mortalitätsdaten zeigten, dass behandelte Hepatitis-C-Patienten eine um 8,5 bis 8,9 Jahre längere Lebenserwartung hatten, wobei dieser Vorsprung zwischen 2015–2018 und 2019–2022 abnahm.",
-    result:"Periode 2015–2018: behandelte Frauen +8,5 Jahre LE (95%-KI: 5,4–11,5), Männer +8,9 Jahre (95%-KI: 5,6–12,2); Periode 2019–2022: Frauen +6,7 Jahre (95%-KI: 3,3–10,2), Männer +5,3 Jahre (95%-KI: 3,0–7,6); Rückgang durch höhere Suizid-, Alkohol- und Drogentodesfälle in behandelter Population.",
-    transfer:"Vereinigtes Königreich, vergleichbare westliche Versorgungsstrukturen, nationale Überwachungsdaten mit Mortalitätslinkage verfügbar."
+    title:"Urinmetabolom als biologische Alter-Uhr: Längsschnitt-Heterogenität und Mortalitätsvorhersage",
+    sum:"Entwicklung und Validierung eines biologischen Alter-Scores aus hochauflösender ¹H-Kernresonanzspektroskopie von Urinmetaboliten in großer populationsbasierter Kohorte mit &gt;10-Jahr Nachverfolgung.",
+    result:"Metabolisches Altern variiert zwischen Individuen, unterstreicht inter-individuelle Heterogenität. Metabolisches Alter zeigte Assoziation mit altersrelevanten klinischen Phänotypen und war prädiktiv für multiple Erkrankungen und Gesamtmortalität unabhängig vom chronologischen Alter. Urinmetabolom als non-invasives Werkzeug zur Risikostratifizierung validiert.",
+    transfer:"Deutschland, Greifswald; deutsche Klinikdaten, vergleichbare Dokumentationspflichten"
   },
   {
-    journal:"Eur J Neurol", year:"2026", pmid:"42496021",
-    author:"Giehl K et al.", pubdate:"Juli 2026",
-    added:"24.07.2026",
-    title:"Datenaustausch für Hirnalterungsforschung: Barrieren und Strategien in der Open Science",
-    sum:"Übersichtsarbeit zu Hindernissen bei der Freigabe von Neuroimaging-Daten in der Alternsforschung und Vorschläge für vereinheitlichte rechtliche Rahmen, Standardisierung und akademische Anreize.",
-    result:"Barriers range from technical and infrastructural limitations to legal challenges; article advocates for unified GDPR-compliant frameworks, academic credit for data stewardship, and coordinated community effort to move toward open science in neurodegenerative disease research.",
-    transfer:"Europa: GDPR-Konformität, direkt auf EU-Systeme anwendbar, insbesondere Deutschland."
+    journal:"Arch Gerontol Geriatr", year:"2026", pmid:"42603460",
+    author:"Bubeck M et al.", pubdate:"28.07.2026",
+    added:"15.08.2026",
+    title:"Sozial assistive Roboter in der Altenpflege: Phasen-orientierte Implementierung statt Technologie-Fokus",
+    sum:"Qualitative Studie mit 14 professionellen Pflegekräften in deutschen Einrichtungen zur Erfahrung mit Robotern am Krankenbett.",
+    result:"Vier analytische Phasen der Implementierung identifiziert: Orientierung, Einführung, Routinenutzung, Neubewertung. Praktische und moralische Anforderungen verschoben sich systematisch. Zentrale Erkenntnisse: Nachhaltige, ethisch verantwortungsvolle Nutzung erfordert Unterstützung des professionellen Urteils und kontextuelle Sensibilität – nicht technisches Rollout ohne Reflexion.",
+    transfer:"Deutschland, direkt auf deutsches Versorgungssystem anwendbar"
   },
   {
-    journal:"Geriatr Psychol Neuropsychiatr Vieil", year:"2026", pmid:"42412499",
-    author:"Mésinèle L et al.", pubdate:"01.06.2026",
-    added:"07.07.2026",
-    title:"Französische Geriater fordern Fortbildung in Nephrologie: 75% Bedarf bei chronischen Nierenerkrankungen im Alter",
-    sum:"Online-Befragung von 252 französischen Geriatrien zur Zusammenarbeit mit Nephrologie und Fortbildungsbedarf; 89% haben Zugang zu Nephrologen, aber nur 37% nennen einen Ansprechpartner für nephrogeriatrische Fragen.",
-    result:"89% haben Zugang zu Nephrologen, 37% identifizieren einen Ansprechpartner; häufigster Fortbildungswunsch: metabolische und kardiovaskuläre Komplikationen der CKD (60%), CKD-Stadien 1–4 (46%), Arzneimitteltherapie bei Niereninsuffizienz (38%); Geriater mit Nephro-Fortbildung häufiger in Shared Decision-Making zu Dialyse involviert.",
-    transfer:"Frankreich, vergleichbares westeuropäisches Gesundheitssystem und Aus­bildungsanforderungen, Befragungsdaten direkt zur Versorgungsorganisation."
+    journal:"Arch Gerontol Geriatr", year:"2026", pmid:"42418874",
+    author:"Zhong S et al.", pubdate:"04.07.2026",
+    added:"08.07.2026",
+    title:"Frailty-Übergänge und Schlaganfall-Risiko: China und Großbritannien im Vergleich",
+    sum:"Längsschnittstudie (CHARLS/ELSA) mit 14.682 älteren Erwachsenen zu Frailty-Verlauf und Schlaganfall-Inzidenz über 2 Jahre.",
+    result:"Baseline-Frailty erhöhte Schlaganfall-Risiko in beiden Ländern. Progression von robust zu pre-frail/frail: signifikant erhöhtes Risiko; Verbesserung von frail zu robust/pre-frail: Risikoreduktion. Höherer kumulativer Frailty-Index zeigte Dosis-Wirkungs-Beziehung (alle p&lt;0,0001). Frailty-Monitoring als Prognose-Instrument für Hochrisiko-Patienten bestätigt.",
+    transfer:"Großbritannien und China, vorsichtig auf Deutschland; Altersstruktur und Versorgung unterschiedlich, Frailty-Mechanismus universal"
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"42407095",
+    author:"Meier C et al.", pubdate:"02.07.2026",
+    added:"06.07.2026",
+    title:"Soziale, psychische und spirituelle Versorgung am Lebensende: Ungleichheiten durch fehlende Formaldienste",
+    sum:"Analyse von 507 Proxy-Interviews verstorbener Personen (≥55 Jahre) aus der ELSA zur Unterstützung non-medizinischer Bedarf in den letzten drei Lebensmonaten.",
+    result:"Soziale Bedürfnisse bei 81,8%, psychische bei 77,8%, spirituelle bei 74,4% erfüllt. Überwiegend Familie als Unterstützer, kaum formale Dienste. Alleinleben assoziiert mit niedrigerer Erfüllungswahrscheinlichkeit; Demenz korreliert mit schlechterer psychischer und sozialer Unterstützung. Mangel an integrierten Angeboten verstärkt soziale Ungleichheiten am Lebensende.",
+    transfer:"Großbritannien, vergleichbar mit deutschem NHS; Befund zur Systemabhängigkeit nicht-medizinischer Versorgung bedeutsam"
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"42407094",
+    author:"Silveira LC et al.", pubdate:"02.07.2026",
+    added:"06.07.2026",
+    title:"Schlafstörungen und Muskelkraftverlust im Alter: Geschlechtsspezifische Unterschiede bei älteren Erwachsenen",
+    sum:"Längsschnittstudie (8 Jahre, n=6.429, ELSA) zu Einfluss von Insomnie und Schlafdauer auf Handgriff-Kraft-Abnahme.",
+    result:"Männer mit erhöhter Insomnie: schnellerer Kraftverlust (–0,02 kg/Jahr; 95%-KI –0,04 bis –0,01). Frauen mit Schlafdauer ≥9 Stunden: stärkerer Rückgang (–0,14 kg/Jahr; 95%-KI –0,26 bis –0,03). Schlafprobleme beeinflussen Muskelabbau geschlechtsspezifisch unterschiedlich – bei Männern Insomnie, bei Frauen lange Schlafdauer.",
+    transfer:"Großbritannien, epidemiologisch auf Deutschland übertragbar; Geschlechtsdimension in Prävention relevant"
+  },
+  {
+    journal:"Sante Publique", year:"2026", pmid:"42674988",
+    author:"Acoulon G et al.", pubdate:"2026",
+    added:"31.08.2026",
+    title:"Psychische Gesundheit älteren Menschen: Evidenzbasierte Prävention mit moderater körperlicher Aktivität",
+    sum:"Systematische Übersicht von Primärprävention psychischer Erkrankungen bei selbstständig lebenden älteren Menschen ab 60 Jahren.",
+    result:"Sieben Interventionskategorien identifiziert; moderate körperliche Aktivität (2–3 Sitzungen/Woche, ≥12 Wochen) reduzierte depressive und Angstsymptome am stärksten. Multimodale und in Gemeinderessourcen verankerte Programme zeigten beste Effektivität. Hauptchallenge: Dissemination und Anpassung an vulnerable Bevölkerungsgruppen, nicht die Identifikation wirksamer Interventionen.",
+    transfer:"Frankreich, vergleichbare Sozialversicherung; Empfehlungen auf deutsches System übertragbar"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1495,7 +1486,7 @@ const RADAR_FRISTEN = [["2026-09-22", "2026-10-20", "2026-10-20", "2026-09-02", 
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "01.09.2026";
+const NEWS_STAND = "02.09.2026";
 const NEWS = [
   {titel:"Erster Landes-Demenzplan für Mecklenburg-Vorpommern vorgestellt", datum:"2026-08-12", url:"https://www.monitor-versorgungsforschung.de/news/erster-landes-demenzplan-fuer-mecklenburg-vorpommern-vorgestellt/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
@@ -1505,8 +1496,8 @@ const NEWS = [
 // Fremde Pressemeldungen zum Thema — taeglich von scripts/newsfeed.py
 // === PRESSE-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
 const PRESSE = [
-  {titel:"Presseeinladung: DGPs-Pressefrühstück zu Psychischer Gesundheit, Künstlicher Intelligenz und nachhaltigem Verhalten", datum:"2026-08-31", url:"http://idw-online.de/de/news876544", quelle:"idw"},
-  {titel:"KIT-Expertinnen und -Experten zum Wissenschaftsjahr 2026 – Medizin der Zukunft", datum:"2026-08-27", url:"http://idw-online.de/de/news876444", quelle:"idw"},
+  {titel:"Call for Abstracts: Medizin im Alter – was leistet die EbM?", datum:"2026-09-01", url:"http://idw-online.de/de/news876663", quelle:"idw"},
+  {titel:"Infektionen der Atemwege und der Lunge vermeiden, erkennen, behandeln - Lungentag 2026", datum:"2026-09-01", url:"http://idw-online.de/de/news876597", quelle:"idw"},
 ];
 // === PRESSE-BLOCK-ENDE ===
 
