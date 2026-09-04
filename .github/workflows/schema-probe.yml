@@ -19,10 +19,28 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      # thema.py liegt weiterhin in scripts/, die gemeinsamen Skripte in
+      # scripts/gemeinsam/. Beide muessen importierbar sein: update_studies.py
+      # laeuft drueben und importiert thema von hier, mailchimp_entwurf.py
+      # laeuft hier und importiert torwaechter und sponsoren von drueben.
+      PYTHONPATH: scripts:scripts/gemeinsam
 
     steps:
       - name: Repo auschecken
         uses: actions/checkout@v4
+
+      # Die gemeinsamen Skripte liegen seit dem 04.09.2026 nicht mehr in jedem
+      # Portal, sondern einmal in mvf-portal/hub-scripts. Geholt wird der Zweig
+      # `stabil` - nicht `main`: Auf main wird entwickelt, und ein Commit dort
+      # soll nicht am naechsten Morgen ungeprueft in zwoelf Portalen laufen.
+      # Ausgerollt wird mit `git push origin main:stabil` im Skript-Repo.
+      - name: Gemeinsame Skripte auschecken
+        uses: actions/checkout@v4
+        with:
+          repository: mvf-portal/hub-scripts
+          ref: stabil
+          path: scripts/gemeinsam
 
       - name: Python einrichten
         uses: actions/setup-python@v5
@@ -36,4 +54,4 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.LONGEVITYHUB }}
           MODEL: claude-haiku-4-5
-        run: python scripts/update_studies.py --probe
+        run: python scripts/gemeinsam/update_studies.py --probe
