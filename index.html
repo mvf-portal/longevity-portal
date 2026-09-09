@@ -1415,62 +1415,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "8. Sept. 2026, 05:33 Uhr";
+const SNAP_DATE = "9. Sept. 2026, 05:33 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"J Int Med Res", year:"2026", pmid:"42704222",
-    author:"Chen L et al.", pubdate:"07.09.2026",
+    journal:"Stress Health", year:"2026", pmid:"42708507",
+    author:"Arkesteijn M et al.", pubdate:"Okt. 2026",
+    added:"08.09.2026",
+    title:"Allostatic Load vorhersagt Frailty-Entwicklung: 12-Jahres-Längsschnittstudie",
+    sum:"English Longitudinal Survey on Ageing (ELSA): 3248 Personen 50–89 Jahre über 12 Jahre; Analyse, ob Allostatic Load (Multimarkerbiomarker chronischen Stresses) die Neuonset von Prä-Frailty oder Frailty vorhersagt.",
+    result:"Erhöhte Allostatic Load war signifikanter Prädiktor für Onset von Prä-Frailty und Frailty (Hazard Ratio nicht in Abstract beziffert). Soziale Unterstützung modifizierte diesen Effekt modifizierbar. Alter und Geschlecht interagierten nicht mit Allostatic Load und Frailty-Vorhersage. Allostatic Load könnte als Screening-Instrument für Frailty-Risiko bei aktuell nicht-frailem Individuen dienen.",
+    transfer:"Großbritannien, NHS-System, nationale Surveydaten vergleichbar mit deutschem Setting."
+  },
+  {
+    journal:"Aging Cell", year:"2026", pmid:"42698274",
+    author:"Huang Y et al.", pubdate:"Sept. 2026",
+    added:"05.09.2026",
+    title:"SFRP2 und FSTL1 regulieren DHT-induzierte Seneszenz in Haarfollikeln",
+    sum:"Mechanistische Studie zu androgenetischer Alopezie (AGA): Knock-down-Experimente und Mausmodell zur Rolle der SFRP2-FSTL1-Achse bei DHT-induzierten mitochondrialen Dysfunktionen und Seneszenz von Dermalapilla-Zellen.",
+    result:"SFRP2 hochexprimiert in AGA-Dermalapilla-Zellen. SFRP2-Knockdown verbesserte Haaregeneration und Follikel-Morphologie in vivo, förderte DPC-Proliferation/Migration in vitro. SFRP2 beeinflusst FSTL1-Proteinstabilität. Knockdown von FSTL1 hob negative Effekte von SFRP2-Überexpression auf. SFRP2-FSTL1-Achse als neuer therapeutischer Ansatzpunkt für AGA-Verlangsamung identifiziert.",
+    transfer:"Grundlagenforschung mit klinischem Ansatz (AGA-Behandlung); zelluläre Seneszenz-Mechanismen relevant für Aging-Verständnis."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42707366",
+    author:"Cantore M et al.", pubdate:"24.08.2026",
+    added:"08.09.2026",
+    title:"Zivilgesellschaftliche Beteiligung älterer Menschen und wahrgenommene Gesundheit",
+    sum:"Qualitative Studie (Italien, 2025): 12 ältere Erwachsene (≥70 Jahre) zu Erfahrungen mit zivilgesellschaftlicher und politischer Partizipation und deren Auswirkungen auf Gesundheit und Wohlbefinden.",
+    result:"Freiwilliges Engagement fördert körperliche Mobilität, Handlungsfähigkeit und Selbstwirksamkeit. Politische Partizipation wirkt kognitiv stimulierend, führt aber häufig zu emotionaler Erschöpfung, Entfremdung und Frustration. Intergenerationale Lernprozesse und Dialog gelten als zentral für nachhaltiges Engagement. Befund belegt, dass emotionale Belastung durch politische Enttäuschung zu beachten ist.",
+    transfer:"Italien, Südeuropa; Gesundheitssystem und zivilgesellschaftliche Strukturen unterscheiden sich von Deutschland."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42698449",
+    author:"Mou Y et al.", pubdate:"21.08.2026",
+    added:"05.09.2026",
+    title:"Kognitives Frailty bei hospitalisierten älteren Patienten mit Herzinsuffizienz",
+    sum:"Systematischer Review (8 Querschnittsstudien, 20 Modelle zur Identifikation von kognitiver Frailty bei hospitalisierten älteren Patienten mit chronischer Herzinsuffizienz in China).",
+    result:"Alle Modelle waren Screening-/Diagnosemodelle für prävalentes kognitives Frailty (nicht prognostisch). Externe Validierung zeigte AUC 0,770–0,852. Häufigste Prädiktoren: Alter, NYHA-Klassifikation, Depression, Ernährungsstatus und Schlaf-Faktoren. Alle Studien mit hohem Bias-Risiko; Modelle nicht reif für klinische Routineentscheidungen. Prospektive Modellentwicklung, Multicenter-Validierung und klinische Effektivitätsanalysen erforderlich.",
+    transfer:"China, andere Strukturen; Befund zeigt, welche Faktoren kognitives Frailty bestimmen – relevant für deutsches geriatrisches Assessment."
+  },
+  {
+    journal:"J Psychiatr Res", year:"2026", pmid:"42585821",
+    author:"Järvensivu L et al.", pubdate:"07.08.2026",
+    added:"12.08.2026",
+    title:"Körperliche Aktivität moderiert psychische Belastung im Alter unterschiedlich",
+    sum:"Finnische Kohortenstudie (Helsinki Health Study 2017–2022): Zwei Altersgruppen (19–39 Jahre und 55–75 Jahre) zur Assoziation zwischen Intensität der Freizeit-Bewegungsaktivität und psychischer Belastung nach 5 Jahren.",
+    result:"Höhere moderate Aktivität assoziiert mit weniger psychischer Belastung nur in der älteren Kohorte (β = −0,163; p &lt; 0,001). Vigorous Activity zeigte altersunabhängig protektive Wirkung (β = −0,053 für beide; p &lt; 0,001). Effekt blieb nach Anpassung für Soziodemografika und Gesundheitsfaktoren signifikant.",
+    transfer:"Finnland, skandinavisches Versicherungssystem, vergleichbare Erfassungsstandards."
+  },
+  {
+    journal:"Eur J Public Health", year:"2026", pmid:"42709676",
+    author:"Pallesen AVJ et al.", pubdate:"04.08.2026",
+    added:"08.09.2026",
+    title:"Sozioökonomische Ungleichheiten in der Lebenserwartung nach Diagnose: Dänemark 64 Erkrankungen",
+    sum:"Bevölkerungsregister-Studie (4,4 Mio. Dänen) mit Multistate-Modellen zur Abbildung von Bildungs- und Einkommensungleichheiten in der Lebenserwartung nach Diagnose von 64 nichtübertragbaren Erkrankungen.",
+    result:"Bildungs- und Einkommensungleichheiten in der Lebenserwartung nach Diagnosestellung waren konsistent über alle 64 Erkrankungen hinweg vorhanden. Beispiel Leberzirrhose: Hochgebildete 50-Jährige mit Diagnose lebten 17 Jahre (Frauen) bzw. 13 Jahre (Männer) länger als Niedriggebildete (14 bzw. 10 Jahre). Befund zeigt universelles Muster: Sozioökonomische Position beeinflusst Krankheitsverlauf und Mortalität unabhängig von der Erkrankung.",
+    transfer:"Dänische Vollpopulationsdaten, Sozialversicherungssystem vergleichbar mit Deutschland."
+  },
+  {
+    journal:"J Aging Stud", year:"2026", pmid:"42705826",
+    author:"Mishra J et al.", pubdate:"26.06.2026",
     added:"07.09.2026",
-    title:"Individuelle Ernährungsintervention mit Krafttraining verbessert Frailty bei hospitalisierten Älteren",
-    sum:"Prospektive Pilotkohorte ohne Kontrolle (n=120, Durchschnittsalter 87 Jahre) zur Wirkung von Screening-gesteuerter individualisierter Ernährungsunterstützung (bei MNA-SF ≤11) kombiniert mit dosiertem Theraband-Krafttraining 3x wöchentlich über 12 Wochen.",
-    result:"Signifikante Verbesserungen: Serum-Transferrin, Präalbumin und Albumin (alle p&lt;0,05), MNA-SF-Scores, SPPB-Scores, Mobilität, ADL/IADL-Funktionen, Griffstärke und Gehgeschwindigkeit (alle p&lt;0,05). SPPB-Mindesteffekt erreicht bei höherem Bildungsniveau (aOR=1,96) und niedrigerem Ausgangs-Mobilitätswert (aOR=1,81). Ohne externe Validierung; Ergebnisse vorläufig.",
-    transfer:"China (Klinikdaten), Struktur auf deutsche Geriatrie übertragbar (Assessment, Ernährung, Rehabilitation), klinische Dosierung dokumentiert"
-  },
-  {
-    journal:"Age Ageing", year:"2026", pmid:"42704260",
-    author:"Ivers R et al.", pubdate:"04.09.2026",
-    added:"07.09.2026",
-    title:"Gezieltes Kraft- und Balancetraining verbessert Mobilität älterer Aboriginal-Menschen",
-    sum:"Kontrollierte Vorher-nachher-Studie (n=19 Standorte Australien, Ironbark-Programm) zum Effekt eines Co-Design-Sturzvorsorgeprogramms mit Übungen und Yarning Circles auf funktionelle Mobilität und Stürze bei Aboriginal-Älteren (≥45 Jahre, n=vor allem Intervention).",
-    result:"Signifikante Verbesserung der primären Outcome funktionelle Mobilität (SPPB-Veränderung +0,8 Punkte, 95 % CI 0,4–1,1), kürzere Schrittzeiten, bessere Beinstabilität, mehr geplante und beiläufige Bewegung. Keine signifikanten Änderungen bei Stürzen, Lebensqualität oder psychischer Belastung. Kontrollgruppe (Healthy Community) zeigte Verschlechterungen.",
-    transfer:"Australien, Kontrollstudie mit funktionellem Endpunkt, Design übertragbar auf andere First-Nations-Settings"
-  },
-  {
-    journal:"Inquiry", year:"2026", pmid:"42695810",
-    author:"Wang Y et al.", pubdate:"04.09.2026",
-    added:"04.09.2026",
-    title:"Digitale Technologien für aktives Altern: Bibliometrie und Forschungslandkarte",
-    sum:"Bibliometrische Analyse (n=837 Publikationen 2006–2025, Web of Science) zur Kartierung der Forschungslandschaft digitaler Technologien für aktives Altern, Identifikation von Clustern, Trends und thematischen Strukturen.",
-    result:"Publikationen steigen ab 2018 deutlich an. Fünf Forschungscluster: Technologieakzeptanz und Befähigung, digitale Lifestyle-Interventionen, digitale Partizipation und Smart Environments, eHealth-gestützte Verhaltensänderung, Machine-Learning-basierte Altersassessments. Schlüsselthemen: digitale Inklusion, körperliche Aktivität, Gesundheitsrisiko-Analytik, Lebensqualität. Verschiebung hin zu Funktionsfähigkeit und personalisierter Unterstützung; KI-basierte Assessments noch früh, sollten vorsichtig interpretiert werden.",
-    transfer:"Globale Analyse, beschreibend (keine Wirksamkeitsdaten), Anwendbarkeit hängt von lokalen Systemen ab"
-  },
-  {
-    journal:"Clin Interv Aging", year:"2026", pmid:"42703386",
-    author:"Sládeček S et al.", pubdate:"02.09.2026",
-    added:"07.09.2026",
-    title:"Gestaffelte Auswahl von Frailty-Assessment-Instrumenten für die klinische Praxis",
-    sum:"Narrative Übersicht über zehn validierte Frailty-Assessments (FRAIL, SOF, CFS, PRISMA-7, VES-13, Fried phenotype, TFI, GFI, EFS, FI-CGA) mit Analyse ihrer konzeptionellen Grundlagen, Einsatzdomänen und praktischen Anforderungen.",
-    result:"Gegenüberstellung zeigt: Kurze Screening-Tools (PRISMA-7, FRAIL) für erste Kontakte in Ambulanz/Gemeinde; CFS für schnelle klinische Stratifizierung in Akutaufnahme/Notfall; mehrdimensionale Instrumente (EFS) wenn breiterer Überblick nötig, aber keine vollständige geriatrische Diagnostik; CGA+FI-CGA für spezialisierte geriatrische Versorgung. Instrumentwahl hängt von Versorgungskontext, Zweck und Kapazität ab – keine Austauschbarkeit.",
-    transfer:"Mehrsprachig validiert (europäischer und nordamerikanischer Raum), klinische Empfehlungen universell anwendbar, deutschsprachige Literatur einbezogen"
-  },
-  {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42705630",
-    author:"Sasaki Y et al.", pubdate:"Sept. 2026",
-    added:"07.09.2026",
-    title:"Langzeitpflege für Ältere in Südostasien: Verfügbarkeit, Qualität und Lücken",
-    sum:"Mixed-Methods-Studie (Sekundärdaten zu UHC, demografische Trends, Expertinneninterviews, 7 Evaluationsdomänen) zur Organisation und Qualität der Langzeitpflege in Kambodscha, Thailand, Philippinen, Malaysia und Myanmar während des demographischen Wandels.",
-    result:"Positive Assoziation zwischen UHC-Fortschritt und Altersstruktur. Langzeitpflege-Organisation und -Versorgung variieren stark; Heimbasierte Pflege dominiert, Verfügbarkeit und Integration öffentlicher Dienste inkonsistent. Demenzbetreuung weitgehend unerkannt, haushaltszentriert. Informations- und Kommunikationstechnologien minimal/absent. Thailand zeigt Fortschritt bei Rehabilitations-UHC-Verknüpfung, aber Personalengpässe und Zugangsbarrieren. Präventivversorgung, einschließlich Frailty-Prävention, unterentwickelt.",
-    transfer:"Südostasien, unterschiedliche Finanzierungssysteme und Entwicklungslagen; Befunde zeigen regionale Unterschiede, Übertragung auf Deutschland begrenzt, aber Policy-Implikationen relevant"
-  },
-  {
-    journal:"Gen Hosp Psychiatry", year:"2026", pmid:"42660041",
-    author:"Dong X et al.", pubdate:"15.08.2026",
-    added:"27.08.2026",
-    title:"Körperliche Aktivität mindert Frailty-Risiko trotz belastender Kindheitserfahrungen",
-    sum:"Prospektive Kohortenstudie (SHARE-Daten, n=23.385) zur Frage, ob ausreichende körperliche Aktivität die negativen Auswirkungen ungünstiger Kindheitserfahrungen (Adverse Childhood Experiences) auf kognitives Frailty im mittleren und höheren Alter abpuffert.",
-    result:"Jede zusätzliche ungünstige Kindheitserfahrung erhöhte das Frailty-Risiko um 9 % (HR=1,09). Ein Jahr ausreichende körperliche Aktivität senkte das Risiko um 25 % (HR=0,75). Langfristige Aufrechterhaltung (≥6 Jahre) reduzierte das Frailty-Risiko bei ungünstigen Erfahrungen um 54 % (HR=0,46); die Assoziation wurde zu 23 % durch erhaltene körperliche Aktivität vermittelt. Effekt war stärksten bei schlechtem Kindheitseinkommen (HR=0,59) und schlechter Nachbarschaftsqualität (HR=0,45).",
-    transfer:"Europa (SHARE-Daten, deutschsprachige Länder einbezogen), sozialversicherungsbasierte Systeme vergleichbar"
+    title:"Altern ohne Verwandte: Transnigration, Sehnsucht und Desillusionierung",
+    sum:"Ethnografische Studie in Patiala (Nordindien) mit älteren Erwachsenen: Erfahrungen mit transnationaler Migration ihrer Familienangehörigen und deren Auswirkungen auf Wahrnehmung von Sorge, Zugehörigkeit und Familienrekonfiguration im Alter.",
+    result:"Ältere Ermöglichen Emigration ihrer Kinder durch Ressourcen-Pooling; erleben aber Abwesenheit emigrierter Kinder in paradoxer Liminalität. Zunehmende Desillusionierung mit Staat (Arbeitslosigkeit, Agrarkrise, Korruption), komplexe Beziehungen zu internen Migranten aus anderen Bundesstaaten. Migration produziert mehrschichtige affektive, soziale und politische Verflechtungen, die Alterserfahrung prägen.",
+    transfer:"Indien, nicht übertragbar; dokumentiert Mechanismen familiärer und sozialer Strukturen beim Altern unter Migrationsdruck."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1486,7 +1495,7 @@ const RADAR_FRISTEN = [["2026-09-22", "2026-10-20", "2026-10-20", "2026-09-07", 
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "08.09.2026";
+const NEWS_STAND = "09.09.2026";
 const NEWS = [
   {titel:"Erster Landes-Demenzplan für Mecklenburg-Vorpommern vorgestellt", datum:"2026-08-12", url:"https://www.monitor-versorgungsforschung.de/news/erster-landes-demenzplan-fuer-mecklenburg-vorpommern-vorgestellt/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
@@ -1496,8 +1505,8 @@ const NEWS = [
 // Fremde Pressemeldungen zum Thema — taeglich von scripts/newsfeed.py
 // === PRESSE-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
 const PRESSE = [
-  {titel:"ERC Starting Grant für den Heidelberger Neurologen und Neurowissenschaftler Dr. Dr. Varun Venkataramani", datum:"2026-09-03", url:"http://idw-online.de/de/news876851", quelle:"idw"},
-  {titel:"Presse-Einladung nach Frankfurt: Wie wollen wir künftig altern?", datum:"2026-09-03", url:"http://idw-online.de/de/news876764", quelle:"idw"},
+  {titel:"Geldzahlungen an einkommensschwache Mütter könnten die biologische Alterung von Kindern verlangsamen", datum:"2026-09-08", url:"http://idw-online.de/de/news876947", quelle:"idw"},
+  {titel:"Demenz vorbeugen: Warum Bewegung die Gehirngesundheit stärkt", datum:"2026-09-08", url:"http://idw-online.de/de/news877008", quelle:"idw"},
 ];
 // === PRESSE-BLOCK-ENDE ===
 
