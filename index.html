@@ -1415,62 +1415,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "12. Sept. 2026, 06:21 Uhr";
+const SNAP_DATE = "13. Sept. 2026, 08:31 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Age Ageing", year:"2026", pmid:"42726903",
-    author:"Zhang Y et al.", pubdate:"04.09.2026",
+    journal:"BMJ Open", year:"2026", pmid:"42731824",
+    author:"Nicklén J et al.", pubdate:"11.09.2026",
+    added:"12.09.2026",
+    title:"Altern von Personen mit Typ-1-Diabetes: prospektive Kohorte zur funktionellen Fähigkeit",
+    sum:"Studienprotokoll für prospektive Kohortenstudie (FinnDiane LifeOne) mit mindestens 300 älteren Personen mit Typ-1-Diabetes (&gt;65 Jahre) und 100 gematchten Kontrollen zur Untersuchung der funktionellen Fähigkeit und gesunden Alterns über 5 Jahre mit geriatrischem Assessment.",
+    result:"Eingeschlossene Studien: ≥300 Patienten mit T1D, ≥100 Kontrollen, gematchte Vergleichgruppe. Umfassendes geriatrisches Assessment mit 5-jährlichen Intervallen. Fokus auf fünf Domänen der intrinsic capacity: Kognition, Vitalität, Sensomotorisch, Lokomotion, Psychologisch. Follow-up-Strukturen und Vergleichsdesign etabliert; endgültige Ergebnisse stehen aus.",
+    transfer:"Skandinavisches Gesundheitssystem, prospektiv designt mit europäischen Standards; übertragbar auf Deutschland."
+  },
+  {
+    journal:"Eur Respir Rev", year:"2026", pmid:"42716546",
+    author:"Satia I et al.", pubdate:"09.09.2026",
+    added:"09.09.2026",
+    title:"Normaler altersgerechter Rückgang der Vitalkapazität: systematische Analyse und Metaanalyse",
+    sum:"Systematische Übersichtsarbeit und Metaanalyse von 35 Kohorten mit über 365.000 Teilnehmern zu altersbezogenen Veränderungen der Vitalkapazität (FVC) bei Personen ohne Lungenerkrankung über bis zu 35 Jahre Follow-up.",
+    result:"FVC erreicht Spitzenwert Mitte 20er, sinkt kontinuierlich linear ab ohne Plateau. Bei Frauen Abfall von ca. 26 mL/Jahr, bei Männern biphasisch: ca. 22 mL/Jahr vor 40 Jahren, dann ca. 36 mL/Jahr. Durchschnittlicher altersgerechter Rückgang 20–30 mL pro Jahr. Diese normativen Trajektorien sind essentiell zur Differenzierung gesunden Alterns von pathologischem Rückgang.",
+    transfer:"Deutschland und europäische Spirometriestandards; Benchmark ist grundlegend für klinische Interpretation."
+  },
+  {
+    journal:"Eur Respir Rev", year:"2026", pmid:"42716547",
+    author:"Maniscalco M et al.", pubdate:"09.09.2026",
+    added:"09.09.2026",
+    title:"Frailty und COPD: bidirektionale Beziehung im Kontext von Systemalterung und Trainingsresponse",
+    sum:"Narrative Übersichtsarbeit zu biologischen und klinischen Verbindungen von COPD, Frailty und körperlicher Aktivität unter Anwendung von Geroscience-Prinzipien.",
+    result:"Gemeinsame biologische Mechanismen: chronische Entzündung, oxidativer Stress, Mitochondriendysfunktion, Muskelatrophie. Kombiniertes aerobes, Widerstands- und Balance-Training zeigt stärkste Evidenz zur Verbesserung von Funktionsstatus und Lebensqualität bei frail-COPD. Exercise induziert Hormeseeffekte: gesteigerte Mitochondriogenese, verbessertes Redox-Balance, Upregulation von antioxidativen Wegen und Zellreparaturmechanismen.",
+    transfer:"Geroscience-Rahmen auf deutsche COPD-Versorgung und Rehabilitation übertragbar."
+  },
+  {
+    journal:"PeerJ", year:"2026", pmid:"42730319",
+    author:"Yoon TH et al.", pubdate:"08.09.2026",
+    added:"12.09.2026",
+    title:"Sitzzeit und Funktionsfähigkeit im Alter: Längere Sitzzeit reduziert Muskelmasse und ADL",
+    sum:"Querschnittstudie an 200 Älteren (65–96 Jahre) zur Assoziation von täglicher Sitzzeit (&lt;6, 6–8, &gt;8 h) mit Sarcopenia-Markern und funktioneller Unabhängigkeit in ADL und IADL.",
+    result:"Höhere Sitzzeit war negativ mit Appendicular Skeletal Muscle (β = −0,415; p &lt; 0,001), Wadenschritt (β = −0,442; p &lt; 0,001) und Griffstärke (β = −0,385; p &lt; 0,001) assoziiert und positiv mit 5-Stühle-Stand-Test (β = 0,465; p &lt; 0,001). Sitzzeit korrelierte negativ mit ADL-Summe (β = −0,308; p &lt; 0,001) und IADL-Summe (β = −0,410; p &lt; 0,001). Assoziationen blieben nach Altersadjustierung signifikant.",
+    transfer:"Prävention durch Reduktion von Sitzzeit ist in allen europäischen Kontexten implementierbar."
+  },
+  {
+    journal:"Alzheimers Dement", year:"2026", pmid:"42723149",
+    author:"Wang X et al.", pubdate:"Sept. 2026",
     added:"11.09.2026",
-    title:"Multimorbidität im hohen Alter: Krankheitsansammlung verlangsamt sich, Komplexität nimmt zu",
-    sum:"Schwedische Registeranalyse der Krankheitsansammlung bei 1920–1922 geborenen Personen von Alter 70 bis 100 Jahren.",
-    result:"Mit 90 Jahren durchschnittlich 3,9 Erkrankungen bei Männern und 3,5 bei Frauen; über die Hälfte der ≥95-Jährigen hatte ≥5 Erkrankungen. Krankheitsansammlung beschleunigte sich bis 80, stabilisierte sich 80–90, verlangsamte sich danach, aber Komplexität und Krankheitslast stiegen bis ins extreme Alter weiter. Kardiovaskuläre Erkrankungen dominierten durchgehend, Muskel- und Sinneserkrankungen wurden im hohen Alter wichtiger.",
-    transfer:"Schweden, vergleichbare Lebenserwartung und Versorgungsstruktur"
+    title:"Frailty und kognitives Altern: Assoziationen mit ungünstigeren kognitiven Verlaufsmustern",
+    sum:"Längsschnittstudie an 19.586 Personen aus drei nationalen Kohorten (China, England, USA) zur Assoziation von Frailty-Status und kognitiver Veränderung über Zeit.",
+    result:"Baseline-Frailty war mit stärkerem jährlichen kognitiven Rückgang assoziiert (β = −0,023 SD/Jahr; p &lt; 0,001). Verschlechterung von robust zu pre-frail oder frail war mit mehr negativem Rückgang verbunden (β = −0,025 SD/Jahr). In trajektoriengestützen Analysen zeigten Baseline-Frailty, höhere mittlere Frailty-Last und Frailty-Verschlechterung Assoziationen mit weniger günstigen kognitiven Verläufen. Frailty-Verbesserung war direktional mit günstigeren Gruppen assoziiert.",
+    transfer:"Vergleichbare nationale Gesundheitsdatenstrukturen; kognitives Altern als Endpunkt relevant für deutsche Versorgung."
   },
   {
-    journal:"Age Ageing", year:"2026", pmid:"42709408",
-    author:"Squeri T et al.", pubdate:"04.09.2026",
-    added:"08.09.2026",
-    title:"Gebrechlichkeit am Lebensende: wer hat Anspruch auf assistierten Freitod?",
-    sum:"Vergleichende Analyse der Häufigkeit und rechtlichen Zulässigkeit von Gebrechlichkeit (Frailty) als Indikation für assistierten Freitod in Jurisdiktionen mit reguliertem Zugang.",
-    result:"Nur Kanada und Niederlande berichten die Häufigkeit: 9,07% der Freitode in Kanada 2023 waren mit Gebrechlichkeit assoziiert (als Hauptdiagnose oder Komorbidität), in den Niederlanden 3,85% mit multiplen geriatrischen Syndromen. 11 Jurisdiktionen: Gebrechlichkeit wahrscheinlich nicht zulässig; 6: schwere Gebrechlichkeit erfüllt Kriterien; 14: unklar. Erhebliches Reporting-Defizit und regulatorische Mehrdeutigkeit.",
-    transfer:"Internationale Perspektive, begrenzte Relevanz für deutsches Recht"
+    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42716517",
+    author:"Kim S et al.", pubdate:"Sept. 2026",
+    added:"09.09.2026",
+    title:"Netzwerk-Analyse der Lebensqualität bei älteren Koreanern: Depression dominiert das frail-Netzwerk",
+    sum:"Netzwerk-Analyse an 1.311 älteren Koreanern (≥65 Jahre) zur Struktur der gesundheitsbezogenen Lebensqualität (HRQoL) im Vergleich zwischen frail und non-frail-Gruppen.",
+    result:"Bei frail-Gruppe war Depression-Glück die stärkste Assoziation mit hoher Zentralität bei Arbeit, Depression, Glück und Schlaf. Bei non-frail-Gruppe dominierten physikalisch-soziale Domänen (Treppensteigen-Schmerz stärkster Link, zentral: Arbeit, Treppensteigen, Schmerz). Arbeit zeigte konsistent hohe Zentralität in beiden Gruppen, was Rollenpartizipation als Hebel für HRQoL-Verbesserung unterstreicht.",
+    transfer:"Strukturelle Vergleichbarkeit der Frailty-Definitionen mit europäischen Standards gegeben."
   },
   {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42723340",
-    author:"Yonekura H et al.", pubdate:"Sept. 2026",
-    added:"11.09.2026",
-    title:"Präoperative Gebrechlichkeit und postoperative Komplikationen bei Hüftfrakturchirurgie",
-    sum:"Analyse von 29.684 älteren Patienten (≥65 Jahre) in Japan mit Hüftfrakturoperationen (2005–2021) zu Assoziationen zwischen präoperativem Frailty-Risiko-Score und postoperativen Komplikationen mittels Krankenhausregister.",
-    result:"59,5% (17.656) waren gebrechlich (Hospital Frailty Risk Score ≥5). Präoperative Gebrechlichkeit nicht mit akutem Nierenversagen assoziiert (OR 0,97, KI 0,83–1,14; p=0,72) oder Major Adverse Kidney Events (OR 1,07, 0,80–1,44; p=0,65), aber signifikant mit Lungenkomplikationen (OR 1,68, 1,39–2,02; p&lt;0,001), postoperativem Delir (OR 1,35, 1,13–1,62; p&lt;0,001), höherer Transfusionsrate und längerer Krankenhausdauer assoziiert.",
-    transfer:"Japan, vergleichbare Finanzierung, Operationsindikationen ähnlich zu Deutschland"
-  },
-  {
-    journal:"Front Public Health", year:"2026", pmid:"42725090",
-    author:"Feng S et al.", pubdate:"27.08.2026",
-    added:"11.09.2026",
-    title:"Gebrechlichkeit bei Multimorbidität: Prävalenz und Risikofaktoren in der Gemeinde",
-    sum:"Querschnittsstudie bei 346 multimorbiden älteren Erwachsenen (≥60 Jahre) in fünf Gemeinden Chinas zur Prävalenz und unabhängigen Risikofaktoren für Gebrechlichkeit (Frailty).",
-    result:"52,9% (183/346) waren gebrechlich. Unabhängige Faktoren: Alter 70–80 Jahre (OR 2,64, 95%-KI 1,03–6,79), ≥80 Jahre (OR 4,92, 1,87–12,96); Krankenhausaufnahme wegen akuter Ereignisse im vergangenen Jahr (OR 1,84, 1,04–3,27); Landbewohner vs. städtisch (OR 0,34, 0,19–0,60). Normale Ernährung (OR 0,23, 0,16–0,50) und volle Aktivitätsunabhängigkeit (OR 0,21, 0,06–0,79) waren protektiv. Familienbetreuung vs. Selbstpflege (OR 0,39, 0,16–0,95) reduzierte Frailty-Risiko.",
-    transfer:"China, andere Gesundheitsinfrastruktur; Screening-Muster teilweise übertragbar"
-  },
-  {
-    journal:"Soc Sci Med", year:"2026", pmid:"42561791",
-    author:"Bertogg A et al.", pubdate:"01.08.2026",
-    added:"06.08.2026",
-    title:"Kognitive Alterung als sozial strukturierter Prozess: Lebenskurs, Ungleichheit und institutionelle Kontexte",
-    sum:"Editorial zu Spezialausgabe, die kognitives Altern als von Lebenslauf, sozialen Ungleichheiten und Institutionen geprägte Prozesse konzeptualisiert; Synthese länderübergreifender Studien aus Europa, Nordamerika, Lateinamerika und Asien.",
-    result:"Längsschnittstudien, Register, qualitative Interviews und ethnographische Arbeiten dokumentieren bleibende Einflüsse von Kindheitsbedingungen, Bildung, Berufslaufbahn, Familie, sozialer Partizipation, Nachbarschaft und Wohlfahrtsregimen auf späte kognitive Leistung. Ungleichheiten nach Geschlecht, Ethnie, Migrationshintergrund und Ort prägen kognitives Altern über die Lebensspanne. Infrastruktur, Gesundheitssysteme und politisch-ökonomische Veränderungen beeinflussen kognitive Reserven.",
-    transfer:"Europäische und deutschsprachige Beiträge, vergleichbare Wohlfahrtssysteme"
-  },
-  {
-    journal:"Eur Geriatr Med", year:"2026", pmid:"42435263",
-    author:"Martín ML et al.", pubdate:"11.07.2026",
-    added:"11.07.2026",
-    title:"Berufswahl Geriatrie: persönliche Zuneigung und Spezialisierungsanreize bei Medizinern",
-    sum:"Qualitative Befragung (N=129) spanischer Medizinresidenten zu Faktoren, die die Wahl der Geriatrie beeinflussen, und Einfluss geriatrischer Schulung während des Studiums.",
-    result:"89% bereits mit Fachgebiet vertraut; 46% hatten theoretische und praktische geriatrische Schulung während des Studiums erhalten. Häufigste Faktoren: Affinität zu älteren Menschen (95%), Patientenkommunikation und Familie (90%), multidisziplinäres Arbeiten (86%), klinische Komplexität (84%), Multimorbidität (82%). Mit vollständiger geriatrischer Schulung 75% vs. 54% (p=0,02) erwogen Geriatrie als Fachgebiet; klinische Komplexität war signifikant wichtiger unter denen mit vollständiger Schulung (92% vs. 77%, p=0,027).",
-    transfer:"Spanien, europäische Gesundheitspolitik, Ärztenachwuchs vergleichbar"
+    journal:"J Intern Med", year:"2026", pmid:"42410718",
+    author:"Emanuelsson CA et al.", pubdate:"06.07.2026",
+    added:"07.07.2026",
+    title:"Hereditäre hämorrhagische Teleangiektasie reduziert die Lebenserwartung um 7,5 Jahre",
+    sum:"Schwedische populationsbasierte Registerstudie mit 393 HHT-Patienten und 1.965 alters- und geschlechtsgematchten Kontrollen zur Mortalität und Todesursachen über 17 Jahre Nachbeobachtung (2001–2018).",
+    result:"Lebenserwartung nach 30 Jahren bei HHT: 73,0 Jahre (68,0–77,2) vs. 80,5 Jahre (79,1–82,0) bei Kontrollen; Differenz 7,5 Jahre. Häufigere Todesursachen bei HHT: ischämische Herzerkrankung, arterielle Erkrankungen und Leberkrankheiten signifikant erhöht. HHT-Prävalenz: 9,3 pro 100.000 über 12 Jahre; mögliche Unterdiagnose bei milderen Symptomen.",
+    transfer:"Skandinavisches Register mit Deutschland vergleichbar; Versorgungsplanning für rare diseases relevant."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1486,7 +1495,7 @@ const RADAR_FRISTEN = [["2026-09-22", "2026-10-20", "2026-10-20", "2026-09-14", 
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "12.09.2026";
+const NEWS_STAND = "13.09.2026";
 const NEWS = [
   {titel:"Bewegung senkt Demenzrisiko: AFI startet Serie zur Prävention", datum:"2026-09-10", url:"https://www.monitor-versorgungsforschung.de/news/bewegung-senkt-demenzrisiko-afi-startet-serie-zur-praevention/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
