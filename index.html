@@ -1415,71 +1415,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "13. Sept. 2026, 08:31 Uhr";
+const SNAP_DATE = "14. Sept. 2026, 06:21 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"BMJ Open", year:"2026", pmid:"42731824",
-    author:"Nicklén J et al.", pubdate:"11.09.2026",
+    journal:"Nat Commun", year:"2026", pmid:"42728266",
+    author:"Krasnov H et al.", pubdate:"11.09.2026",
     added:"12.09.2026",
-    title:"Altern von Personen mit Typ-1-Diabetes: prospektive Kohorte zur funktionellen Fähigkeit",
-    sum:"Studienprotokoll für prospektive Kohortenstudie (FinnDiane LifeOne) mit mindestens 300 älteren Personen mit Typ-1-Diabetes (&gt;65 Jahre) und 100 gematchten Kontrollen zur Untersuchung der funktionellen Fähigkeit und gesunden Alterns über 5 Jahre mit geriatrischem Assessment.",
-    result:"Eingeschlossene Studien: ≥300 Patienten mit T1D, ≥100 Kontrollen, gematchte Vergleichgruppe. Umfassendes geriatrisches Assessment mit 5-jährlichen Intervallen. Fokus auf fünf Domänen der intrinsic capacity: Kognition, Vitalität, Sensomotorisch, Lokomotion, Psychologisch. Follow-up-Strukturen und Vergleichsdesign etabliert; endgültige Ergebnisse stehen aus.",
-    transfer:"Skandinavisches Gesundheitssystem, prospektiv designt mit europäischen Standards; übertragbar auf Deutschland."
+    title:"Umweltbelastung und Frailty bei älteren Menschen nach Trauma: WTC-Responder-Kohorte",
+    sum:"Analysierte in Längsschnittkohort (18.734 WTC-Responder) den Zusammenhang zwischen städtischen Umweltexpositionen (Feinstaub, Temperatur, Grünflächen) und Frailty sowie psychiatrischen Symptomen, adjustiert für Traumaexposition.",
+    result:"Ein Dezil-Anstieg der Gesamt-Expositionsmischung assoziiert mit erhöhter Frailty (0,56%; 95%-KI: 0,14%-0,98%) und Post-Traumatic-Stress-Disorder-Scores (0,31%; 95%-KI: 0,07%-0,55%); Effekte stärker bei Responders mit höherer WTC-Exposition. Deutet auf biologische Langzeitvulnerabilität nach Trauma und Toxinexposition hin.",
+    transfer:"USA-Kohorte; Befunde zu Umwelteffekten auf Frailty übertragbar, aber langfristige Trauma-Exposition länderspezifisch"
   },
   {
-    journal:"Eur Respir Rev", year:"2026", pmid:"42716546",
-    author:"Satia I et al.", pubdate:"09.09.2026",
-    added:"09.09.2026",
-    title:"Normaler altersgerechter Rückgang der Vitalkapazität: systematische Analyse und Metaanalyse",
-    sum:"Systematische Übersichtsarbeit und Metaanalyse von 35 Kohorten mit über 365.000 Teilnehmern zu altersbezogenen Veränderungen der Vitalkapazität (FVC) bei Personen ohne Lungenerkrankung über bis zu 35 Jahre Follow-up.",
-    result:"FVC erreicht Spitzenwert Mitte 20er, sinkt kontinuierlich linear ab ohne Plateau. Bei Frauen Abfall von ca. 26 mL/Jahr, bei Männern biphasisch: ca. 22 mL/Jahr vor 40 Jahren, dann ca. 36 mL/Jahr. Durchschnittlicher altersgerechter Rückgang 20–30 mL pro Jahr. Diese normativen Trajektorien sind essentiell zur Differenzierung gesunden Alterns von pathologischem Rückgang.",
-    transfer:"Deutschland und europäische Spirometriestandards; Benchmark ist grundlegend für klinische Interpretation."
-  },
-  {
-    journal:"Eur Respir Rev", year:"2026", pmid:"42716547",
-    author:"Maniscalco M et al.", pubdate:"09.09.2026",
-    added:"09.09.2026",
-    title:"Frailty und COPD: bidirektionale Beziehung im Kontext von Systemalterung und Trainingsresponse",
-    sum:"Narrative Übersichtsarbeit zu biologischen und klinischen Verbindungen von COPD, Frailty und körperlicher Aktivität unter Anwendung von Geroscience-Prinzipien.",
-    result:"Gemeinsame biologische Mechanismen: chronische Entzündung, oxidativer Stress, Mitochondriendysfunktion, Muskelatrophie. Kombiniertes aerobes, Widerstands- und Balance-Training zeigt stärkste Evidenz zur Verbesserung von Funktionsstatus und Lebensqualität bei frail-COPD. Exercise induziert Hormeseeffekte: gesteigerte Mitochondriogenese, verbessertes Redox-Balance, Upregulation von antioxidativen Wegen und Zellreparaturmechanismen.",
-    transfer:"Geroscience-Rahmen auf deutsche COPD-Versorgung und Rehabilitation übertragbar."
-  },
-  {
-    journal:"PeerJ", year:"2026", pmid:"42730319",
-    author:"Yoon TH et al.", pubdate:"08.09.2026",
-    added:"12.09.2026",
-    title:"Sitzzeit und Funktionsfähigkeit im Alter: Längere Sitzzeit reduziert Muskelmasse und ADL",
-    sum:"Querschnittstudie an 200 Älteren (65–96 Jahre) zur Assoziation von täglicher Sitzzeit (&lt;6, 6–8, &gt;8 h) mit Sarcopenia-Markern und funktioneller Unabhängigkeit in ADL und IADL.",
-    result:"Höhere Sitzzeit war negativ mit Appendicular Skeletal Muscle (β = −0,415; p &lt; 0,001), Wadenschritt (β = −0,442; p &lt; 0,001) und Griffstärke (β = −0,385; p &lt; 0,001) assoziiert und positiv mit 5-Stühle-Stand-Test (β = 0,465; p &lt; 0,001). Sitzzeit korrelierte negativ mit ADL-Summe (β = −0,308; p &lt; 0,001) und IADL-Summe (β = −0,410; p &lt; 0,001). Assoziationen blieben nach Altersadjustierung signifikant.",
-    transfer:"Prävention durch Reduktion von Sitzzeit ist in allen europäischen Kontexten implementierbar."
-  },
-  {
-    journal:"Alzheimers Dement", year:"2026", pmid:"42723149",
-    author:"Wang X et al.", pubdate:"Sept. 2026",
+    journal:"Daru", year:"2026", pmid:"42726380",
+    author:"Niharika K et al.", pubdate:"11.09.2026",
     added:"11.09.2026",
-    title:"Frailty und kognitives Altern: Assoziationen mit ungünstigeren kognitiven Verlaufsmustern",
-    sum:"Längsschnittstudie an 19.586 Personen aus drei nationalen Kohorten (China, England, USA) zur Assoziation von Frailty-Status und kognitiver Veränderung über Zeit.",
-    result:"Baseline-Frailty war mit stärkerem jährlichen kognitiven Rückgang assoziiert (β = −0,023 SD/Jahr; p &lt; 0,001). Verschlechterung von robust zu pre-frail oder frail war mit mehr negativem Rückgang verbunden (β = −0,025 SD/Jahr). In trajektoriengestützen Analysen zeigten Baseline-Frailty, höhere mittlere Frailty-Last und Frailty-Verschlechterung Assoziationen mit weniger günstigen kognitiven Verläufen. Frailty-Verbesserung war direktional mit günstigeren Gruppen assoziiert.",
-    transfer:"Vergleichbare nationale Gesundheitsdatenstrukturen; kognitives Altern als Endpunkt relevant für deutsche Versorgung."
+    title:"Terpenoide und Seneszenz in Lungenkrebszellen: Versorgungsrelevanz begrenzt",
+    sum:"Übersichtsarbeit zu 46 Terpenoiden mit Effekten auf Autophagie und zelluläre Seneszenz in Lungenkrebszellen in vitro (ohne In-vivo-Studien oder klinische Endpunkte).",
+    result:"Terpenoide beeinflussen zentrale Signalweg-Knoten (AMPK, NF-κB, MAPK, PI3K/AKT/mTOR, ROS, p53); begrenzte klinische Translation durch schlechte Löslichkeit und Bioverfügbarkeit. Überblick ohne Angabe von Effektgrößen oder klinischen Ergebnissen - ausgeschlossen da keine gemessenen Endpunkte beim Menschen.",
+    transfer:""
   },
   {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42716517",
-    author:"Kim S et al.", pubdate:"Sept. 2026",
+    journal:"J Cross Cult Gerontol", year:"2026", pmid:"42709276",
+    author:"Bodner E et al.", pubdate:"08.09.2026",
+    added:"08.09.2026",
+    title:"Wohlbefinden und Kognitives Reserve in spanischer Alterskohorte: Freizeit und psychische Gesundheit",
+    sum:"Untersuchte Assoziationen zwischen Freizeit-aktivitäten, kognitiver Reservefähigkeit und psychologischem Wohlbefinden bei älteren Spaniern im Wohngebiet (Gedächtnisleistung, Aufmerksamkeit, Depression, Angst, Lebenszufriedenheit, Einsamkeit).",
+    result:"Höhere Cognitive-Reserve-Scores assoziiert mit niedrigerem wahrgenommenem Stress (bei Männern) und besserer Aufmerksamkeitsleistung; Geschlechtsspezifische Unterschiede in der Assoziation zwischen Freizeitaktivitäten und Stresswahrnehmung (Frauen zeigten keine signifikanten Zusammenhänge). Erklärt potenzielle Mechanismen zwischen kognitiver Reservefähigkeit und psychologischem Wohlbefinden im Alter.",
+    transfer:"Spanische Allgemeinbevölkerung, vergleichbare europäische Gesundheitssysteme und Sozialstruktur"
+  },
+  {
+    journal:"Australas J Ageing", year:"2026", pmid:"42712137",
+    author:"Reid N et al.", pubdate:"Sept. 2026",
     added:"09.09.2026",
-    title:"Netzwerk-Analyse der Lebensqualität bei älteren Koreanern: Depression dominiert das frail-Netzwerk",
-    sum:"Netzwerk-Analyse an 1.311 älteren Koreanern (≥65 Jahre) zur Struktur der gesundheitsbezogenen Lebensqualität (HRQoL) im Vergleich zwischen frail und non-frail-Gruppen.",
-    result:"Bei frail-Gruppe war Depression-Glück die stärkste Assoziation mit hoher Zentralität bei Arbeit, Depression, Glück und Schlaf. Bei non-frail-Gruppe dominierten physikalisch-soziale Domänen (Treppensteigen-Schmerz stärkster Link, zentral: Arbeit, Treppensteigen, Schmerz). Arbeit zeigte konsistent hohe Zentralität in beiden Gruppen, was Rollenpartizipation als Hebel für HRQoL-Verbesserung unterstreicht.",
-    transfer:"Strukturelle Vergleichbarkeit der Frailty-Definitionen mit europäischen Standards gegeben."
+    title:"Transitions-Care-Programm in Australien: Effektivität und Kosten 2006-2024",
+    sum:"Analysierte 18 Jahre öffentlicher Daten zum australischen Kurz-Rehabilitations-Programm nach Klinikaufenthalt (Demografie, Inanspruchnahme, Kosten, funktioneller Status mit Modified-Barthel-Index).",
+    result:"351.981 Klienten über Studienzeitraum; Fallzahlen pro anno +143% (2006-2007 bis 2016-2017), dann Rückgang auf 14.388 (2022-2023). Verweildauer +60% (48 auf 77 Tage), Durchschnittskosten pro Episode +261% (A$9.996 auf A$36.093), jedoch minimale Änderung in Ein- (69,7-72,1) oder Austritts-MBI (79,5-83). Weniger Menschen erhalten Zugang trotz wachsender Bevölkerung und steigender zugeteilter Plätze.",
+    transfer:"Australien, ähnliche Versorgungsstrukturen und Finanzierung wie europäische Sozialsysteme"
   },
   {
-    journal:"J Intern Med", year:"2026", pmid:"42410718",
-    author:"Emanuelsson CA et al.", pubdate:"06.07.2026",
-    added:"07.07.2026",
-    title:"Hereditäre hämorrhagische Teleangiektasie reduziert die Lebenserwartung um 7,5 Jahre",
-    sum:"Schwedische populationsbasierte Registerstudie mit 393 HHT-Patienten und 1.965 alters- und geschlechtsgematchten Kontrollen zur Mortalität und Todesursachen über 17 Jahre Nachbeobachtung (2001–2018).",
-    result:"Lebenserwartung nach 30 Jahren bei HHT: 73,0 Jahre (68,0–77,2) vs. 80,5 Jahre (79,1–82,0) bei Kontrollen; Differenz 7,5 Jahre. Häufigere Todesursachen bei HHT: ischämische Herzerkrankung, arterielle Erkrankungen und Leberkrankheiten signifikant erhöht. HHT-Prävalenz: 9,3 pro 100.000 über 12 Jahre; mögliche Unterdiagnose bei milderen Symptomen.",
-    transfer:"Skandinavisches Register mit Deutschland vergleichbar; Versorgungsplanning für rare diseases relevant."
+    journal:"Front Public Health", year:"2026", pmid:"42724145",
+    author:"Puelles-Diaz A", pubdate:"27.08.2026",
+    added:"11.09.2026",
+    title:"Muskelkraft und Mortalität im Alter: Versorgungsepidemiologie und Prävention",
+    sum:"Analysierte Evidenz zur Muskelgesundheit (Kraft, Masse, Funktion) als eigenständiges Versorgungsziel in der Altersmedizin und entwickelte einen Implementierungsrahmen für Primary-Care-Assessment und Resistenztraining.",
+    result:"Muskelkraft sagt Mortalität voraus, unabhängig von körperlicher Aktivität; Randomisierte Studien mit bis zu 36 Monaten Nachverfolgung zeigen größere Nutzen durch Widerstands- und multimodale Trainingsprogramme (speziell bei Personen mit funktioneller Beeinträchtigung). Identifizierte drei Versorgungslücken: begrenzte Assessment-Nutzung in der Primärversorgung, fragmentierte Prävention mit Unterbewertung von Resistenztraining, fehlende funktionale Kapazität in globalen NCD-Rahmen.",
+    transfer:"Internationale Evidenz aus Japan, Europa, Nordamerika und Brasilien mit direktem deutschem Versorgungsbezug"
+  },
+  {
+    journal:"Aging (Albany NY)", year:"2026", pmid:"42467494",
+    author:"Marino N et al.", pubdate:"16.07.2026",
+    added:"17.07.2026",
+    title:"Healthspan-Strategien im italienischen Gesundheitssystem: Rahmenbedingungen und Prioritäten",
+    sum:"Position Paper zur Integration von Longevity Medicine (Prävention mit mehromischen Biomarkern und Risikoschichtung) in das italienische SSN vor dem Hintergrund von 24,1% der Bevölkerung ≥65 Jahre und einer Healthspan-Lücke von 15-16 Jahren.",
+    result:"Italien: höchster EU-Anteil Älterer (24,1%), median age 51 Jahre bis 2050 projiziert; Lebenserw. 85,4 (Frauen) / 81,4 (Männer) Jahre vs. gesunde Lebensjahre 69,6 / 68,5 (Lücke: 15-18 Jahre); Multimorbiditäts- und Behinderungsprävalenz &gt;60% bei ≥75-Jährigen. Empfiehlt fünf Investitionsprioritäten: validierte Biomarker biologisches Alter, digitale Plattformen, adaptive Studien, explainable-AI-Risikoschichtung, Lehrcurricula.",
+    transfer:"Italien mit deutschsprachigem Raum vergleichbare Bevölkerungsstruktur und Sozialversicherung"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1495,7 +1486,7 @@ const RADAR_FRISTEN = [["2026-09-22", "2026-10-20", "2026-10-20", "2026-09-14", 
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "13.09.2026";
+const NEWS_STAND = "14.09.2026";
 const NEWS = [
   {titel:"Bewegung senkt Demenzrisiko: AFI startet Serie zur Prävention", datum:"2026-09-10", url:"https://www.monitor-versorgungsforschung.de/news/bewegung-senkt-demenzrisiko-afi-startet-serie-zur-praevention/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
