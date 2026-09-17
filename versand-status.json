@@ -1,35 +1,35 @@
 {
  "hub": "Knowledge-Hub Gesundes Altern & Longevity",
  "domain": "longevity.m-vf.de",
- "datum": "2026-09-16",
+ "datum": "2026-09-17",
  "stand": "terminiert",
- "titel": "MVF Longevity-Newsletter 16.09.2026",
- "betreff": "Neueste Studien - Gesundes Altern und Longevity – 16. September 2026",
- "anzahl": 7,
+ "titel": "MVF Longevity-Newsletter 17.09.2026",
+ "betreff": "Neueste Studien - Gesundes Altern und Longevity – 17. September 2026",
+ "anzahl": 5,
  "pmids": [
-  "42741152",
-  "42736541",
-  "42678992",
-  "42612584",
-  "42605666",
-  "42430904",
-  "42424841"
+  "42747548",
+  "42745813",
+  "42745694",
+  "42740373",
+  "42705825"
  ],
- "kampagne": "https://us6.admin.mailchimp.com/campaigns/edit?id=9098905",
- "termin_utc": "2026-09-16T08:00:00+00:00",
+ "kampagne": "https://us6.admin.mailchimp.com/campaigns/edit?id=9098922",
+ "termin_utc": "2026-09-17T08:00:00+00:00",
  "empfaenger": 4,
- "listengroesse": 5905,
+ "listengroesse": 5902,
  "beanstandungen": [],
- "aussortiert": [],
+ "aussortiert": [
+  "Studie 2 (PMID 42745907): Ergebnisfeld ist mit 56 Zeichen zu duenn"
+ ],
  "pool": {
   "geholt": 220,
-  "bekannt": 139,
-  "pool": 53,
+  "bekannt": 142,
+  "pool": 50,
   "gewaehlt": 7,
-  "neu": 7
+  "neu": 6
  },
  "rubriken": {
   "radar": "abc9fdc968d0dbb1",
-  "news": "03e490891b72b60d"
+  "news": "899710630672737d"
  }
 }

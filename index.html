@@ -1528,71 +1528,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "16. Sept. 2026, 06:20 Uhr";
+const SNAP_DATE = "17. Sept. 2026, 06:20 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"PLoS Med", year:"2026", pmid:"42678992",
-    author:"Logan Ellis H et al.", pubdate:"01.09.2026",
-    added:"01.09.2026",
-    title:"Automatisierter Frailty-Index aus Labortests (FI-Lab) validiert akutes Mortalitätsrisiko",
-    sum:"Retrospektive multizentrische Studie an drei Kohorten (Boston, London, UK Biobank; insgesamt 872.744 Patienten), die einen aus 20-40 Standardlabortests berechneten automatisierten Frailty-Index zur Vorhersage der 1-Jahres-Mortalität in der Notaufnahme und klinischen Routine erprobte.",
-    result:"Der FI-Lab zeigte Hazard Ratios für 1-Jahres-Mortalität von 2,04 (95%-KI [1,99–2,09]) in MIMIC-IV-ED, 2,55 (95%-KI [2,42–2,69]) in King's College Hospital und 1,87 (95%-KI [1,80–1,94]) in UK Biobank pro Standardabweichung Anstieg – und übertraf damit den National Early Warning Score 2. Die Unterscheidungsfähigkeit stabilisierte sich bei 20–40 Tests. Ein pragmatisches, ohne zusätzliche Messungen anwendbares Instrument.",
-    transfer:"UK-Klinikdaten, Notaufnahme-Dokumentation übertragbar auf deutsche Krankenhaussysteme"
+    journal:"Eur J Orthop Surg Traumatol", year:"2026", pmid:"42747548",
+    author:"Ichikawa T et al.", pubdate:"16.09.2026",
+    added:"16.09.2026",
+    title:"Frailty-Index (mFI-5) vorhersagekräftig für Komplikationen nach Amputation",
+    sum:"USA-Traumakohorte (n=1.122, ≥18 Jahre, offene Unterschenkelbrüche mit Amputation; 2017–2021) zur Prognose von 30-Tage-Komplikationen via 5-Item Modified Frailty Index.",
+    result:"Pro Punkt mFI-5-Erhöhung: signifikant gestiegene Odds für Wundinfekt (OR 1,36), zerebrovaskuläres Ereignis (OR 2,93), Reintubation (OR 2,17), ICU-Aufnahme (OR 1,56) und Druckgeschwür (OR 1,68). mFI-5 unabhängiger Prädiktor nach Adjustierung für Alter, Geschlecht, ISS und andere Faktoren. Routinescreening empfohlen für Risikostratifizierung.",
+    transfer:"USA-Traumasystem, aber Frailty-Assessment-Tool und Komplikationsdefinitionen international etabliert."
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42741152",
-    author:"Jiang W et al.", pubdate:"31.08.2026",
+    journal:"Eur J Orthop Surg Traumatol", year:"2026", pmid:"42747548",
+    author:"Ichikawa T et al.", pubdate:"16.09.2026",
+    added:"16.09.2026",
+    title:"Frailty-Index (mFI-5) vorhersagekräftig für Komplikationen nach Amputation",
+    sum:"USA-Traumakohorte (n=1.122, ≥18 Jahre, offene Unterschenkelbrüche mit Amputation; 2017–2021) zur Prognose von 30-Tage-Komplikationen via 5-Item Modified Frailty Index.",
+    result:"Pro Punkt mFI-5-Erhöhung: signifikant gestiegene Odds für Wundinfekt (OR 1,36), zerebrovaskuläres Ereignis (OR 2,93), Reintubation (OR 2,17), ICU-Aufnahme (OR 1,56) und Druckgeschwür (OR 1,68). mFI-5 unabhängiger Prädiktor nach Adjustierung für Alter, Geschlecht, ISS und andere Faktoren. Routinescreening empfohlen für Risikostratifizierung.",
+    transfer:"USA-Traumasystem, aber Frailty-Assessment-Tool und Komplikationsdefinitionen international etabliert."
+  },
+  {
+    journal:"Inquiry", year:"2026", pmid:"42745694",
+    author:"Antohi VM et al.", pubdate:"16.09.2026",
+    added:"16.09.2026",
+    title:"Determinanten der Lebenserwartung in der EU: Präventive Mortalität geht über Wohlstand hinaus",
+    sum:"Panel-Regressionsanalyse (6 EU-Länder: Rumänien, Bulgarien, Lettland, Deutschland, Italien, Spanien; 2011–2021) zu Effekten wirtschaftlicher, demografischer und Mortalitätsfaktoren auf Lebenserwartung.",
+    result:"CO₂-Emissionen und Bevölkerungswachstum senken Lebenserwartung (LE) signifikant. BIP pro Kopf, Gesundheitsausgaben, Bildung, Rechtsstaatlichkeit und Regierungseffektivität heben LE – aber nach Kontrolle für Mortalitätsindikatoren sinkt BIP-Effekt. Krude Mortalitätslast und Lebensjahre verloren durch Unfälle zeigen stärkste Assoziationen mit LE. Schlussfolgerung: Nachhaltige LE-Gewinne hängen weniger an Wachstum, mehr an Prävention.",
+    transfer:"Deutschland, Italien, Spanien im Sample; europäische Sozialsysteme, direkt vergleichbar."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42745813",
+    author:"Sorrentino M et al.", pubdate:"01.09.2026",
+    added:"16.09.2026",
+    title:"Freiwillige Krankenversicherung senkt Frailty-Onset bei europäischen Älteren",
+    sum:"Europäische Längsschnittstudie (SHARE 2013–2022, n=191.848, ≥50 Jahre) zur Assoziation zwischen freiwilliger Zusatzversicherung (VHI) und Frailty-Progression.",
+    result:"VHI mit niedrigeren Frailty-Scores assoziiert (Koeff. −0,056; 95%-KI −0,071 bis −0,041), stärkster Effekt in niedrigstem Einkommensquartil. Reduziertes Frailty-Onset-Risiko unter VHI (HR 0,862; 95%-KI 0,763–0,973), besonders in Spanien (HR 0,626). Allerdings: VHI könnte als Out-of-Pocket-Ausgabe Ungleichheiten verstärken.",
+    transfer:"Europäische SHARE-Daten, vergleichbare Sozialsysteme, direkt auf deutsche Sozialversicherung übertragbar."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42745907",
+    author:"Zhao S et al.", pubdate:"01.09.2026",
+    added:"16.09.2026",
+    title:"Soziale Entfremdung bei kognitiver Gebrechlichkeit: Vier Subgruppen älterer Erwachsener",
+    sum:"Chinesische Querschnittstudie (n=968, ≥60 Jahre, mit kognitiver Frailty) mittels latenter Profilanalyse zur Heterogenität sozialer Entfremdung.",
+    result:"Vier distinkte Profile identifiziert: „Soziale Anpassung",
+    transfer:"China – andere Altersstruktur, aber relevante Versorgungsfrage zur kognitiven Frailty."
+  },
+  {
+    journal:"Hippocampus", year:"2026", pmid:"42740373",
+    author:"Montero-Herrera B et al.", pubdate:"Sept. 2026",
     added:"15.09.2026",
-    title:"Orale Gebrechlichkeit beeinträchtigt Alltagsfähigkeit durch schlechte Ernährung – Ernährungsstatus vermittelt",
-    sum:"Querschnittsstudie mit 401 älteren Chengdu-Bewohnern (≥60 Jahre): untersuchte, ob orale Frailty (Zahnprobleme, Kaustörungen) die Alltagsfunktion beeinträchtigt und ob Malnutritionsrisiko diesen Zusammenhang mediert.",
-    result:"Orale Frailty korrelierte mit schlecherer Ernährung (B=–0,116; p=0,001) und niedriger ADL-Fähigkeit (Barthel-Index). Der direkte Assoziationseffekt blieb signifikant (B=–2,261; p=0,012), die indirekte Assoziation über Ernährung war klein aber signifikant (indirekt=–0,363; 95%-Bootstrap: –0,798 bis –0,044). Orale Frailty liegt bei 40,9 % vor, Malnutritionsrisiko bei 12,0 %.",
-    transfer:"Chinesische Primärversorgung, Instrument ORALFRAIL übertragbar, Modell validierungsbedürftig für Deutschland"
+    title:"Körperliche Aktivität puffert alternsbedingte Hippocampus-Veränderungen ab",
+    sum:"Querschnittsstudie (n=555, 36–90 Jahre, Human Connectome Project-Aging) zur Assoziation von moderater bis vigoroster Aktivität mit Hippocampus-Struktur (Dicke, Oberfläche, mikrostrukturelle T1w/T2w-Ratio).",
+    result:"Bei niedriger Aktivität (&lt;150 Min/Wo): Alter assoziiert mit diffusen Unterschieden in Hippocampus-Makro- und Mikrostruktur (niedrigere Dicke/Oberfläche, höhere T1w/T2w-Ratio). Moderate bis hohe Aktivität (≥150 Min/Wo) moderiert diese Alterseffekte in linkem Hippocampus signifikant; signifikante Unterschiede in Oberfläche und Ratio bei aktiveren Älteren. Befund deutet auf erhaltene plastische Kapazität hin.",
+    transfer:"USA – Neuroimaging-Methodik unabhängig von System; Aktivitätsempfehlung universal anwendbar."
   },
   {
-    journal:"Circ Popul Health Outcomes", year:"2026", pmid:"42605666",
-    author:"Dal Passo B et al.", pubdate:"17.08.2026",
-    added:"17.08.2026",
-    title:"Multidomain-Rehabilitation nach Herzinfarkt wirkt auch bei Frailty – Frailty sollte nicht abschrecken",
-    sum:"Prespecified-Subgruppen-Analyse der italienischen PIpELINe-RCT mit 512 Patienten ≥65 Jahren nach Myokardinfarkt; getestet, ob Gebrechlichkeit (Fried-Phänotyp) den Nutzen von multidomäner Rehabilitation (Bewegung, Ernährung, Psyche, Beckenbodentraining) mindert.",
-    result:"68,4 % (350 von 512) waren prefrail/frail; davon profitierten die 232 der Interventionsgruppe signifikant mit 43 % relativem Risikoreduktion (HR 0,57; 95%-KI 0,34–0,94; p=0,028) für die primäre Endpunkte (kardiovaskulärer Tod oder ungeplante Hospitalisierung). Kein signifikanter Interaktionseffekt: Frailty mindert den Rehabilitations-Nutzen nicht.",
-    transfer:"Multizentrische italienische RCT, europäisches Setting, direkt auf deutsches Gesundheitswesen übertragbar"
-  },
-  {
-    journal:"Maturitas", year:"2026", pmid:"42612584",
-    author:"Zhang Z et al.", pubdate:"15.08.2026",
-    added:"18.08.2026",
-    title:"Intrinsic Capacity senkt kardiovaskuläres Risiko durch multidimensionale Funktionsmessung",
-    sum:"Gepoolte Analyse dreier Langzeitkohorten (China, England, USA; 13.807 Probanden) untersuchte, ob Beeinträchtigungen in Intrinsic Capacity (Kognition, Mobilität, Vitalität, psychische Funktion, Sinnesfunktion) unabhängig und gemeinsam mit Hypertonie das Herzinfarkt- und Schlaganfallrisiko vorhersagen.",
-    result:"Gegenüber intakter Kapazität und normalen Blutdruckwerten zeigten beeinträchtigte IC (HR 1,53; 95%-KI 1,34–1,74), Hypertonie allein (HR 1,68; 95%-KI 1,46–1,93) und beide kombiniert (HR 2,29; 95%-KI 2,02–2,59) erhöhte kardiovaskuläre Ereignisrisiken. Das Modell mit IC-Messung erhöhte die C-Index-Diskriminierung von 0,619 auf 0,649. Progressive Risikozunahme mit jeder zusätzlich beeinträchtigten IC-Domäne.",
-    transfer:"Drei Kohorten auf vier Kontinenten, vergleichbare Outcomemessung, Übertragbarkeit hoch"
-  },
-  {
-    journal:"BMC Geriatr", year:"2026", pmid:"42736541",
-    author:"Wang Z et al.", pubdate:"24.07.2026",
-    added:"15.09.2026",
-    title:"Kurzzeitliches Prehab-Training steigert präoperative Funktionsfähigkeit fragiler Prostatapatienten",
-    sum:"Randomisierte, verblindete Studie mit 80 älteren Männern (≥60 Jahre) mit Prostatakarzinom in prefrail/frail Zustand; geprüft, ob 12-tägiges Home-Prehabilitation (Bewegung, Ernährung, psychische Unterstützung) vor geplanter Prostatektomie die perioperative funktionelle Leistung verbessert.",
-    result:"Prehab-Gruppe verbesserte 6-Minuten-Gehstrecke um 27,70±16,86 m vor OP, Kontrollgruppe nur um –3,12±3,62 m; Differenz 30,82 m (95%-KI 25,32–36,33; p&lt;0,001). Postoperativ schnellere Mobilisierung, schnellere Magen-Darm-Erholung, kürzere Krankenhausliegedauer. Keine interventionsbezogenen Nebenereignisse.",
-    transfer:"Chinesische Klinikdaten, geriatrisches Prähabilitationskonzept übertragbar auf Deutschland"
-  },
-  {
-    journal:"J Nutr Health Aging", year:"2026", pmid:"42430904",
-    author:"Chen W et al.", pubdate:"10.07.2026",
-    added:"10.07.2026",
-    title:"Gebrechlichkeit steigert Demenzrisiko durch Entzündung, Stoffwechsel und vorzeigte Hirnalterung",
-    sum:"Kohortenstudie mit 452.516 UK-Biobank-Probanden ohne Demenz-Baseline, Verfolgung 13,7 Jahre: untersucht, ob der Fried-Frailty-Phänotyp das Demenzrisiko steigert und welche Pfade (Entzündung, Stoffwechsel, Hirn-Age-Gap) diese Assoziation vermitteln.",
-    result:"7.777 Demenzneuerkrankungen; Frailty erhöhte Risiko mit HR 2,21 (95%-KI 2,02–2,42). Mediation: Entzündungs-Score vermittelte 4 %, Stoffwechsel-Score 13 %, beschleunigtes Hirn-Alter (brain-age-gap) 20 % der Frailty-Demenz-Assoziation. Genetische Interaktion nachgewiesen (p=0,033).",
-    transfer:"UK Biobank, Bildgebung, Biomarker, Konzept der Frailty-Prävention gegen Demenz auf deutsches Gesundheitswesen übertragbar"
-  },
-  {
-    journal:"J Nutr Health Aging", year:"2026", pmid:"42424841",
-    author:"Wang X et al.", pubdate:"09.07.2026",
-    added:"09.07.2026",
-    title:"Operative Belastung beschleunigt biologisches Altern, körperliche Aktivität puffert Effekt",
-    sum:"Querschnittanalyse von 126.668 UK-Biobank-Probanden ≥60 Jahren mit Operationsgeschichte: geprüft, ob Anzahl, Häufigkeit und zeitliche Nähe von Operationen das biologische Alter (PhenoAge-Acceleration) steigern und ob sportliche Aktivität diesen Effekt abschwächt.",
-    result:"≥4 Operationen assoziiert mit 0,14–0,39 Jahren PhenoAge-Acceleration. Operationen im Abstand ≤1 Jahr: +0,11 Jahre Beschleunigung. Operation ≤1 Jahr zurück: +0,35 Jahre Beschleunigung. Hohe körperliche Aktivität (≥600 MET-min/Woche) minderte diese Effekte deutlich; nur bei ≥5 Operationen blieb Beschleunigung signifikant.",
-    transfer:"UK Biobank, Operationsdaten und PhenoAge-Biomarker verfügbar, Aktivitätsbewertung übertragbar"
+    journal:"J Aging Stud", year:"2026", pmid:"42705825",
+    author:"Grand J", pubdate:"29.06.2026",
+    added:"07.09.2026",
+    title:"Moralische Verantwortung im Alter: Klimahandeln unter Alltagsbedingungen",
+    sum:"Qualitative Studie (Interviews, Fokusgruppen) mit Schweizer Älteren (65–83 Jahre) zu deren Verständnis und Umsetzung von Verantwortung für Klimaschutz im Alltag.",
+    result:"Ältere Erwachsene verhandeln Klimaverantwortung pragmatisch im Spannungsfeld zwischen persönlicher Handlungsfähigkeit und körperlichen Grenzen des Alterns. Zeitliche Beschränkung und Mobilitätseinbußen prägen Deutung und Umfang ihres Engagements; Fokus liegt auf Haushalt und Familie statt großflächiger Aktivismus. Kernbefund: Spätes Leben restrukturiert, realisiert aber nicht negiert Umweltverantwortung.",
+    transfer:"Schweiz, deutschsprachig, Sozialkontext vergleichbar; Erkenntnisse zu älteren Bürgern in Transformationen."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1608,9 +1608,9 @@ const RADAR_FRISTEN = [["2026-09-22", "2026-10-20", "2026-10-20"], [], ["2026-09
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "16.09.2026";
+const NEWS_STAND = "17.09.2026";
 const NEWS = [
-  {titel:"Bewegung senkt Demenzrisiko: AFI startet Serie zur Prävention", datum:"2026-09-10", url:"https://www.monitor-versorgungsforschung.de/news/bewegung-senkt-demenzrisiko-afi-startet-serie-zur-praevention/"},
+  {titel:"Soziale Kontakte und Demenzrisiko: AFI-Serie zur Prävention", datum:"2026-09-16", url:"https://www.monitor-versorgungsforschung.de/news/soziale-kontakte-und-demenzrisiko-afi-serie-zur-praevention/"},
   {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
 ];
 // === NEWS-BLOCK-ENDE ===
@@ -1618,8 +1618,8 @@ const NEWS = [
 // Fremde Pressemeldungen zum Thema — taeglich von scripts/newsfeed.py
 // === PRESSE-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
 const PRESSE = [
+  {titel:"Gesunde Ernährung ist mit langsamerem biologischen Altern verknüpft – doch es gibt nicht DIE „beste“ Diät", datum:"2026-09-16", url:"http://idw-online.de/de/news877508", quelle:"idw"},
   {titel:"Einladung zur Kongress-Pressekonferenz 2026", datum:"2026-09-16", url:"http://idw-online.de/de/news877457", quelle:"idw"},
-  {titel:"Langlebigkeitsgene und Biomarker: Altersbedingte Erkrankungen können durch Gesundheitschecks reduziert werden", datum:"2026-09-16", url:"http://idw-online.de/de/news877449", quelle:"idw"},
 ];
 // === PRESSE-BLOCK-ENDE ===
 
