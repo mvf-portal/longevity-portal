@@ -1528,62 +1528,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "18. Sept. 2026, 06:21 Uhr";
+const SNAP_DATE = "19. Sept. 2026, 06:21 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Aging (Albany NY)", year:"2026", pmid:"42754269",
-    author:"Zhavoronkov A et al.", pubdate:"16.09.2026",
-    added:"17.09.2026",
-    title:"Kontrolltheorie des Alterns beschreibt sichere Dosierung und Sequenzierung geriatrischer Interventionen",
-    sum:"Theoriearbeit entwickelt kontrolltheoretisches Rahmenwerk, das Altern als Verlust sicherer Kontrollierbarkeit definiert und präskriptive Dosierungs- und Sequenzierungsprotokolle für Geroprotektoren vorhersagt.",
-    result:"Biologisches Alter = minimale sichere Kontrollkosten für funktionale Wiederherstellung. Lie-Bracket-Analyse von 5-ODE-Modell zeigt Interventionsreihenfolge entscheidend. 20 falsfizierbare Vorhersagen; Kontrollwert-Reduktion prognostiziert translationalen Erfolg besser als Biomarker-Umkehr.",
-    transfer:"Konzeptuelle, nicht-empirische Arbeit; Übertragbarkeit hängt von Validierung in Patientenkohorten ab"
+    journal:"Kidney Int", year:"2026", pmid:"42760022",
+    author:"Nixon AC", pubdate:"Okt. 2026",
+    added:"18.09.2026",
+    title:"Geriatrisches Assessment bei chronischer Nierenkrankheit und Frailty",
+    sum:"Kommentararbeit zur GOAL-Studie, die überprüfte, ob eine einzige geriatrische Konsultation ältere Patienten mit chronischer Nierenkrankheit und Frailty in ihren Behandlungszielen hilft.",
+    result:"Die Studie fand keine signifikante Verbesserung der Zielerreichung durch ein Konsultationsmodell. Personenzentrierte Versorgungsmodelle außerhalb von Einzelterminen und fortlaufende Neubewertung erfordern weitere Evaluierung.",
+    transfer:"UK-Gesundheitssystem, Design auf europäische Versorgungsstrukturen übertragbar"
   },
   {
-    journal:"Transl Psychiatry", year:"2026", pmid:"42697895",
-    author:"Volkmer S et al.", pubdate:"04.09.2026",
-    added:"05.09.2026",
-    title:"Funktionales Gehirnalter erfasst Heterogenität in Schizophrenien besser als strukturelle Parameter",
-    sum:"Validierungsstudie untersuchte resting-state funktionales Gehirnalter (brain-age gap, BAG) bei Schizophreniespektrum-Störungen in vier Kohorten; innerhalb SSD assoziiert jüngeres Gehirnalter mit schlechterer Kognition.",
-    result:"SSD zeigte group-level BAG-Elevation 0,4–0,6. Innerhalb SSD: jüngeres Gehirnalter korreliert mit niedrigerer Kognition, längerer Krankheitsdauer, höheren neurologischen soft signs (NSS). Über 12–24 Wochen: BAG-Zunahme mit NSS-Motor-Reduktion assoziiert.",
-    transfer:"Deutschland und Schweiz, multizentrisches Design; Biomarker vorhersagewert offen"
+    journal:"Kidney Int", year:"2026", pmid:"42760016",
+    author:"Guha C et al.", pubdate:"Okt. 2026",
+    added:"18.09.2026",
+    title:"Verständnis von Frailty bei Kindern mit chronischer Nierenkrankheit",
+    sum:"Qualitatives Perspektivwerk auf Frailty im Kindesalter bei chronischer Nierenkrankheit – Interpretation als Verlust von Entwicklungspotenzial statt funktionellem Rückgang im Gegensatz zu Frailty bei Älteren.",
+    result:"Zentrale Befunde: (1) Frailty bei Kindern ist (anders als bei Älteren) oft reversibel; (2) Frühe Identifikation durch altersgerechte Screening ermöglicht multidisziplinäre Intervention; (3) Kritisches Fenster zur Maximierung von Wachstum, Resilienz und Lebensfunktion in der Kindheit.",
+    transfer:"Internationale Perspektive auf Frailty-Definition und Versorgungsmodelle, anwendbar auf deutsches Versorgungssystem"
   },
   {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"42753144",
-    author:"Hori N et al.", pubdate:"Sept. 2026",
-    added:"17.09.2026",
-    title:"Computer- und Smartphone-Nutzung reduzieren Frailty bei älteren Erwachsenen",
-    sum:"Querschnittsstudie untersuchte, ob Gesundheitsinformationen über Computer und Smartphone mit Frailty assoziiert sind, gemessen durch Mediation über Health Literacy bei 451 älteren Menschen.",
-    result:"33,8 % nutzten Computer/Smartphone für Gesundheitsinformation. Frailty-Prävalenz 3,5 %. Mediation über Health Literacy signifikant: β = 0,323 (95%-KI: 0,084–0,698). Keine Assoziation mit nur Robustness vs. Präfrailty.",
-    transfer:"Japan, vergleichbar mit deutschem Gesundheitswesen; einfacher Screening-Tool"
+    journal:"Front Neurol", year:"2026", pmid:"42756253",
+    author:"Gu G et al.", pubdate:"03.09.2026",
+    added:"18.09.2026",
+    title:"Frailty-Index für Mortalitätsprognose nach Schlaganfall in kritischer Versorgung",
+    sum:"Verwendung eines laborgestützten Frailty-Index (FI-Lab) zur Vorhersage der 90-Tage-Mortalität nach akutem ischämischen Schlaganfall in der Intensivmedizin mit temporaler Validierung.",
+    result:"3.186 Patienten beim 24-h-Zeitpunkt (559 Todesfälle): FI-Lab verbesserte AUC von 0,774 auf 0,808 (Differenz 0,034, 95% CI 0,022–0,047; p&lt;0,001) und Brier-Score von 0,162 auf 0,152. Beim 72-h-Punkt: 2.918 Patienten (473 Ereignisse), AUC 0,752 → 0,791 mit FI-Lab.",
+    transfer:"MIMIC-IV-Datenbank, generalisierbare ICU-Frailty-Messung, externe Validierung ausstehend"
   },
   {
-    journal:"Cancer Med", year:"2026", pmid:"42745681",
-    author:"Yang X et al.", pubdate:"Sept. 2026",
-    added:"16.09.2026",
-    title:"Frailty und Ernährungsstatus prägen Überleben älter Brustkrebspatientinnen",
-    sum:"Retrospektive Studie entwickelte FINE Index (Frailty, Immunonutrition, TNM-Stadium) zur Vorhersage des Gesamtüberlebens bei 1.621 älteren Brustkrebspatientinnen (training n=1.132, validation n=489).",
-    result:"C-Index 0,767 (training), 0,739 (intern validation), 0,731 (extern validation). 3-, 5-, 10-Jahr-AUC &gt;0,7. Unabhängige Prädiktoren: Alter, PNI, TNM, mFI-5, Endokrintherapie. Besser als TNM allein.",
-    transfer:"China (West-China Hospital), deutsche Kliniken nutzen ähnliche Frailty-Indices"
+    journal:"Mult Scler Relat Disord", year:"2026", pmid:"42664643",
+    author:"Brigo F et al.", pubdate:"28.08.2026",
+    added:"28.08.2026",
+    title:"Krankheitslast bei Multipler Sklerose in Italien 1990–2023",
+    sum:"Analyse der zeitlichen Trends und regionalen Unterschiede in der Morbidität (Behinderung versus Sterblichkeit) von MS in Italien mittels Global-Burden-of-Disease-Daten.",
+    result:"MS-Krankheitslast stieg in allen Regionen; Verschiebung von Sterblichkeit zu Behinderung: YLL/YLD-Ratio sank überall, mit steilstem Anstieg in Sardinien und Süd+Sizilien. Höhere DALY-Raten in allen Regionen bei Frauen und Männern.",
+    transfer:"Italien, vergleichbares europäisches Gesundheitssystem und Versorgungsinfrastruktur"
   },
   {
-    journal:"Nutrients", year:"2026", pmid:"42739007",
-    author:"Hayase M et al.", pubdate:"28.08.2026",
-    added:"15.09.2026",
-    title:"Orale Frailty korreliert mit BMI nur bei Sarkopenie-Risiko",
-    sum:"Querschnittstudie mit 3.829 älteren Japanern untersuchte Assoziation zwischen oraler Frailty und BMI-Kategorien, stratifiziert nach Sarkopenie-Status.",
-    result:"In Sarkopenie-Risikogruppe: Übergewicht OR 1,73 (95%-KI: 1,09–2,73), Untergewicht OR 1,44 (95%-KI: 1,07–1,95). Nicht-Sarkopenie-Gruppe: keine signifikante Assoziation.",
-    transfer:"Japan, 80-Jährige; Frailty-Phenotyp mit praktischem Screening-Tool"
+    journal:"Nat Aging", year:"2026", pmid:"42642518",
+    author:"Li J et al.", pubdate:"25.08.2026",
+    added:"26.08.2026",
+    title:"Geschlechtsspezifische Altersuhren und Stoffwechselveränderungen in Bevölkerungsphenome",
+    sum:"Entwicklung und Validierung von Altersuhren (klinische und biologische Marker) in &gt;100.000 Chinesen (18–98 Jahre) mit Analyse von Geschlechtsunterschieden und modifizierbaren metabolischen Faktoren.",
+    result:"Divergente Alterungstrajektorien Männer vs. Frauen in mittlerem Alter konvergierten später. Akkumulation von Cholesterin, Triglyzeriden, Glukose, Harnsäure und Tumormalkeuren mit dem Altern. High-Fat-Diet-Reversierung zeigte Modifizierbarkeit metabolischer Belastung.",
+    transfer:"China, große Kohorte, metabolische Befunde altersunabhängig übertragbar auf deutsches Setting"
   },
   {
-    journal:"Adv Clin Exp Med", year:"2026", pmid:"42543032",
-    author:"Bejda G et al.", pubdate:"Aug. 2026",
-    added:"02.08.2026",
-    title:"Wahrnehmung des Alterns bei Männern 2013–2023 stabil trotz Gesundheitsbewusstsein",
-    sum:"Vergleichende Querschnittstudie an 2013 und 2023 hospitalisierten Männern aus Polen untersuchte Veränderungen in Alterswahrnehmung und Gesundheitsverhalten mittels standardisierter Instrumente.",
-    result:"80,5 % (2013) vs. 75,9 % (2023) mit psychischen Alterssymptomen. Sexuelle Dysfunktion 65,8 % vs. 63,3 %. Testosterone-Abnahme als Altersmerkmal erwartet. Hohe Selbstwirksamkeit in beiden Kohorten. Unzureichendes Alterswissen bleibt.",
-    transfer:"Polen (Podlaskie), verwandter Sozialversicherungskontext"
+    journal:"Prostate", year:"2026", pmid:"42418725",
+    author:"Falkenbach F et al.", pubdate:"08.07.2026",
+    added:"08.07.2026",
+    title:"Gewonnene Lebensjahre bei zufällig entdecktem Prostatakarzinom",
+    sum:"Berechnung der verlorenen Lebensjahre (YLL) bei zufällig entdecktem Prostatakarzinom mittels SEER-Daten 2004–2021 und Vergleich mit bevölkerungsgestützten Überlebensstudien.",
+    result:"7.324 Patienten; Unterschied zu Bevölkerungskontroll: 0,23 verlorene Jahre (p&lt;0,001). Ohne Behandlung: 0,25 YLL; mit Behandlung: 0,18 YLL. Gleason 8–10 + T1b ohne Therapie: 3,02 YLL; Gleason ≤7 + T1a mit Therapie: keine signifikanten YLL.",
+    transfer:"USA, SEER-Register, Unterschiede in Lebenserwartung und Behandlungsindikationen beachten"
+  },
+  {
+    journal:"J Psychiatr Res", year:"2026", pmid:"42731903",
+    author:"Mullins D et al.", pubdate:"06.05.2026",
+    added:"12.09.2026",
+    title:"Selbstmitgefühl und Selbstwirksamkeit bei Älteren: Lebenqualität und Gesundheitsverhalten",
+    sum:"Querschnittsuntersuchung von 179 Bewohnern der Gemeinde (≥65 Jahre) zur Assoziation von Selbstmitgefühl, Selbstwirksamkeit und posturalem Bewusstsein mit Schmerz, Lebensstilverhalten und Lebensqualität.",
+    result:"Selbstwirksamkeit war stärkster Prädiktor für Lebensqualität (β=0,340, p&lt;0,05) und Lebensstilverhalten (R²=0,21–0,40 aller Subdomänen). Selbstmitgefühl stärkstes Prädiktor für Ernährung (β=0,436). Gesamtmodell Lebensqualität: 61,4% Varianzaufklärung (R²=0,614).",
+    transfer:"Türkei, psychosoziale Faktoren kulturneutral, Messparameter international validiert"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1599,10 +1608,10 @@ const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-09-22"], [], ["2026-10
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "18.09.2026";
+const NEWS_STAND = "19.09.2026";
 const NEWS = [
+  {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
   {titel:"Soziale Kontakte und Demenzrisiko: AFI-Serie zur Prävention", datum:"2026-09-16", url:"https://www.monitor-versorgungsforschung.de/news/soziale-kontakte-und-demenzrisiko-afi-serie-zur-praevention/"},
-  {titel:"Thomas E. Dorner übernimmt Professur für Gerontologie an der MedUni Wien", datum:"2026-07-02", url:"https://www.monitor-versorgungsforschung.de/news/thomas-e-dorner-uebernimmt-professur-fuer-gerontologie-an-der-meduni-wien/"},
 ];
 // === NEWS-BLOCK-ENDE ===
 
