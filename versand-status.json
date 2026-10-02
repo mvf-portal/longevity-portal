@@ -1,31 +1,30 @@
 {
  "hub": "Knowledge-Hub Gesundes Altern & Longevity",
  "domain": "longevity.m-vf.de",
- "datum": "2026-10-01",
+ "datum": "2026-10-02",
  "stand": "terminiert",
- "titel": "MVF Longevity-Newsletter 01.10.2026",
- "betreff": "Neueste Studien - Gesundes Altern und Longevity – 1. Oktober 2026",
- "anzahl": 6,
+ "titel": "MVF Longevity-Newsletter 02.10.2026",
+ "betreff": "Neueste Studien - Gesundes Altern und Longevity – 2. Oktober 2026",
+ "anzahl": 5,
  "pmids": [
-  "42814673",
-  "42814578",
-  "42814029",
-  "42813925",
-  "42811040",
-  "42809783"
+  "42820336",
+  "42818694",
+  "42816844",
+  "42807462",
+  "42641502"
  ],
- "kampagne": "https://us6.admin.mailchimp.com/campaigns/edit?id=9099181",
- "termin_utc": "2026-10-01T08:00:00+00:00",
- "empfaenger": 14,
- "listengroesse": 5906,
+ "kampagne": "https://us6.admin.mailchimp.com/campaigns/edit?id=9099215",
+ "termin_utc": "2026-10-02T08:00:00+00:00",
+ "empfaenger": 15,
+ "listengroesse": 5897,
  "beanstandungen": [],
  "aussortiert": [],
  "pool": {
   "geholt": 220,
-  "bekannt": 139,
-  "pool": 35,
-  "gewaehlt": 6,
-  "neu": 6
+  "bekannt": 141,
+  "pool": 37,
+  "gewaehlt": 5,
+  "neu": 5
  },
  "rubriken": {
   "radar": "1fb569d92d9e8112",
