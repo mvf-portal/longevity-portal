@@ -1529,62 +1529,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "5. Okt. 2026, 06:22 Uhr";
+const SNAP_DATE = "6. Okt. 2026, 06:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Scand J Caring Sci", year:"2026", pmid:"42828510",
-    author:"Nivestam A et al.", pubdate:"Dez. 2026",
+    journal:"Clin Geriatr Med", year:"2026", pmid:"42833807",
+    author:"Cohen CI et al.", pubdate:"Nov. 2026",
+    added:"05.10.2026",
+    title:"Frailty als multidimensionales biopsychosoziales Syndrom: Update zu Konzepten und Versorgung",
+    sum:"Übersichtsartikel fasst die Entwicklung von Frailty-Konzeptualisierung von primär physisch zu einem komplexen, multidimensionalen biopsychosozialen Syndrom zusammen, unter Einbeziehung von Definition, Diagnose-Tools, Epidemiologie, Pathogenese und Versorgungsansätze.",
+    result:"Frailty erweitert von physischer zu physischer, kognitiver, sozialer und psychologischer Frailty. Tools und Assessment-Domains aufgelistet; Epidemiologie, Risikofaktoren, Pathogenese, Prävention und Behandlungs-Frameworks skizziert. Ungelöste Versorgungsfragen benannt. Keine spezifischen Zahlenergebnisse, sondern konzeptueller Überblick über den Wandel im Feld.",
+    transfer:"US-amerikanisches Review; biopsychosoziales Frailty-Modell international etabliert, auf deutsches System direkt anwendbar."
+  },
+  {
+    journal:"Open Heart", year:"2026", pmid:"42833700",
+    author:"Demir OM et al.", pubdate:"05.10.2026",
+    added:"05.10.2026",
+    title:"Aortenstenose im Alter: Weshalb Lebenserwartung keine Indikation zum Verzicht auf Klappenersatz ist",
+    sum:"Konzeptuelles Argument zur Fehlinterpretation von Lebenserwartung bei älteren Patienten mit symptomatischer schwerer Aortenstenose und der Frage, wann Ventilintervention gerechtfertigt ist.",
+    result:"Nationale Sterbe- und Überlebenstafeln: 90-Jähriger in England/Wales hat noch 3,9 Jahre Lebenserwartung; 82-Jähriger lebt länger als 72-Jähriger. 'Schlagrisiko ist kardial, nicht chronologisch' — korreliert mit extravalvulärer Herzschädigung, Frailty und konkurrierenden Erkrankungen, nicht mit Kalenderalter. Stadium, nicht Alter, diskriminiert Outcome. Empfehlung: conditional, komorbidität-adjustierte Prognose statt Alters-Nihilismus.",
+    transfer:"Britisches System; medizinisches Konzept zur Patientenauswahl übertragbar auf deutsches Altensystem."
+  },
+  {
+    journal:"J Cachexia Sarcopenia Muscle", year:"2026", pmid:"42833623",
+    author:"Reparaz-Escudero I et al.", pubdate:"Okt. 2026",
+    added:"05.10.2026",
+    title:"Körperliche Leistung puffert Alterseffekt auf Exekutivfunktion bei Demenzrisiko",
+    sum:"Querschnittsstudie an 920 älteren Spaniern (60–85 Jahre) mit erhöhtem Demenzrisiko untersuchte, ob Ganggeschwindigkeit, Handgriffkraft und Beinmuskelpower den Zusammenhang zwischen Alter und Exekutivfunktion moderieren.",
+    result:"Höhere körperliche Leistung schwächte die Alters-Exekutivfunktion-Assoziation ab. Ganggeschwindigkeit moderierte die Beziehung am konsistentesten; Johnson-Neyman-Analyse zeigte: Alters-Exekutivfunktion-Effekt nur bei Ganggeschwindigkeiten unter 1,68–1,83 m/s messbar (1,0–15,9 % der Teilnehmer). Sex-spezifische Muster: Ganggeschwindigkeit bei TMT-B bei Männern, Stroop-Interferenz bei Frauen moderat.",
+    transfer:"Spanische Demenzrisiko-Kohorte; körperliches Training zur Exekutivschutzung übertragbar auf deutsche Altenpopulation."
+  },
+  {
+    journal:"J Cachexia Sarcopenia Muscle", year:"2026", pmid:"42830734",
+    author:"Huang P et al.", pubdate:"Okt. 2026",
+    added:"05.10.2026",
+    title:"Elektromyographie beim Gehen identifiziert Gebrechlichkeit bei älteren Patienten mit Herzkrankheit",
+    sum:"Fall-Kontroll-Studie mit 150 älteren Patienten mit Herzkrankheit (75 gebrechlich, 75 nicht-gebrechlich) verglich oberflächliche Elektromyographie (sEMG) der Unterschenkelmuskeln beim Gehen und testete deren Diskriminativwert für Frailty.",
+    result:"Gebrechliche waren älter (76,04 vs. 68,55 Jahre), benötigten länger für 10-m-Gang (13,34 vs. 9,44 s), niedrigere POMA-Scores (21,51 vs. 27,59). Gebrechliche zeigten höhere integrierte EMG des linken Semitendinosus (534,4 vs. 455,5 μV·s, p=0,0084) und höhere Aktivierungssequenz-Rang des linken Rectus femoris (p=0,0404). Im Frequenzbereich höhere Medianfrequenz (MF) in 6 Muskeln. Multivariates Modell: MF Rectus femoris rechts (OR 1,067, p=0,038), MF Gastrocnemius rechts (OR 1,054, p=0,019), Aktivierungsrang TA rechts (OR 0,640, p=0,014) unabhängig assoziiert. sEMG+Alter-Modell: AUC 0,8418 (Sensitivität 0,8933, Spezifität 0,6400), Vollmodell mit POMA: AUC 0,8740.",
+    transfer:"Chinesische Klinik-Kohorte; sEMG-Methode und Frailty-Assessments international vergleichbar."
+  },
+  {
+    journal:"Front Endocrinol (Lausanne)", year:"2026", pmid:"42827523",
+    author:"Wang J et al.", pubdate:"18.09.2026",
     added:"03.10.2026",
-    title:"Prävention durch Hausbesuche erfordert sektorenübergreifende Partnerschaften und Unterstützung durch Führungspersonen",
-    sum:"Qualitative Studie (Fokusgruppen mit 16 Fachpersonen aus 5 schwedischen Gemeinden) identifiziert, welche Kooperationspartner Hausbesucher für erfolgreiche Prävention und gesundes Altern mobilisieren.",
-    result:"Hausbesucher arbeiten mit breitem Spektrum von Partnern zusammen: kritisch sind Politiker und Medien; wichtig sind Akteure für sinnvolle Freizeit, Partizipation, lebenslanges Lernen und Gesundheits-/Sozialsektoren. Unterstützung durch Führungspersonen in Schlüsselpositionen steigert Effektivität. Kernempfehlung: gesamtgesellschaftlicher (whole-of-society) Ansatz zur Planung von Präventionsbesuchen.",
-    transfer:"Skandinavien vergleichbar, universelles Gesundheitssystem, übertragbar auf Deutschland."
+    title:"Glukosestoffwechsel und vaskuläres Altern: Prädiktive Güte einfacher Marker im Screening",
+    sum:"Retrospektive Querschnittsstudie mit 555 Personen aus Routineuntersuchungen evaluierte sieben Glukosemetaboliten-Indizes (TyG, CHG, HOMA-IR etc.) und deren Assoziationen mit frühem vaskulärem Altern (EVA, baPWV).",
+    result:"156/555 (28,1%) hatten EVA. Alle sieben Marker unabhängig mit EVA assoziiert nach Confounding-Kontrolle. CHG-Index stärkste Korrelation mit baPWV-Mittelwert (r=0,402, p&lt;0,001). ROC-Analysen: HbA1c höchste AUC (0,690), TyG-Index höchste Sensitivität (70,51%). Bescheidene Diskriminanzleistung über alle Marker. Schluss: TyG und HbA1c als potenzielle kostengünstige Hilfsmarker für EVA-Screening; interne Bootstrap- und externe prospektive Validierung erforderlich.",
+    transfer:"Chinesische Gesundheitsuntersuchungskohorte; Biomarker-Interpretation übertragbar, aber lokale Altersstruktur verschieden."
   },
   {
-    journal:"Aging Cell", year:"2026", pmid:"42823846",
-    author:"Pyrgioti M et al.", pubdate:"Okt. 2026",
-    added:"02.10.2026",
-    title:"Biologische Organaltern und Proteinprofile vorhersagen Mortalitätsrisiko besser als Standard-Biomarker",
-    sum:"Benchmarking von 11 proteomic organ clocks gegen etablierte Altersmarker (epigenetisches Alter, Telomerlänge, Lungenfunktion, Kognition, Neuroimaging) für 16-Jahres-Gesamtmortalität in einer schottischen Kohorte (n=861; 444 Todesfälle).",
-    result:"Unter proteomic clocks: beschleunigte Leber-(HR=1,43), Immun-(HR=1,42) und Herzalterung (HR=1,38) waren stärkste Prädiktor:innen. Aber älteres epigenetisches Alter, kleineres Hirnvolumen, reduzierte Atemfunktion und schlechtere Kognition zeigten stärkere Assoziationen (HR=1,44–1,62). Von 9703 Plasma-Proteinen: GDF15 (HR=1,56), WFDC2 (HR=1,47) und TIMP1 (HR=1,45) führend mit Mortalität assoziiert.",
-    transfer:"UK-Biobank-Kohorte, europäische Altersstruktur, direkt auf Deutschland übertragbar."
+    journal:"Front Public Health", year:"2026", pmid:"42807006",
+    author:"Sun A et al.", pubdate:"14.09.2026",
+    added:"29.09.2026",
+    title:"Arteriosklerose und Sarkopenie: biologisches Alter als Mediator, Gebrechlichkeit als Modifikator",
+    sum:"Prospektive UK-Biobank-Kohortenstudie mit 32.451 Teilnehmern untersuchte, ob Arteriensteifigkeit (ASI) mit Sarkopenie-Risiko assoziiert ist und welche Rolle biologisches Alter und Frailty spielen.",
+    result:"Höchstes vs. niedriges ASI-Tertil: HR 1,38 (95%-KI 1,22–1,55) für wahrscheinliche Sarkopenie, HR 1,56 (95%-KI 1,11–2,18) für Sarkopenie. Biologisches Alter mediierte 8,66 % und 18,85 % dieser Assoziationen. Frailty modifizierte die Magnitude erheblich; Assoziationen überwiegend bei nicht-Gebrechlichen. Erkannter nichtlinearer Zusammenhang bei wahrscheinlicher Sarkopenie, linear bei manifester Sarkopenie.",
+    transfer:"UK Biobank; methodische Validierbarkeit aber Altersdurchschnitt und Sozialstruktur unterscheiden sich von Deutschland."
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42827769",
-    author:"Yang J", pubdate:"18.09.2026",
-    added:"03.10.2026",
-    title:"Krankenversicherung für Ernährungstherapie älterer Krebspatienten determiniert Funktionsfähigkeit",
-    sum:"Narratives Mini-Review analysiert Versicherungsdeckung für medizinische Ernährungstherapie (Medical Nutrition Therapy, MNT) bei älteren Frauen mit Krebs als Politikfrage für Langzeitpflege und Frailty-Equity in USA, Australien und UK.",
-    result:"Untersucht, wie Versicherungsdesign – Leistungsbeschränkungen, Kostenbeteiligung, fragmentierte Autorisierung – den Zugang zu MNT und damit Risiken für Mangelernährung, Sarkopenie und funktionalen Niedergang lenkt. Empfiehlt MNT als essenzielle, risikostratifizierte Komponente von Onkologie und Langzeitpflege, nicht als optionales Wellness-Angebot, mit kontinuierlichen Übergängen zwischen Klinik, Heimat und Pflege.",
-    transfer:"UK-System vergleichbar; Kernaussage zur Finanzierungspolitik auch auf deutsches System übertragbar."
-  },
-  {
-    journal:"J Nutr Health Aging", year:"2026", pmid:"42697165",
-    author:"Du R et al.", pubdate:"04.09.2026",
-    added:"04.09.2026",
-    title:"Gesunde Altersverläufe senken kardiovaskuläres Erkrankungsrisiko",
-    sum:"Studie untersucht die Assoziation zwischen Mustern gesunder Alterung (gemessen mit ATHLOS-Score) und dem Auftreten kardiovaskulärer Erkrankungen in drei europäischen und chinesischen Kohorten.",
-    result:"Verglichen mit der niedrigsten Altersverlauf-Gruppe zeigte die mittlere Gruppe reduziertes CVD-Risiko (SHARE HR=0,89; ELSA HR=0,66; CHARLS HR=0,67), die höchste Gruppe sogar deutlich gesenkt (SHARE HR=0,61; ELSA HR=0,36; CHARLS HR=0,39). Assoziation war konsistent über SES- und Lebensstil-Schichten. Hochwertige Altersverläufe sind kardioprotektiv.",
-    transfer:"SHARE und ELSA europäisch vergleichbar, CHARLS repräsentiert alternatives System."
-  },
-  {
-    journal:"Cir Esp (Engl Ed)", year:"2026", pmid:"42680087",
-    author:"Castellví Valls J et al.", pubdate:"01.09.2026",
-    added:"01.09.2026",
-    title:"Spezialisierte Versorgung fragiler Chirurgiepatienten senkt Morbidität und erhält Lebensqualität",
-    sum:"Evaluiert Effektivität eines integrierten geriatrischen Versorgungsbereichs für fragile Patienten, die operativ behandelt wurden, mit Fokus auf perioperative Morbidität, Mortalität und Funktionsfähigkeit.",
-    result:"Von 413 Patienten (Alter 80 J., 91,8% ASA III-IV) wurden 288 operiert. Perioperative Komplikationen Clavien-Dindo III-V: 9,7%, 30-Tage-Mortalität 3,1%, Wiederaufnahmen 13,2%. Nach 3 Monaten und 1 Jahr waren 82,5% der operierten Patienten in Funktion gleich oder besser als präoperativ. Von 125 nicht operierten Patienten starben 48,3% im 1. Jahr.",
-    transfer:"Spanisch-katalanisches Krankenhaus-System, deutsche Geriatrien vergleichbar organisiert."
-  },
-  {
-    journal:"Sleep Med", year:"2026", pmid:"42628340",
-    author:"Urdanibia-Centelles O et al.", pubdate:"20.08.2026",
-    added:"21.08.2026",
-    title:"Schlaf-Mikrostruktur in der Älterung vorhersagt kognitive Trajektorie über 10 Jahre",
-    sum:"Prospektive Kohortenstudie (n=82 mit ausreichend NREM-Schlaf, Polysomnografie und kognitive Tests 10 Jahre auseinander) untersucht, ob Schlafmerkmale (Spindel, Slow Waves, EEG-Kohärenz) kognitive Alterung und Verfall vorhersagen.",
-    result:"Über 10 Jahre: Verarbeitungsgeschwindigkeit nahm um 6,1 s zu, symbolische Konversion um 2,3 ab. Höhere Schlafeffizienz → besseres kognitives Halten. Erhöhte Wachphase und erhöhtes Arousal → schlechtere Gedächtnis- und Lernleistung. Höhere Fast-Spindle-Amplitude und -Frequenz, Slow-Wave-Charakteristika und N2/REM-Kohärenz korrelierten mit Verarbeitungsgeschwindigkeit, Aufmerksamkeit und globaler Kognition.",
-    transfer:"Dänische Geburtskohorte, nordeuropäisches System vergleichbar."
+    journal:"Clin Geriatr Med", year:"2026", pmid:"42833800",
+    author:"McMahon SK et al.", pubdate:"03.09.2026",
+    added:"05.10.2026",
+    title:"Altersfeindlichkeit als upstream-Determinante: Sturzverhütung durch multilevel Reframing",
+    sum:"Konzeptuelle Analyse aus USA untersucht, wie strukturelle, interpersonelle und individuelle Ebenen von Altersdiskriminierung die Implementierung, Akzeptanz und Wirksamkeit von Sturz-Prävention bei älteren Menschen beeinträchtigen.",
+    result:"Lücke zwischen Evidenz (starke Maßnahmen-Effektivität) und Implementierung getrieben durch Ageismus: Untererfassung, Umweltbarrieren, internalisierte Stigma. Empfehlung für ganzheitlichen, mehrebenenigen Ansatz, der soziale Determinanten (besonders Ageismus) integriert; Systemische, klinische und Kommunikations-Änderungen für bessere Prävention, Engagement, sichere Mobilität. Framework ‚Reframing Aging' zitiert.",
+    transfer:"USA-Perspektive; konzeptueller Rahmen zur Sturzverhütung durch Anti-Ageismus-Ansätze prinzipiell auf deutsches System übertragbar, erfordert aber Systemanpassung."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1595,14 +1604,14 @@ const RADAR_STAND = "05.10.2026";
 const RADAR_URL = "https://wissen.m-vf.de/ausschreibungen.html#longevity";
 const RADAR_EIGENES = 4;
 const RADAR_ZUHAUSE = false;
-const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2027-01-07", "2026-10-19", "2026-10-28"], [], ["2026-10-09", "2026-10-19", "2026-10-19", "2026-10-06", "2026-10-28", "2027-01-07", "2026-10-19", "2026-10-19"], [], ["2026-10-15", "2026-11-19"], [], [], ["2026-10-22", "2026-11-18", "2026-10-30", "2026-11-06", "2026-11-09", "2026-10-26"], [], ["2026-10-09", "2026-10-09", "2026-10-20"], [], ["2026-10-15", "2027-01-07"], ["2026-10-05", "2027-01-07", "2027-01-07", "2027-01-07", "2026-10-07", "2026-11-18", "2026-11-18", "2026-10-14"], ["2026-11-19", "2027-01-07", "2027-01-07", "2027-01-07"], ["2026-10-06"]];
+const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-12-31", "2026-10-28"], [], ["2026-10-06", "2026-10-28", "2026-10-09", "2026-10-19", "2026-10-19", "2027-01-07", "2026-10-19", "2026-10-19"], [], ["2026-10-15"], [], [], ["2026-10-30", "2026-10-22", "2026-11-18", "2026-10-26"], [], ["2026-10-20", "2026-10-09", "2026-10-09"], [], ["2026-10-15", "2026-10-15", "2027-01-07", "2026-10-15", "2026-10-15"], ["2027-01-07", "2027-01-07", "2027-01-07", "2026-10-07", "2026-10-07", "2026-11-18", "2026-11-18", "2026-10-05"], ["2026-11-19", "2027-01-07", "2027-01-07"], ["2026-10-06", "2026-11-09"]];
 // === RADAR-BLOCK-ENDE ===
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "05.10.2026";
+const NEWS_STAND = "06.10.2026";
 const NEWS = [
-  {titel:"Neue Leitung für Demenzzentrum StattHaus Offenbach: Breuer-Stiftung", datum:"2026-09-30", url:"https://www.monitor-versorgungsforschung.de/news/neue-leitung-fuer-demenzzentrum-statthaus-offenbach-breuer-stiftung/"},
+  {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Depressions-Screening mit zwei Fragen: DGG vergibt Förderpreis", datum:"2026-09-28", url:"https://www.monitor-versorgungsforschung.de/news/depressions-screening-mit-zwei-fragen-dgg-vergibt-foerderpreis/"},
 ];
 // === NEWS-BLOCK-ENDE ===
@@ -1610,8 +1619,8 @@ const NEWS = [
 // Fremde Pressemeldungen zum Thema — taeglich von scripts/newsfeed.py
 // === PRESSE-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
 const PRESSE = [
-  {titel:"Erfolgreicher Gemeinschaftskongress: 1.200 Teilnehmende diskutieren Zukunft der Altersmedizin und Alternsforschung", datum:"2026-10-01", url:"http://idw-online.de/de/news878331", quelle:"idw"},
   {titel:"Adipositas: Immunzellen im Fettgewebe brauchen das Enzym ACC1, um die Stoffwechselgesundheit zu erhalten", datum:"2026-09-30", url:"http://idw-online.de/de/news878293", quelle:"idw"},
+  {titel:"„Gesundheit gestalten“ startet mit Rekordbeteiligung", datum:"2026-09-30", url:"http://idw-online.de/de/news878292", quelle:"idw"},
 ];
 // === PRESSE-BLOCK-ENDE ===
 
