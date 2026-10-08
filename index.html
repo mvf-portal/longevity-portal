@@ -1529,62 +1529,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "7. Okt. 2026, 06:00 Uhr";
+const SNAP_DATE = "8. Okt. 2026, 06:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"PLoS One", year:"2026", pmid:"42837339",
-    author:"Zhang Y et al.", pubdate:"06.10.2026",
-    added:"06.10.2026",
-    title:"Soziale Teilhabe vor Schlaganfall assoziiert mit physischer Resilienz nach Schlaganfall",
-    sum:"Querschnittsstudie an 314 Schlaganfallpatienten (≥45 Jahre) in China, die retrospektive soziale Partizipation vor dem Ereignis mit aktueller physischer Resilienz verknüpfte.",
-    result:"Schwache positive Korrelation zwischen sozialer Teilhabe und physischer Resilienz (r=0,295, p&lt;0,001). Pro Punkt höherer sozialer Partizipationsscore war physische Resilienz um 0,725 Punkte höher (95%-KI 0,405–1,044, p&lt;0,001), Effekt über alle Frailty-Level konsistent. Belastende retrospektive Erhebung schließt aber kausale Aussagen aus.",
-    transfer:"China, begrenzt übertragbar; Mechanismus unterscheidet sich von Deutschland"
+    journal:"Psychol Med", year:"2026", pmid:"42839301",
+    author:"Gupta Y et al.", pubdate:"07.10.2026",
+    added:"07.10.2026",
+    title:"Beschleunigtes Hirnaltern bei psychiatrischen und neurodegenerativen Störungen quantifiziert",
+    sum:"Lifespan-MRT-Studie an 25.425 Gesunden (Alter 2–95 Jahre) und 3.530 Patienten mit Schizophrenie, Depression, bipolarer Störung, ADHS, Substanzabhängigkeit, Alzheimer und FTD zur Bestimmung eines Brain-Predicted-Age-Difference (brain-PAD).",
+    result:"Modell erreichte mittleren absoluten Fehler von 5–7 Jahren. Signifikante Erhöhung von Δbrain-PAD bei Schizophrenie (+7,64 Jahre), FTD (+7,61), Alzheimer (+3,24), bipolarer Störung (+2,08), Depression (+2,76) und CSUD (+2,91 Jahre), nicht bei ADHS. Regionale Analysen zeigten gemeinsame und störungsspezifische morphometrische Alterationen. Effekt: Quantitativer Rahmen für Hirnaltern über Störungen hinweg, aber mechanistischer Versorgungsbezug fehlt.",
+    transfer:"Deutschland, Forschung; Mechanismus-Biomarker ohne Behandlungsendpunkt – begrenzte geriatrische Relevanz"
   },
   {
-    journal:"J Gerontol B Psychol Sci Soc Sci", year:"2026", pmid:"42837505",
-    author:"Yang YC et al.", pubdate:"01.10.2026",
-    added:"06.10.2026",
-    title:"Soziale Isolation und Einsamkeit vorhersagend für kognitive Verschlechterung von Jugend bis Alter",
-    sum:"Koordinierte Längsschnittanalyse von drei großen US-Kohorten (Add Health, MIDUS, HRS; n=18.553, Alter 11+), um Zusammenhang zwischen Isolations-/Einsamkeitsmuster und Gedächtnisschwund über Lebensverlauf zu prüfen.",
-    result:"Starke negative Effekte sozialer Isolation in jungem und älterem Erwachsenenalter, Einsamkeit besonders im Alter auf Gedächtnisfunktion. Persistente (nicht nur transiente) Isolation und Einsamkeit waren mit schlechteren Merkfähigkeitswerten verbunden (p&lt;0,05 nach Adjustierung). Effekte blieben signifikant auch nach Anpassung für soziodemografische und Verhaltensfaktoren, zeigten sich aber weniger konsistent als Niveau-Effekte.",
-    transfer:"USA-Kohorten, Mechanismen wahrscheinlich übertragbar; Ausmaß hängt von Sozialstruktur ab"
+    journal:"Eur J Nutr", year:"2026", pmid:"42841976",
+    author:"Nanri H et al.", pubdate:"07.10.2026",
+    added:"07.10.2026",
+    title:"Kohlenhydrat-Fett-Verhältnis positiv mit Gebrechlichkeit assoziiert – Ernährungsempfehlung für Ältere",
+    sum:"Querschnittstudie an 5.679 älteren Japanern (≥65 Jahre) zur Assoziation des Kohlenhydrat-zu-Fett-Energieverh ältnisses (CFr) mit umfassender Gebrechlichkeit (Kihon-Checklist-Score ≥7) über multivariable logistische Regression mit Stratifizierung nach Proteinzufuhr.",
+    result:"30,0 % (1.705/5.679) zeigten umfassende Gebrechlichkeit. Adjustierte Odds-Ratios für höchstes CFr-Quartil vs. niedrigstes: 1,92 (95%-KI 1,55–2,38, p&lt;0,001). Dose-Wirkung-Beziehung linear über alle Geschlechter und Proteinzufuhr-Tertile, ohne Effektmodifikation. Höhere Kohlenhydrate bei moderater Fettreduktion assoziiert mit erhöhter Gebrechlichkeitsprä valenz, unabhängig von Proteinmenge.",
+    transfer:"Japan, Ernährungsepidemiologie; Qualität beschränkt auf Querschnitt ohne Kausalität"
   },
   {
-    journal:"J Gerontol B Psychol Sci Soc Sci", year:"2026", pmid:"42837509",
-    author:"Gaydosh L et al.", pubdate:"01.10.2026",
-    added:"06.10.2026",
-    title:"Kohorte der Altern-Studie Add Health in mittlerem Alter mit schlechterer Gesundheit als Vorgängergenerationen",
-    sum:"Add Health Welle VI (Durchschnittsalter 44 Jahre, n=11.979) und Vergleich mit NHANES-Kohorten: Analyse von Altersmustern in Allgemeingesundheit, psychischer Gesundheit, Gesundheitsverhalten und chronischen Erkrankungen über Lebensabschnitte.",
-    result:"Add Health zeigte beim Alterungsübergang in Mittelalter Verschlechterung in Allgemeingesundheit, psychischer Gesundheit und chronischen Erkrankungen, während Gesundheitsverhalten sich verbesserte. Im Vergleich zu NHANES-Kohorten: Add Health-Kohorte hat schlechtere Gesundheit als ältere Kohorten und teilweise schlechter als eigene Geburtskohorte zu früheren Zeitpunkten. Bildungsgradienten sind relativ stabil, mit einigen Anzeichen von Zunahme über Zeit.",
-    transfer:"USA, begrenzt auf US-Versorgungskontext; Trends sozioökonomischer Disparitäten aber universal relevant"
+    journal:"Ulus Travma Acil Cerrahi Derg", year:"2026", pmid:"42841891",
+    author:"Ozdemir E et al.", pubdate:"Okt. 2026",
+    added:"07.10.2026",
+    title:"Gebrechlichkeit vorhersagt prolongierte Hospitalisierung und schlechtere Outcomes nach Quadrizeps-Sehnenriss",
+    sum:"Retrospektive multizentrische Kohortenstudie an 67 älteren Patienten (Mittelwert 57,5 Jahre) mit akutem Quadrizeps-Sehnenriss, bewertet mit modifiziertem Frailty Index (mFI-5) und Clinical Frailty Scale (CFS) zur Vorhersage von Aufenthaltsdauer und funktionaler Erholung (Lysholm-Score ≥12 Monate).",
+    result:"Höhere mFI-5-Scores waren mit prolongierter Hospitalisierungsdauer assoziiert (r=0,404, p&lt;0,001); jeder 1-Punkt-Anstieg sagte 1,26 Tage längeren Aufenthalt voraus (95%-KI 0,61–1,90; R²=0,337). CFS war unabhängig mit schlechterer Erholung verbunden: jeder 1-Punkt-Anstieg entsprach 4,32-Punkt-Reduktion im Lysholm-Score (95%-KI –6,98 bis –1,67; R²=0,163). Höchstes Risiko-Quartil zeigte 16,7× erhöhtes Mortalitätsrisiko.",
+    transfer:"Türkei, Orthopädie-Versorgung vergleichbar; geriatrisches Assessment umsetzbar"
   },
   {
-    journal:"Transpl Int", year:"2026", pmid:"42835482",
-    author:"Beerli N et al.", pubdate:"21.09.2026",
-    added:"06.10.2026",
-    title:"Nierentransplantation verbessert Gebrechlichkeit und kognitive Funktion über zwei Jahre",
-    sum:"Prospektive multizentrische Schweizer Kohortenstudie mit 230 Nierentransplantatierten, die Frailty und milde kognitive Beeinträchtigung (MCI) vor und nach Transplantation über bis zu zwei Jahre verfolgten.",
-    result:"Frailty sank von 8,3% vor Transplantation auf unter 2% im Follow-up, Präfrailty von 54,3% auf 27,6% nach zwei Jahren; MCI-Prävalenz fiel von 42,6% auf 31,3%. Bessere kognitive Funktion vorhersagte niedrigere nachfolgende Frailty, aber nicht umgekehrt. Das Ergebnis zeigt, dass Nierenverpflanzung funktionelle Gebrechlichkeit deutlich reduziert.",
-    transfer:"Schweizer Universitätskliniken, vergleichbares deutschsprachiges Versorgungssystem"
+    journal:"Recenti Prog Med", year:"2026", pmid:"42831708",
+    author:"Tenace D et al.", pubdate:"Okt. 2026",
+    added:"05.10.2026",
+    title:"Dehnen verbessert Gelenkbeweglichkeit älterer Menschen, aber nicht isoliert funktionale Leistung",
+    sum:"Narrative Literaturübersicht (PubMed, Scopus, Cochrane) zu Effektivität statischen, dynamischen Dehnens und propriozeptiver neuromuskulärer Fazilitation auf Beweglichkeit, Steifheit, Schmerz und funktionale Autonomie bei älteren Menschen.",
+    result:"Evidenz für Dehnen zeigt konsistente Gewinne bei Gelenkbeweglichkeit und Flexibilität; einige Studien berichten günstige Effekte auf wahrgenommene Steifheit und muskuloskelettale Schmerzen. Verbesserungen der Gesamtfunktion, Balance und Sturzprävention sind jedoch weniger konsistent. Fazit: Dehnen ist kein Monotherapie-Ansatz, sondern komplementäre Komponente in Multikomponenten-Programmen, am wirksamsten für Mobilitätsgewinne bei Menschen mit Ausgangsfunktionsverlust.",
+    transfer:"Italien, Evidenzlage europäisch dominiert, methodisch konsistent"
   },
   {
-    journal:"Transpl Int", year:"2026", pmid:"42835482",
-    author:"Beerli N et al.", pubdate:"21.09.2026",
-    added:"06.10.2026",
-    title:"Geriatrisches Assessment vor Klinikaufnahme reduziert Frailty nach Organtransplantation",
-    sum:"Schweizer prospektive Kohortenstudie zum Verlauf von Physical-Frailty und MCI bei Nierentransplantatierten, mit Assessment präoperativ und über 24 Monate.",
-    result:"Präoperative Frailty-Prävalenz 8,3%, nach zwei Jahren &lt;2%; bessere frühe kognitive Funktion vorhersagte niedrigere spätere Frailty (p&lt;0,05). Frailty zeigte sich dynamischer als Kognition, beide sollten zur Risikostratifikation routinemäßig erfasst werden.",
-    transfer:"Schweiz, DACH-Länder, vergleichbare Universitätskliniken"
+    journal:"Geriatr Psychol Neuropsychiatr Vieil", year:"2026", pmid:"42842818",
+    author:"Annweiler C et al.", pubdate:"01.09.2026",
+    added:"07.10.2026",
+    title:"Hitzewellen gefährden geriatrische Versorgungspfade – Stresstest zeigt Systemfragmentierung",
+    sum:"Beobachtungsstudie zu Auswirkungen der Hitzewelle Juni/Juli 2026 auf akute geriatrische Stationen und Rehabilitationseinheiten in Frankreich mit Erfassung von Raumtemperaturen, Kapazitätsbelastung und organisatorischen Anpassungen.",
+    result:"45,5 % der Stationen meldeten zunächst unerträgliche Patientenzimmertemperaturen, 88,4 % Personalermüdung. Eine Woche später besserten sich die Akutsymptome (tolerable Temperaturen 53,6 % → 100 %, p&lt;0,001; Notaufnahmebelastung 91,1 % → 63,3 %, p&lt;0,001), doch die Downstream-Kapazität blieb kritisch: 87,5 % der Stationen meldeten unzureichende Rehabilitationskapazität, die sich nicht verbesserte (86,7 %, p=0,903). Gekürzte Räume und Geräte reduzierten Hitzekomplikationen. Das Hitzeereignis offenbarte ein bereits fragiles System mit persistenter Versorgungsfragmentierung.",
+    transfer:"Frankreich, deutsche Versorgung vergleichbar gefährdet; Klimaresilenz Gesundheitswesen zentrale Strategie"
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42836140",
-    author:"Wang S et al.", pubdate:"21.09.2026",
-    added:"06.10.2026",
-    title:"Gemeinschaftsgaststätten für Senioren fördern Nutzung durch Awareness-Partizipation-Kaufverhalten-Weitersagen-Sequenz",
-    sum:"Querschnittsstudie in Nanjing (China) mit 1.568 älteren Erwachsenen (≥60 Jahre) zur Nutzung von Seniorengaststätten, strukturelle Gleichungsmodellierung zur Assoziation von Bewusstsein, Interaktion, Kauf und Weitergabe.",
-    result:"Strukturmodell zeigte signifikante sequenziell positive Assoziationen: Awareness→Interaction (p&lt;0,001), Interaction→Purchase (p&lt;0,001), Purchase→Sharing (p&lt;0,001). Alle Pfade statistisch signifikant, gutes Modellfit. Querschnittdesign erlaubt aber keine Kausalaussagen – hilfreich aber für Serviceoptimierung.",
-    transfer:"China, teilweise übertragbar; Versorgungskontext unterscheidet sich von Deutschland"
+    journal:"Soc Sci Med", year:"2026", pmid:"42700481",
+    author:"Köhler T et al.", pubdate:"29.08.2026",
+    added:"05.09.2026",
+    title:"Resilienz ist häufige, aber nicht universelle Reaktion auf funktionalen Gesundheitsverlust im Alter",
+    sum:"Growth-Mixture-Modelling-Analyse von SHARE-Daten zu Anpassungstrajektorien der Lebensqualität nach Beginn von Aktivitätseinschränkungen bei älteren Menschen (Match-Kontroll-Design für Kausalitätsattribution).",
+    result:"Bei Lebenszufriedenheit und Lebensqualität entstanden 3 Trajektorien mit Resilienz als Modalantwort (86,5 % bzw. 78,7 %); bei depressiven Symptomen 4 Trajektorien mit gleichen Anteilen resilient und chronisch (je 43,4 %). Stärkere Behinderung sagte Erholungstrajektorie voraus, vorbestehende Limitations und sozioökonomische Benachteiligung waren mit chronischen Pfaden assoziiert. Befund: Resilienz ist verbreitet, aber nicht uniform; multidimensionale Outcomes essentiell.",
+    transfer:"Europa (SHARE), deutsches Sozialversicherungssystem direkt übertragbar"
+  },
+  {
+    journal:"Curr Aging Sci", year:"2026", pmid:"42841459",
+    author:"Chiara B et al.", pubdate:"2026",
+    added:"07.10.2026",
+    title:"Biofeedback reduziert Schwindel-Beeinträchtigung im Alltag älterer Menschen",
+    sum:"Randomisierte kontrollierte Studie zur Wirksamkeit von Biofeedback-Training (Procomp Infinity) bei 190 älteren Ambulanzpatienten (&gt;65 Jahre) mit Schwindel über 3 Monate ohne Auffrischungssitzungen.",
+    result:"Repeated-ANOVA zeigte signifikante Reduktion der Dizziness-Handicap-Inventory(DHI)-Scores nach 3 Monaten in der Biofeedback-Gruppe; Patienten lernten durch Muskelentspannung und Atemkontrolle, die Symptome zu bewältigen und erlangten Selbstwirksamkeit. Die Intervention reduzierte die funktionalen Auswirkungen von Schwindel und Instabilität im alltäglichen Leben substanziell.",
+    transfer:"Italien, Methode kulturübergreifend übertragbar; Effektgröße in Abstract nicht quantifiziert"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1600,7 +1609,7 @@ const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-12-31", "2026-10-28"],
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "07.10.2026";
+const NEWS_STAND = "08.10.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Depressions-Screening mit zwei Fragen: DGG vergibt Förderpreis", datum:"2026-09-28", url:"https://www.monitor-versorgungsforschung.de/news/depressions-screening-mit-zwei-fragen-dgg-vergibt-foerderpreis/"},
