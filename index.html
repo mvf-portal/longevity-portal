@@ -1919,62 +1919,17 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "17. Okt. 2026, 06:22 Uhr";
+const SNAP_DATE = "18. Okt. 2026, 06:22 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Aging Male", year:"2026", pmid:"42886648",
-    author:"Zheng J et al.", pubdate:"31.12.2026",
-    added:"16.10.2026",
-    title:"Vitamin-D-Mangel und Frailty-Risiko im Alter: Assoziationen in USA-Daten",
-    sum:"Querschnittanalyse von 8.064 US-Amerikanern über 40 Jahren, untersucht die Beziehung zwischen Serum-Vitamin-D und Gebrechlichkeit mit einem 49-Item-Frailty-Index.",
-    result:"Vitamin-D-Mangel (&lt;25 nmol/L) war mit erhöhtem Frailty-Risiko assoziiert (OR 2,15, 95% CI 1,42–3,25), während Insuffizienz nicht signifikant war (OR 1,15, 95% CI 0,95–1,38). Gebrechlichkeitsprävalenz: Mangel 55,9%, Insuffizienz 42,9%, ausreichend 37,2%. U-förmiger Zusammenhang zwischen Vitamin-D und Frailty-Index.",
-    transfer:"USA-Daten, aber Assoziationsfrage unabhängig von Gesundheitssystem, große bevölkerungsrepräsentative Stichprobe."
-  },
-  {
-    journal:"PLoS One", year:"2026", pmid:"42886645",
-    author:"Yang JE et al.", pubdate:"16.10.2026",
-    added:"16.10.2026",
-    title:"Mundgesundheit und Gebrechlichkeit im Alter: Geschlechtsunterschiede",
-    sum:"Südkoreanische Querschnittstudie mit 3.729 älteren Menschen (≥65 Jahre) untersucht Assoziationen zwischen Mundgesundheit und Frailty-Status (robust, Prä-Frailty, Frailty).",
-    result:"16% waren gebrechlich, 84% nicht gebrechlich. Zahnlosigkeit ohne Zahnersatz war stärkster Faktor (Frauen: OR 3,76; Männer: OR 2,95). Zahnlosigkeit, Kau-/Schluckstörungen und Zahnschmerzen waren signifikant mit Frailty assoziiert. Geschlechtsspezifische Unterschiede: Zahnempfindlichkeit erhöhte Frailty-Risiko bei Frauen (OR 1,82), senkte es bei Männern (OR 0,85).",
-    transfer:"Korea, Datenqualität hoch, aber Übertragbarkeit auf Deutschland eingeschränkt durch unterschiedliche Zahnversorgung und Mundgesundheit."
-  },
-  {
-    journal:"J Gerontol A Biol Sci Med Sci", year:"2026", pmid:"42720597",
-    author:"Kyrönlahti S et al.", pubdate:"06.10.2026",
-    added:"10.09.2026",
-    title:"Funktionsfähigkeit am Lebensende: Drei Verlaufsmuster in den letzten Lebensjahren",
-    sum:"Schwedische Längsschnittstudie mit 2.294 älteren Menschen (62% Frauen, Durchschnittsalter 89,8 Jahre), die verfolgte, wie sich Alltagsfähigkeiten (ADL-Einschränkungen) zeitlich vor dem Tod entwickelten.",
-    result:"53% zeigten durchgehend niedrige ADL-Einschränkungen bis zum Tod, 36% einen flachen Anstieg und 11% einen steilen Anstieg. Frauen, niedriger gebildete Personen und älter Verstorbene hatten häufiger zunehmende Behinderung. Kognitives Defizit war mit steiler Verschlechterung assoziiert. Für die meisten blieb die funktionale Fähigkeit bis 2 Jahre vor dem Tod erhalten.",
-    transfer:"Schwedische Daten, vergleichbare nordeuropäische Altersstruktur und Versorgungssystem."
-  },
-  {
-    journal:"Nutrients", year:"2026", pmid:"42884640",
-    author:"Khalaf H et al.", pubdate:"27.09.2026",
-    added:"16.10.2026",
-    title:"Ernährungsinterventionen bei Mangelernährung, Sarkopenie und Frailty im Alter",
-    sum:"Narrative Übersichtsarbeit zur Evidenz für Ernährungsmassnahmen (Food First, Lebensmittelfortifikation, orale Nahrungsergänzungen) bei älteren Menschen und Pflegeheimbewohnern.",
-    result:"Lebensmittelfortifikation erhöht effektiv Energie- und Proteinaufnahme; orale Nahrungsergänzungen (ONS) verbessern BMI und Alltagsfunktion und senken Hospitalisierungsraten. Multimodale Ansätze (Ernährung plus Bewegung) sind wirksamer; geringe Therapieadhärenz bleibt Barriere. Food-First-Ansatz in Kombination mit ONS zeigt beste Ergebnisse.",
-    transfer:"UK/Europa-Daten, transferierbar auf deutschsprachige Pflegeheimversorgung."
-  },
-  {
-    journal:"J Affect Disord", year:"2027", pmid:"42785391",
-    author:"Kang J et al.", pubdate:"01.01.2027",
-    added:"24.09.2026",
-    title:"Alltagsmessung psychischer Symptome im älteren Alter: Machbarkeit und Prädiktoren",
-    sum:"US-amerikanische Studie mit 64 älteren Erwachsenen (Durchschnittsalter 63,4 Jahre; 31 gesund, 33 mit Depression), die zweimal täglich über ~10 Wochen Symptome via Smartphone berichteten.",
-    result:"Gesamtausfallquote 76% (SD 22,1). Gesunde Teilnehmer zeigten höhere Compliance (81% vs. 71% bei Depression, p=0,04). Schnellere Antwortlatenz sagte höhere Adhärenz voraus. Rasche affektive Schwankungen am Anfang waren Prädiktoren niedriger Adhärenz. EMA ist mit Anpassungen im späteren Alter durchführbar.",
-    transfer:"USA, Methode unabhängig von Gesundheitssystem, aber Adhärenz-Faktoren in älteren Erwachsenen noch wenig erforscht."
-  },
-  {
-    journal:"Nutrients", year:"2026", pmid:"42884586",
-    author:"Lee H et al.", pubdate:"23.09.2026",
-    added:"16.10.2026",
-    title:"Hochverarbeitete Lebensmittel und Frailty im Alter: Assoziationen in Südkorea",
-    sum:"Querschnittanalyse von 9.861 südkoreanischen Älteren (≥65 Jahre) untersucht die Beziehung zwischen Anteil hochverarbeiteter Lebensmittel (UPF) an der Gesamtenergieaufnahme und Gebrechlichkeit.",
-    result:"Höchstes Quartil UPF-Energieanteil zeigte 31% höheres Frailty-Risiko als niedrigstes (OR 1,31, 95% CI 1,08–1,59, p=0,002). Besondere Assoziation mit niedriger körperlicher Aktivität (OR 1,31, 95% CI 1,13–1,51). Linearer Dosis-Wirkungs-Zusammenhang (keine Nicht-Linearität, p=0,8).",
-    transfer:"Korea, Ernährungsassoziationen sind kulturabhängig und weniger auf Deutschland übertragbar als mediterrane oder nordeuropäische Diätmuster."
+    journal:"Front Public Health", year:"2026", pmid:"42891303",
+    author:"Li J et al.", pubdate:"02.10.2026",
+    added:"17.10.2026",
+    title:"Krafttraining senkt Gebrechlichkeit im Alter stärker als Gehen oder Tai Chi",
+    sum:"Systematische Übersicht mit Metaanalyse von randomisierten Studien zu Krafttraining, Gehen und Tai Chi bei älteren Menschen mit Gebrechlichkeit (Frailty).",
+    result:"Bei 1.361 Teilnehmern zeigte Krafttraining eine signifikante Reduktion von Gebrechlichkeit (SMD = -0,78, 95%-KI -1,22 bis -0,35), während Gehen und Tai Chi keine statistisch signifikanten Effekte aufwiesen. Heterogenität war erheblich (I² = 88%), und optimale Dosierungsempfehlungen konnten nicht abgeleitet werden.",
+    transfer:"Internationale Evidenz, direkt auf deutsches Versorgungssystem übertragbar"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1990,7 +1945,7 @@ const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-12-31"], [], ["2026-10
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "17.10.2026";
+const NEWS_STAND = "18.10.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
