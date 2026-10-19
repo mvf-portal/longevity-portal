@@ -1919,17 +1919,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "18. Okt. 2026, 06:22 Uhr";
+const SNAP_DATE = "19. Okt. 2026, 06:22 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Front Public Health", year:"2026", pmid:"42891303",
-    author:"Li J et al.", pubdate:"02.10.2026",
+    journal:"Medicine (Baltimore)", year:"2026", pmid:"42888628",
+    author:"Cheng Y et al.", pubdate:"16.10.2026",
     added:"17.10.2026",
-    title:"Krafttraining senkt Gebrechlichkeit im Alter stärker als Gehen oder Tai Chi",
-    sum:"Systematische Übersicht mit Metaanalyse von randomisierten Studien zu Krafttraining, Gehen und Tai Chi bei älteren Menschen mit Gebrechlichkeit (Frailty).",
-    result:"Bei 1.361 Teilnehmern zeigte Krafttraining eine signifikante Reduktion von Gebrechlichkeit (SMD = -0,78, 95%-KI -1,22 bis -0,35), während Gehen und Tai Chi keine statistisch signifikanten Effekte aufwiesen. Heterogenität war erheblich (I² = 88%), und optimale Dosierungsempfehlungen konnten nicht abgeleitet werden.",
-    transfer:"Internationale Evidenz, direkt auf deutsches Versorgungssystem übertragbar"
+    title:"Frailty mit multilokulalen Schmerzen vergesellschaftet, teilweise durch Depression vermittelt",
+    sum:"Querschnittsanalyse von 5281 Personen ≥45 Jahre aus China Health and Retirement Longitudinal Study zu Assoziation zwischen korrigiertem modifiziertem Frailty-Index (CMFI) und chronischen Schmerzen mit Mediationsanalyse.",
+    result:"Höherer CMFI stark mit erhöhtem Schmerz-Risiko assoziiert: Höchstes vs. niedrigstes CMFI-Quartil zeigte 11,6-fach erhöhtes Risiko für Kreuzschmerzen, 17,0-fach für Multisite-Schmerzen und 11,5-fach höhere Schmerzlokalisationen. Depression vermittelte ca. 30% dieser Assoziationen. Unterschiede nach Alter, Bildung und Wohnort.",
+    transfer:"China, vergleichbare Altersstruktur – Befunde aber nicht direkt auf deutsche Sozialversicherung übertragbar"
+  },
+  {
+    journal:"Medicine (Baltimore)", year:"2026", pmid:"42888560",
+    author:"Yan W et al.", pubdate:"16.10.2026",
+    added:"17.10.2026",
+    title:"Höhere Frailty mit schlechterer Herzgesundheit: Dosis-Wirkungs-Beziehung in US-Stichprobe",
+    sum:"Querschnittsanalyse von 8015 Erwachsenen ≥20 Jahre aus NHANES 2007–2018 zur Assoziation zwischen Frailty-Index und kardiovaskulärer Gesundheit nach American Heart Association Definition.",
+    result:"Höhere Frailty-Niveaus linear mit erhöhtem Risiko schlechter kardiovaskulärer Gesundheit assoziiert (dosisabhängig). Serum-25(OH)D-Level unabhängig invers mit schlechter kardiovaskulärer Gesundheit assoziiert. Keine statistisch signifikante multiplikative Interaktion zwischen Frailty und 25(OH)D. Assoziationen variierten nach Geschlecht und 25(OH)D-Status.",
+    transfer:"USA, aber Frailty-Kardiovaskularität-Assoziation prinzipiell übertragbar"
+  },
+  {
+    journal:"Aging Clin Exp Res", year:"2026", pmid:"42875631",
+    author:"Kudratova Z et al.", pubdate:"15.10.2026",
+    added:"14.10.2026",
+    title:"Handgriffkraft und Stuhlaufstehen als Functional-Indikatoren: Methodische Vorbehalte bei multizentrischen Studien",
+    sum:"Methodologischer Kommentar zu Prospektivanalyse über kumulative Handgriffkraft und erfolgreiches Altern in drei internationalen Kohorten, kritische Bewertung von Studiendesign und Vergleichbarkeit.",
+    result:"Handgriffkraft erfasst nicht alle funktionellen Determinanten erfolgreiches Alterns. Selbstberichtete chronische Erkrankungen verursachen Klassifizierungsfehler (unterschiedlich nach Sozioökonomie). Zwei-Phasen-Temporaldesign adressiert Selektionsbias und Kohortengrenzen unzureichend. Kohorten-relatives kognitives Schwellenwert gefährdet Bevölkerungsvergleichbarkeit. Empfehlung: stärkere methodologische Reflexion und Standardisierung.",
+    transfer:"Internationale Kohorten (USA, Asien, Europa), Methoden-Review – Design-Kritik grundsätzlich relevant"
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42890831",
+    author:"Du X et al.", pubdate:"02.10.2026",
+    added:"17.10.2026",
+    title:"Elektronischer Frailty-Index sagt Sterblichkeit bei älteren Menschen voraus",
+    sum:"Systematische Übersichtsarbeit und Meta-Analyse von 12 Studien (13 Kohorten mit 11 Hazard-Ratio- und 2 Odds-Ratio-Analysen) zur Assoziation zwischen elektronischem Frailty-Index (eFI) und Mortalität.",
+    result:"Dosisabhängige Assoziation: Milde Frailty (HR 1,81), moderate Frailty (HR 2,95) und schwere Frailty (HR 4,41) gegenüber nicht-frailer Gruppe. Erhebliche Heterogenität zwischen Studien je nach Nachbeobachtungsdauer, eFI-Schwellenwert und Studienumfeld. eFI scheint nützlich für Frailty-Screening und Risikostratifizierung, aber Ergebnisse erfordern vorsichtige Interpretation.",
+    transfer:"UK Biobank und andere, elektronische Gesundheitsregisterdaten wie in Deutschland verfügbar"
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42890626",
+    author:"Zhou Y et al.", pubdate:"02.10.2026",
+    added:"17.10.2026",
+    title:"Orale Frailty bei älteren Menschen mit Multimorbidität: Prävalenz 71,2%, verknüpft mit körperlicher Frailty",
+    sum:"Querschnittsstudie von 393 Personen ≥60 Jahre mit ≥1 chronischer Erkrankung in Nordostchina zur Prävalenz oraler Frailty mittels Oral Frailty Index-8 (OFI-8) und assoziierten Faktoren.",
+    result:"71,2% (n=280) orale Frailty (OFI-8: 5,61±2,58). Häufigste Items: Schwierigkeiten mit harter Nahrung 62,3%, Verschlucken 48,6%, Mundtrockenheit 45,8%. Unabhängig assoziiert: höheres Alter, weibliches Geschlecht, niedriges Einkommen, niedriger/hoher BMI, Alkoholkonsum, körperliche Frailty, Schlafstörung, negative Altersattitude, ≥3 Erkrankungen, Diabetes (alle p&lt;0,05).",
+    transfer:"China, ethnische Minderheit – überwiegend strukturelle Befunde, Screening-Befund direkt relevant"
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"42891966",
+    author:"Kravvariti E et al.", pubdate:"03.08.2026",
+    added:"18.10.2026",
+    title:"Geriatrische Schulungslücken in ambulanter Versorgung: Bedarfsanalyse aus 41 europäischen Ländern",
+    sum:"Querschnittsbefragung von 2380 Fachkräften (Ärzte, Pflege, Diätassistenten, Therapeuten) aus Ambulanzen und häuslichen Diensten zur Selbsteinschätzung ihres Wissensstands bei 33 geriatrischen Themen.",
+    result:"Erhebliche Wissenslücken in allen Berufsgruppen: Umfassendes geriatrisches Assessment, Frailty-Screening, Polymedikation und Deprescribing, Sarkopenie, Dysphagie sowie Verhaltens- und Depressionssymptome bei Demenz zählten zu den Top-Defiziten. Profession-spezifische Prioritäten: Kommunikation und Vorsorgeverfügungen für Pflege, Deprescribing für Ärzte und Apotheker, Ernährungsassessment für Diätassistenten.",
+    transfer:"41 europäische Länder, direkt relevant für deutschsprachigen Raum und Versorgungsstrukturen"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -1945,7 +1990,7 @@ const RADAR_FRISTEN = [["2026-10-20", "2026-10-20", "2026-12-31"], [], ["2026-10
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "18.10.2026";
+const NEWS_STAND = "19.10.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
