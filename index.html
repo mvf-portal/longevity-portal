@@ -2092,62 +2092,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "25. Okt. 2026, 05:01 Uhr";
+const SNAP_DATE = "26. Okt. 2026, 05:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"NEJM Catal Innov Care Deliv", year:"2026", pmid:"42904679",
-    author:"Amir O et al.", pubdate:"21.10.2026",
-    added:"22.10.2026",
-    title:"Geriatrische Versorgung: Risikogeschichtetes Drei-Ebenen-Modell statt Checkliste",
-    sum:"Beschreibt ein risikostratifiziertes Versorgungsmodell für ältere Klinikpatienten, das die 4Ms (Mobility, Mentation, Medication, What Matters) allen Über-65-Jährigen anbietet und dann Hochrisiko-Patienten zu spezialisierten geriatrischen Teams leitet.",
-    result:"Das Modell unterscheidet: (1) universelle 4Ms-Prozesse für alle älteren Patienten, (2) spezialisierte Protokolle (z. B. Hüftfraktur) durch Generalisten mit Geriater-Aufsicht, (3) intensive Comanagement-Modelle durch spezialisierte geriatrische Teams. Dies vermeidet Ressourcen-Ineffizienz und verbessert die Ergebnisse durch angepasste Intensität.",
-    transfer:"USA, CMS-System; Risikostratifizierung und Strukturmodell sind auf deutsches Klinikmanagement übertragbar"
-  },
-  {
-    journal:"NEJM Catal Innov Care Deliv", year:"2026", pmid:"42904676",
-    author:"Wick K et al.", pubdate:"21.10.2026",
-    added:"22.10.2026",
-    title:"Mobile interprofessionelle 4Ms-Versorgung für ländliche ältere Menschen",
-    sum:"Beschreibt ein mobiles interprofessionelles Klinik-Modell (MobileMOC), das die 4Ms in ländlichen Regionen über Klinikbesuche, Senior-Zentren und Lehre erbringt.",
-    result:"In den ersten 6 Monaten 2026 wurden 182 Patientenkontakte erbracht, 129 Patienten (45 % älter als 65 Jahre) erreicht, 1.579 Screenings durchgeführt, 119 Fachüberweisungen generiert und 710 Stunden klinische Lehre geleistet. Das Modell zeigt Machbarkeit, offenbart aber Messlücken und Finanzierungsgaps.",
-    transfer:"USA; Struktur und Interprofessionalität sind auf deutsche ländliche Regionen mit Fachkräftemangel übertragbar"
-  },
-  {
-    journal:"Front Public Health", year:"2026", pmid:"42908591",
-    author:"Soni N et al.", pubdate:"07.10.2026",
-    added:"23.10.2026",
-    title:"Gesundheitsausgaben älterer Menschen treiben Haushalte in Armut: Versicherungslücken in Indien",
-    sum:"Untersucht wurde, wie Eigenleistungen für Gesundheit Haushalte mit älteren Menschen in Indien in Armut treiben und welche Faktoren dieses Risiko verschärfen oder puffern.",
-    result:"Längere Krankenhausaufenthalte, größere Haushalte, Kaste und private Gesundheitsversorgung erhöhen die Armutsquote erheblich. Krankenversicherung und Bildung reduzieren das Risiko. Trotz öffentlicher Programme ist die Abdeckung unzureichend und ungleich, weshalb ältere Menschen finanziell ungeschützt bleiben.",
-    transfer:"Indien; zeigt Versorgungslücken in Ländern ohne Vollversicherung; für Deutschland relevant als Warnung vor Privatisierung von Altenversorgung"
-  },
-  {
-    journal:"Exp Gerontol", year:"2026", pmid:"42822552",
-    author:"Di Maria E et al.", pubdate:"01.10.2026",
-    added:"01.10.2026",
-    title:"Hundertjährige in Genua: Kohortenstudie zu kognitiver Gesundheit im höchsten Alter",
-    sum:"Italienische multidisziplinäre Kohorte von 88 Hundertjährigen (Alter 99–108 Jahre) zur Untersuchung von Schutzfaktoren für kognitive Funktion durch Neuropsychologie und Genomik.",
-    result:"Von 84 Hundertjährigen mit erfasstem kognitiven Status zeigte sich großes Spektrum: CDR 0–5 (Median 1), MMSE 3–30 (Median 24). 32 Patienten wurden nachbeobachtet, DNA von 67 gelagert. Protokoll ist praktikabel und wird akzeptiert. Erkenntnisse werden längerfristig genomische Varianten für kognitive Variabilität im hohen Alter aufklären.",
-    transfer:"Italien, europäische Langzeitpflege; italienisches Alterssystem und High-Prevalence-Hundertjähriger machen Übertrag auf Deutschland begrenzt, aber kognitives Screening relevant"
-  },
-  {
-    journal:"Age Ageing", year:"2026", pmid:"42920343",
-    author:"Soma S et al.", pubdate:"03.08.2026",
+    journal:"Med Lav", year:"2026", pmid:"42925044",
+    author:"Dragano N et al.", pubdate:"23.10.2026",
     added:"24.10.2026",
-    title:"Frailty-Screening mit Prävention senkt Pflegequoten bei Älteren",
-    sum:"Untersucht wurde, ob ein kommunales Programm aus Frailty-Screening und Gesundheitsberatung die Quote der Pflegebedürftigkeit bei Menschen über 75 Jahren reduziert.",
-    result:"Nach Einführung des Programms nahm die altersstandardisierte Pflegequote bei den über 75-Jährigen deutlich ab: Der Trend sank um 0,974 pro Jahr (95 %-KI 0,963–0,983), sodass die Quote am Ende um 6,8 % unter der zu erwartenden Fortsetzung lag (95 %-KI 4,4–10,0 %). Dies zeigt den Nutzen von Frailty-Screening in der bevölkerungsgestützten Prävention.",
-    transfer:"Japan, vergleichbare Langzeitpflegeversicherung; Ergebnis auf Alterungsgesellschaften übertragbar"
+    title:"Arbeitsplatzmaßnahmen für gesundes Altern: Verfügbarkeit und Effekt auf Arbeitsfähigkeit in Italien",
+    sum:"Querschnittstudie an 3.741 berufstätigen Personen im Alter 50–65 Jahren in Italien, die Verfügbarkeit von 20 Maßnahmen zur Förderung gesunden Alterns sowie deren Assoziationen mit dem Work Ability Index (WAI) untersuchte.",
+    result:"Durchschnittliche Verfügbarkeit von 5 von 20 Maßnahmen (viele unter 20 % der Arbeitnehmer); weniger verfügbar für Frauen, mit niedrigem Einkommen, in bestimmten Wirtschaftssektoren und bei befristeten Verträgen. Höhere Verfügbarkeit von Maßnahmen assoziiert mit besserem WAI (β = 0,107; 95%-KI 0,058–0,157). Implementierung bleibt noch deutlich ausbaubar, besonders für benachteiligte Arbeitnehmergruppen.",
+    transfer:"Italien/DACH-Nachbar, vergleichbarer Arbeitsmarkt und Sozialversicherung."
   },
   {
-    journal:"BMC Geriatr", year:"2026", pmid:"42919131",
-    author:"Dlima SD et al.", pubdate:"28.07.2026",
-    added:"23.10.2026",
-    title:"Messbare Indikatoren für Aging-in-Place bei älteren Menschen mit Frailty",
-    sum:"Experten-Delphi-Befragung zur Identifizierung von routinemäßig messbaren Indikatoren für gelungenes Altern zu Hause bei älteren Menschen mit oder Risiko für Frailty.",
-    result:"Nur vier Indikatoren erreichten Konsens für Wichtigkeit und praktische Machbarkeit: körperliche Leistung/Mobilität, Multimorbidität, Sinnesfunktionen und Druckgeschwüre. 27 weitere Indikatoren waren sehr wichtig, aber schwer routinemäßig zu erfassen. Technologie-Indikatoren waren weder wichtig noch machbar; Laien-Experten betonten jedoch digitale Kompetenz.",
-    transfer:"UK (Manchester); Geriatrisches Assessment und Indikatorauswahl sind auf deutsches Versorgungssystem übertragbar"
+    journal:"J Frailty Aging", year:"2026", pmid:"42891948",
+    author:"Roa Santervas L et al.", pubdate:"17.10.2026",
+    added:"18.10.2026",
+    title:"Clinical Frailty Scale: Assoziationen mit Lebensqualität bei akut hospitalisierten Älteren",
+    sum:"Cross-sektonale Studie an 382 Patienten ≥70 Jahren in einer norwegischen Notfallaufnahme, die Zusammenhänge zwischen Clinical Frailty Scale und allgemeiner sowie oraler gesundheitsbezogener Lebensqualität untersuchte.",
+    result:"Zunehmende Gebrechlichkeit war signifikant mit niedrigeren 15D-Scores assoziiert (adjustiertes B −0,053; 95%-KI −0,061 bis −0,045), höheren Odds für niedrigere Lebenszufriedenheit (adjustierte OR 1,19; 95%-KI 1,02–1,39) und höheren Odds für negative Auswirkungen der Mundgesundheit (adjustierte OR 1,25; 95%-KI 1,05–1,48). Einfache Frailty-Bewertung bei akuter Aufnahme kann Patienten mit schlechterer Lebensqualität identifizieren.",
+    transfer:"Norwegen, vergleichbares Versicherungssystem, ähnliche Notfallversorgungsstruktur."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42920700",
+    author:"Tu Y et al.", pubdate:"09.10.2026",
+    added:"24.10.2026",
+    title:"Integrierte Altenpolitik und Lebensqualität: Difference-in-Differences-Analyse über 24 Länder",
+    sum:"Differenzen-in-Differenzen-Analyse mit Daten von 24 Ländern (2018–2025), vergleichend 11 Länder mit nationalen integrierten Altenpflegepolitiken (2021–2022 eingeführt) mit 13 Kontrollländern, Endpunkte Lebensqualitätsindex und Lebenserwartung mit 60 Jahren.",
+    result:"Politikadoption assoziiert mit +3,84 Punkten im Lebensqualitätsindex (95%-KI 2,39–5,30; p&lt;0,01; 0,33 SD) und +1,13 Jahren Lebenserwartung mit 60 Jahren (95%-KI 0,50–1,75; p&lt;0,01; 0,36 SD). Effekte stiegen von Jahr 1 (1,26 Punkte) auf Jahr 3 nach Einführung (3,84 Punkte). Mechanismen: Erhöhte universelle Krankenversicherung (+4,13), Ausweitung Sozialschutz (+5,28), reduzierte Selbstbeteiligung (−3,42). Effekte robuster in Ländern mit niedrigerem Einkommen.",
+    transfer:"Globale Evidenz, DACH-orientiert; Ergebnis hängt an Finanzierungssystem – teilweise übertragbar auf deutsche Ländermodelle."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"42923139",
+    author:"Ren K et al.", pubdate:"08.10.2026",
+    added:"24.10.2026",
+    title:"Digitale Teilhabe älterer Menschen mit Gebrechlichkeit: qualitative Analyse von fünf Nutzer-Profilen",
+    sum:"Qualitative Studie mit 24 älteren Erwachsenen mit Interneterfahrung, die Muster der Internetnutzung nach Gebrechlichkeit mittels semi-strukturierter Interviews und inductiver Inhaltsanalyse mit Entwicklung von fünf User-Personas analysierte.",
+    result:"Fünf Personas identifiziert: Health-Empowered Integrators, Basic-Function Adapters, Entertainment-Oriented Users, Resource-Limited Users, Health-Affected Users. Kernfindung: Gebrechlichkeit korreliert nicht direkt mit Internetnutzung; stattdessen bestimmen Gesundheitsfunktionsfähigkeit, digitale Kompetenzen, Bildungsressourcen und soziale Unterstützung gemeinsam die Muster. Gezielte Unterstützung nach Persona-Merkmalen könnte digitale Gerechtigkeit und Zugang zu Gesundheitsressourcen verbessern.",
+    transfer:"China, qualitative Methode universell; Persona-Ansatz zur Gesundheitsdigitalisierung übertragbar."
+  },
+  {
+    journal:"J Frailty Aging", year:"2026", pmid:"42832337",
+    author:"O'Shea M et al.", pubdate:"05.10.2026",
+    added:"05.10.2026",
+    title:"Gemeindeübungen und Funktionsbesserung bei älteren Menschen mit Gebrechlichkeit",
+    sum:"Prospektive Kohortenstudie mit 1.290 Teilnehmern (Durchschnittsalter 69 Jahre) in einem irischen, medizinisch betreuten Gruppentrainingsprogramm, stratifiziert nach Baseline-Gebrechlichkeit über 24 Wochen.",
+    result:"Bei Baseline 15 % fraile, 23 % präfraile, 62 % robuste Teilnehmer. Fraile Patienten zeigten Verbesserungen in Gehgeschwindigkeit, Timed Up and Go, sechsminütigem Gehtest und EQVAS zwischen Baseline und Woche 24; Präfraile in Sit-to-Stand, sechsminütigem Test und EQVAS; robuste in allen Maßnahmen. Programm war mit Funktionsverbesserungen über alle Frailty-Gruppen hinweg assoziiert.",
+    transfer:"Irland, vergleichbares Primärversorgungssystem, Community-Setting übertragbar."
+  },
+  {
+    journal:"J Frailty Aging", year:"2026", pmid:"42700391",
+    author:"van der Ploeg T et al.", pubdate:"05.09.2026",
+    added:"05.09.2026",
+    title:"Gebrechlichkeit und Palliativbedarf: Unterscheidung durch Fachleute – qualitative Fallstudiensynthese",
+    sum:"Qualitative Studie mit 15 Fallstudien, präsentiert an Fachleute in Niederlanden und Belgien (n=Respondenten mit Expertise), die Fähigkeit zur Unterscheidung zwischen Frailty-Komponenten und Palliativbedarf sowie Sicherheit dieser Urteile untersuchte.",
+    result:"Fachleute nutzen unterschiedliche Komponenten zur Klassifikation: In den meisten Fällen unterscheiden sich Frailty- und Palliativbewertungen signifikant (p&lt;0,05). Fachleute sind sicherer in der Erkennung von Frailty-Komponenten als Palliativbedarf. Erkenntnis: Patienten können Frailty-Komponenten haben ohne Palliativbedarf, aber nicht umgekehrt erkannt. Besseres Verständnis für Progression von Frailty zu Palliativbedarf könnte patientenzentrierte Versorgung und Lebensqualität verbessern.",
+    transfer:"Niederlande/Belgien, deutschsprachige Gesundheitssysteme ähnlich; Befunde zur Versorgungsüberleitung anwendbar."
+  },
+  {
+    journal:"BJS Open", year:"2026", pmid:"42925091",
+    author:"Chesney TR et al.", pubdate:"04.09.2026",
+    added:"24.10.2026",
+    title:"Frailty-Assessments in präoperativer Geriatrie: systematische Übersicht von 35 Werkzeugen",
+    sum:"Systematische Scoping Review von 160 Studien zu 35 Frailty-Messinstrumenten bei Personen ≥65 Jahren vor großen Operationen, untersucht anhand von 6 Performanzmetriken (Messeigenschaften, klinische Implikationen, praktische Faktoren).",
+    result:"Clinical Frailty Scale extensiv erforscht (4 von 6 Metriken), aber 40 % der Tools nur in einer Studie untersucht. Edmonton Frail Scale einziges Tool über alle 6 Metriken validiert. FRAIL scale, Geriatric 8 und Vulnerable Elders Survey-13 zeigen gute Balance zwischen Simplizität und Evidenzlage. Prädiktive Validität am meisten untersucht, während klinische Auswirkungen und Implementierungsfaktoren untererforscht.",
+    transfer:"Kanada, Cochrane Review – internationale Standards; Auswahl übertragbar auf deutschsprachige Kliniken."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2172,7 +2181,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "25.10.2026";
+const NEWS_STAND = "26.10.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
