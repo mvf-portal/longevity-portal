@@ -2092,71 +2092,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "26. Okt. 2026, 05:01 Uhr";
+const SNAP_DATE = "27. Okt. 2026, 05:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Med Lav", year:"2026", pmid:"42925044",
-    author:"Dragano N et al.", pubdate:"23.10.2026",
-    added:"24.10.2026",
-    title:"Arbeitsplatzmaßnahmen für gesundes Altern: Verfügbarkeit und Effekt auf Arbeitsfähigkeit in Italien",
-    sum:"Querschnittstudie an 3.741 berufstätigen Personen im Alter 50–65 Jahren in Italien, die Verfügbarkeit von 20 Maßnahmen zur Förderung gesunden Alterns sowie deren Assoziationen mit dem Work Ability Index (WAI) untersuchte.",
-    result:"Durchschnittliche Verfügbarkeit von 5 von 20 Maßnahmen (viele unter 20 % der Arbeitnehmer); weniger verfügbar für Frauen, mit niedrigem Einkommen, in bestimmten Wirtschaftssektoren und bei befristeten Verträgen. Höhere Verfügbarkeit von Maßnahmen assoziiert mit besserem WAI (β = 0,107; 95%-KI 0,058–0,157). Implementierung bleibt noch deutlich ausbaubar, besonders für benachteiligte Arbeitnehmergruppen.",
-    transfer:"Italien/DACH-Nachbar, vergleichbarer Arbeitsmarkt und Sozialversicherung."
+    journal:"J Rehabil Med", year:"2026", pmid:"42929098",
+    author:"Ihle-Hansen H et al.", pubdate:"26.10.2026",
+    added:"26.10.2026",
+    title:"Schlaganfall-Rehabilitation: Ältere Patienten über 80 Jahren profitieren weniger von koordinierter Langzeitintervention",
+    sum:"Randomisierte Studie an 301 norwegischen Patienten nach Schlaganfall (Durchschnittsalter 71 Jahre), die eine 18 Monate andauernde koordinierte Intervention mit monatlichen Treffen versus Standardversorgung verglich.",
+    result:"Bei Patienten ≥80 Jahren war die Wahrscheinlichkeit für günstige Funktionsergebnisse in der Interventionsgruppe signifikant niedriger als in der Kontrolle (23,4 % vs. 57,0 %; p=0,004). Bei jüngeren Patienten verbesserte die Intervention die kognitiven Testergebnisse (Trail Making Test B: −32,2 s; p=0,015). Frailty als solche modifizierte die Interventionswirkung nicht.",
+    transfer:"Norwegen, vergleichbares europäisches Versicherungssystem; Befund zu Altersgrenze hat universelle Relevanz für Geriatrie."
   },
   {
-    journal:"J Frailty Aging", year:"2026", pmid:"42891948",
-    author:"Roa Santervas L et al.", pubdate:"17.10.2026",
-    added:"18.10.2026",
-    title:"Clinical Frailty Scale: Assoziationen mit Lebensqualität bei akut hospitalisierten Älteren",
-    sum:"Cross-sektonale Studie an 382 Patienten ≥70 Jahren in einer norwegischen Notfallaufnahme, die Zusammenhänge zwischen Clinical Frailty Scale und allgemeiner sowie oraler gesundheitsbezogener Lebensqualität untersuchte.",
-    result:"Zunehmende Gebrechlichkeit war signifikant mit niedrigeren 15D-Scores assoziiert (adjustiertes B −0,053; 95%-KI −0,061 bis −0,045), höheren Odds für niedrigere Lebenszufriedenheit (adjustierte OR 1,19; 95%-KI 1,02–1,39) und höheren Odds für negative Auswirkungen der Mundgesundheit (adjustierte OR 1,25; 95%-KI 1,05–1,48). Einfache Frailty-Bewertung bei akuter Aufnahme kann Patienten mit schlechterer Lebensqualität identifizieren.",
-    transfer:"Norwegen, vergleichbares Versicherungssystem, ähnliche Notfallversorgungsstruktur."
+    journal:"PLoS One", year:"2026", pmid:"42932359",
+    author:"Kobayashi F et al.", pubdate:"26.10.2026",
+    added:"26.10.2026",
+    title:"Depression und Frailty: Depressive Symptome verdoppeln Gebrechlichkeitsrisiko bei älteren Patienten mit Kardiometabolischer Erkrankung",
+    sum:"Längscohortenstudie von 431 Patienten ≥65 Jahren mit kardiometabolischen Erkrankungen (Nachbeobachtung Median 2,9 Jahre) zur Assoziation depressiver Symptome (GDS-15 ≥5) mit neu aufgetretener Frailty.",
+    result:"Depressive Symptome waren unabhängig assoziiert mit Frailty (adjustierte HR für mCHS-Definition 1,92; 95%-CI 1,60–2,31; für KCL-Definition 2,05; 95%-CI 1,70–2,48). Signifikante Interaktion zwischen Depression und Diabetes: Patienten mit beiden Merkmalen hatten markant erhöhtes Frailty-Risiko.",
+    transfer:"Japan; Befund ist altersunabhängig übertragbar, aber Messinstrumente (mCHS, KCL) sind von regionaler Anwendbarkeit abhängig."
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42920700",
-    author:"Tu Y et al.", pubdate:"09.10.2026",
-    added:"24.10.2026",
-    title:"Integrierte Altenpolitik und Lebensqualität: Difference-in-Differences-Analyse über 24 Länder",
-    sum:"Differenzen-in-Differenzen-Analyse mit Daten von 24 Ländern (2018–2025), vergleichend 11 Länder mit nationalen integrierten Altenpflegepolitiken (2021–2022 eingeführt) mit 13 Kontrollländern, Endpunkte Lebensqualitätsindex und Lebenserwartung mit 60 Jahren.",
-    result:"Politikadoption assoziiert mit +3,84 Punkten im Lebensqualitätsindex (95%-KI 2,39–5,30; p&lt;0,01; 0,33 SD) und +1,13 Jahren Lebenserwartung mit 60 Jahren (95%-KI 0,50–1,75; p&lt;0,01; 0,36 SD). Effekte stiegen von Jahr 1 (1,26 Punkte) auf Jahr 3 nach Einführung (3,84 Punkte). Mechanismen: Erhöhte universelle Krankenversicherung (+4,13), Ausweitung Sozialschutz (+5,28), reduzierte Selbstbeteiligung (−3,42). Effekte robuster in Ländern mit niedrigerem Einkommen.",
-    transfer:"Globale Evidenz, DACH-orientiert; Ergebnis hängt an Finanzierungssystem – teilweise übertragbar auf deutsche Ländermodelle."
+    journal:"Maturitas", year:"2026", pmid:"42815273",
+    author:"Zhao H et al.", pubdate:"25.09.2026",
+    added:"30.09.2026",
+    title:"Beschleunigte biologische Alterung erhöht Gicht-Risiko und Sterblichkeit bei älteren Menschen",
+    sum:"Querschnitts- und Kohortenstudie mit 385.130 UK-Biobank-Teilnehmern und 5.228 NHANES-Erwachsenen zur Assoziation von biologischem Altern (KDMAge, PhenoAge) mit Gicht-Prävalenz, Gicht-Inzidenz und Mortalität.",
+    result:"In NHANES war jedes Jahr biologischer Alterungsbeschleunigung mit 4 % erhöhtem Gicht-Risiko verbunden (OR 1,04; 95%-CI 1,03–1,05). Im UK Biobank: HR für Gicht-Neuauftreten bei KDMAge-Beschleunigung 1,80 (95%-CI 1,71–1,90). Bei Gicht-Patienten: beschleunigte biologische Alterung war mit 21–134 % erhöhtem Sterberisiko assoziiert (HR 1,21–2,34).",
+    transfer:"UK Biobank und NHANES; biologische Altersmarker sind populationsübergreifend relevant, aber absolute Risiken gelten nur lokal."
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"42923139",
-    author:"Ren K et al.", pubdate:"08.10.2026",
-    added:"24.10.2026",
-    title:"Digitale Teilhabe älterer Menschen mit Gebrechlichkeit: qualitative Analyse von fünf Nutzer-Profilen",
-    sum:"Qualitative Studie mit 24 älteren Erwachsenen mit Interneterfahrung, die Muster der Internetnutzung nach Gebrechlichkeit mittels semi-strukturierter Interviews und inductiver Inhaltsanalyse mit Entwicklung von fünf User-Personas analysierte.",
-    result:"Fünf Personas identifiziert: Health-Empowered Integrators, Basic-Function Adapters, Entertainment-Oriented Users, Resource-Limited Users, Health-Affected Users. Kernfindung: Gebrechlichkeit korreliert nicht direkt mit Internetnutzung; stattdessen bestimmen Gesundheitsfunktionsfähigkeit, digitale Kompetenzen, Bildungsressourcen und soziale Unterstützung gemeinsam die Muster. Gezielte Unterstützung nach Persona-Merkmalen könnte digitale Gerechtigkeit und Zugang zu Gesundheitsressourcen verbessern.",
-    transfer:"China, qualitative Methode universell; Persona-Ansatz zur Gesundheitsdigitalisierung übertragbar."
+    journal:"Maturitas", year:"2026", pmid:"42777331",
+    author:"Sun Z et al.", pubdate:"17.09.2026",
+    added:"23.09.2026",
+    title:"Armmuskulatur und Frailty: Dysbalance zwischen Fett und Muskel als klinisches Marker für biologische Alterung",
+    sum:"Querschnittsanalyse von 445.317 UK-Biobank-Teilnehmern zur Assoziation von regionalem Fett-Muskel-Verhältnis (aus Bioimpedanz) mit Frailty-Status und proteingestütztem biologischem Altern.",
+    result:"Höhere Fett-Muskel-Quoten waren dosisabhängig assoziiert mit Pre-Frailty und Frailty; Arm-Verhältnis war stärkster regionaler Prädiktor (Frauen: OR 2,95 für Frailty; 95%-CI 2,75–3,18). Arm-Quote verbesserte die BMI-basierte Diskrimination um AUC 0,0068–0,0137. Konkordanz mit multi-organ proteingestütztem Alterungsmuster.",
+    transfer:"UK Biobank; körperanalytische Methoden sind in Deutschland verfügbar; Befund erfordert Validierung an deutschen Kohorten."
   },
   {
-    journal:"J Frailty Aging", year:"2026", pmid:"42832337",
-    author:"O'Shea M et al.", pubdate:"05.10.2026",
-    added:"05.10.2026",
-    title:"Gemeindeübungen und Funktionsbesserung bei älteren Menschen mit Gebrechlichkeit",
-    sum:"Prospektive Kohortenstudie mit 1.290 Teilnehmern (Durchschnittsalter 69 Jahre) in einem irischen, medizinisch betreuten Gruppentrainingsprogramm, stratifiziert nach Baseline-Gebrechlichkeit über 24 Wochen.",
-    result:"Bei Baseline 15 % fraile, 23 % präfraile, 62 % robuste Teilnehmer. Fraile Patienten zeigten Verbesserungen in Gehgeschwindigkeit, Timed Up and Go, sechsminütigem Gehtest und EQVAS zwischen Baseline und Woche 24; Präfraile in Sit-to-Stand, sechsminütigem Test und EQVAS; robuste in allen Maßnahmen. Programm war mit Funktionsverbesserungen über alle Frailty-Gruppen hinweg assoziiert.",
-    transfer:"Irland, vergleichbares Primärversorgungssystem, Community-Setting übertragbar."
+    journal:"Front Public Health", year:"2026", pmid:"42823953",
+    author:"Yu L et al.", pubdate:"17.09.2026",
+    added:"02.10.2026",
+    title:"Umweltbelastung und Schilddrüse: Benzol-Exposition erhöht Dysfunktionsrisiko durch Beschleunigung biologischen Alterns",
+    sum:"Kohortenstudie von 385.130 UK-Biobank-Teilnehmern zur Assoziation chronischer Benzol-Exposition mit Hypothyreose und Hyperthyreose; Testung, ob biologisches Altern den Effekt mediiert.",
+    result:"Benzol-Exposition zeigte dosisabhängige Assoziation mit Hypothyreose (HR pro 1 μg/m³: 1,19; 95%-CI 1,16–1,21) und Hyperthyreose (HR 1,21; 95%-CI 1,18–1,25). Beschleunigte biologische Alterung mediierte 3,07 % des Benzol-Hyperthyreose-Effekts; additive Interaktion mit höherem biologischem Alter auf Hypothyreose.",
+    transfer:"UK Biobank; Luftqualitätsdaten sind in Deutschland verfügbar; biologische Altersmarker sind populationsübergreifend einsetzbar."
   },
   {
-    journal:"J Frailty Aging", year:"2026", pmid:"42700391",
-    author:"van der Ploeg T et al.", pubdate:"05.09.2026",
-    added:"05.09.2026",
-    title:"Gebrechlichkeit und Palliativbedarf: Unterscheidung durch Fachleute – qualitative Fallstudiensynthese",
-    sum:"Qualitative Studie mit 15 Fallstudien, präsentiert an Fachleute in Niederlanden und Belgien (n=Respondenten mit Expertise), die Fähigkeit zur Unterscheidung zwischen Frailty-Komponenten und Palliativbedarf sowie Sicherheit dieser Urteile untersuchte.",
-    result:"Fachleute nutzen unterschiedliche Komponenten zur Klassifikation: In den meisten Fällen unterscheiden sich Frailty- und Palliativbewertungen signifikant (p&lt;0,05). Fachleute sind sicherer in der Erkennung von Frailty-Komponenten als Palliativbedarf. Erkenntnis: Patienten können Frailty-Komponenten haben ohne Palliativbedarf, aber nicht umgekehrt erkannt. Besseres Verständnis für Progression von Frailty zu Palliativbedarf könnte patientenzentrierte Versorgung und Lebensqualität verbessern.",
-    transfer:"Niederlande/Belgien, deutschsprachige Gesundheitssysteme ähnlich; Befunde zur Versorgungsüberleitung anwendbar."
-  },
-  {
-    journal:"BJS Open", year:"2026", pmid:"42925091",
-    author:"Chesney TR et al.", pubdate:"04.09.2026",
-    added:"24.10.2026",
-    title:"Frailty-Assessments in präoperativer Geriatrie: systematische Übersicht von 35 Werkzeugen",
-    sum:"Systematische Scoping Review von 160 Studien zu 35 Frailty-Messinstrumenten bei Personen ≥65 Jahren vor großen Operationen, untersucht anhand von 6 Performanzmetriken (Messeigenschaften, klinische Implikationen, praktische Faktoren).",
-    result:"Clinical Frailty Scale extensiv erforscht (4 von 6 Metriken), aber 40 % der Tools nur in einer Studie untersucht. Edmonton Frail Scale einziges Tool über alle 6 Metriken validiert. FRAIL scale, Geriatric 8 und Vulnerable Elders Survey-13 zeigen gute Balance zwischen Simplizität und Evidenzlage. Prädiktive Validität am meisten untersucht, während klinische Auswirkungen und Implementierungsfaktoren untererforscht.",
-    transfer:"Kanada, Cochrane Review – internationale Standards; Auswahl übertragbar auf deutschsprachige Kliniken."
+    journal:"Age Ageing", year:"2026", pmid:"42933995",
+    author:"Power Foley M et al.", pubdate:"03.08.2026",
+    added:"26.10.2026",
+    title:"Gefäßchirurgie: Geriatrisches Konsil senkt Sterblichkeit und Komplikationen bei älteren Patienten",
+    sum:"Systematische Übersicht von 8 Studien mit 2.441 Patienten, die formalisierte geriatrische Interventionen (präoperatives Comprehensive Assessment, Liaison-Service oder Co-Management) vor/während Gefäßchirurgie mit Standardversorgung verglich.",
+    result:"Geriatrische Modelle waren assoziiert mit reduziertem Risiko für Krankenhaussterblichkeit (RR 0,65; 95%-CI 0,46–0,90; p=0,010), kardiale Komplikationen (RR 0,35; p&lt;0,001) und Infektionen (RR 0,48; p&lt;0,001). Delirium-Risiko war nicht signifikant gesenkt. Verweildauer und Entlassungsort unterschieden sich nicht.",
+    transfer:"Irland und Großbritannien; Befund übertragbar auf deutsches Gesundheitssystem mit ähnlichem Auftrag zur geriatrischen Ko-Versorgung."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2181,7 +2172,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "26.10.2026";
+const NEWS_STAND = "27.10.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
@@ -2192,7 +2183,6 @@ const NEWS = [
 // === PRESSE-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
 const PRESSE = [
   {titel:"Warum ist Bewegung gesund und wie halten sich eigentlich Tiere fit? Die neue Ausgabe „Beweg dich!“ des forscher-Magazins", datum:"2026-10-20", url:"http://idw-online.de/de/news879438", quelle:"idw"},
-  {titel:"Health Tech - Digitalisierung im Gesundheitswesen gestalten: Neuer dualer Studiengang an der HWR Berlin gestartet", datum:"2026-10-19", url:"http://idw-online.de/de/news879359", quelle:"idw"},
 ];
 // === PRESSE-BLOCK-ENDE ===
 
