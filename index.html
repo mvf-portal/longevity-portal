@@ -2214,71 +2214,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "2. Nov. 2026, 05:01 Uhr";
+const SNAP_DATE = "3. Nov. 2026, 05:22 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Age Ageing", year:"2026", pmid:"42967228",
-    author:"Petraglia L et al.", pubdate:"31.10.2026",
+    journal:"J Clin Invest", year:"2026", pmid:"42969229",
+    author:"Mone P et al.", pubdate:"02.11.2026",
+    added:"02.11.2026",
+    title:"Dapagliflozin senkt Übergang von Prefrailty zu Frailty bei älteren Patienten",
+    sum:"Prospektive Studie an 105 vorfrail-hypertonen Patienten über 65 Jahren mit chronischer Nierenkrankheit über ein Jahr: Effekt von Dapagliflozin auf Frailty-Progression, Albuminurie und Ganggeschwindigkeit.",
+    result:"Signifikante inverse Assoziation zwischen Ganggeschwindigkeit und Albuminurie (r² = 0,48; p &lt; 0,0001). Patienten mit eGFR &lt; 60 ml/min/1,73 m² zeigten schlechtere körperliche Leistung (p = 0,0003). Dapagliflozin-Anwendung unabhängig assoziiert mit geringerer Frailty-Progression nach 1 Jahr: OR 0,130 (95%-KI 0,045–0,381; p &lt; 0,001).",
+    transfer:"Italien und internationales Studiennetzwerk, aber Frailty-Prävention in CKD relevant für deutsches Gesundheitswesen."
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"42969553",
+    author:"Soraci L et al.", pubdate:"31.10.2026",
+    added:"02.11.2026",
+    title:"Wissensdefizite und Kompetenzunterschiede in der Geriatrie: multinationale Befragung von Fachkräften",
+    sum:"Befragung von 4.788 Gesundheits- und Sozialfachkräften in 27 EU-Ländern zu wahrgenommenem Wissen und Interesse für geriatrische Themen: Sturzprophylaxe, Delir, Depression, Demenz-Screening, Ernährung und Polypharmazie.",
+    result:"Physiotherapeuten führten bei Sturzprävention (MW 4,21), Apotheker bei Polypharmazie und Deprescribing (MW 3,51), Psychologen bei Depression (MW 3,96). 34,4 % der Apotheker stufen Relevanz des Themas Polypharmazie als niedrig ein. EU-27-Fachkräfte berichteten höhere Wissenswerte als Nicht-EU-27-Fachkräfte (p &lt; 0,001). Interprofessionelle Unterschiede bestanden für alle Themen.",
+    transfer:"Deutschsprachige Länder vertreten, europäische Versorgungsstrukturen, direkt übertragbar für Kompetenzlücken im deutschen Gesundheitswesen."
+  },
+  {
+    journal:"PLoS One", year:"2026", pmid:"42961886",
+    author:"He M et al.", pubdate:"30.10.2026",
+    added:"30.10.2026",
+    title:"Kognitive Frailty nach akutem Koronarsyndrom: Prävalenz, Prognose und Versorgungsbedarf",
+    sum:"Systematische Übersicht von 9 Studien zur kognitiven Frailty bei akutem Koronarsyndrom: Prävalenz, Assessmentverfahren, Risikofaktoren und klinische Ergebnisse.",
+    result:"Kognitvie Frailty-Prävalenz 8–55 % (Heterogenität durch unterschiedliche Assessment-Tools). FRAIL-Skala kombiniert mit Short Portable Mental Status Questionnaire am häufigsten verwendet. Kurzzeit-Komplikationen: Krankenhausaufenthaltsrisiko, 30-Tage-Events. Mittelfristig: 6-Monats-MACCE erhöht. Langfristig: erhöhte Mortalität und Wiederaufnahmen. Keine standardisierten Assessments erschwert Vergleichbarkeit.",
+    transfer:"Internationale Literaturübersicht, Frailty-Assessment bei ACS-Patienten für deutsches Versorgungssystem relevant."
+  },
+  {
+    journal:"Eur J Anaesthesiol", year:"2026", pmid:"42908365",
+    author:"Aldecoa C et al.", pubdate:"01.12.2026",
+    added:"22.10.2026",
+    title:"Frailty vor und nach Operation: multizentrisches europäisches Assessment vorhersagt Komplikationen",
+    sum:"Prospektive europäische Kohortenstudie in 64 Zentren in 10 Ländern mit 1.472 Patienten: Erfassung von Frailty präoperativ und nach 30 Tagen mittels Rockwood Clinical Frailty Scale, FRAIL-Fragebogen und Barthel-Index.",
+    result:"Präoperative Frailty-Prävalenz 14,6 % (FRAIL), 10,4 % (CFS). Innerhalb 30 Tagen wurden 11,9 % nicht-frail Patienten frail (Gesamtprävalenz 21,2 %). Postoperative Komplikationen: 19,2 %, Mortalität: 1,7 %. Präoperative Frailty assoziiert mit Komplikationen: adjustierte OR 2,35 (95%-KI 1,53–3,60; p &lt; 0,001), 30-Tage-Mortalität: OR 10,9 (95%-KI 1,28–93,0; p = 0,029), postoperatives Delir: OR 3,47 (95%-KI 1,98–6,08; p &lt; 0,001).",
+    transfer:"Deutschland und europäische Länder, vergleichbare Versorgungssysteme, validiertes Frailty-Assessment im OP-Setting anwendbar."
+  },
+  {
+    journal:"BMC Psychol", year:"2026", pmid:"42968182",
+    author:"Zhang L et al.", pubdate:"04.08.2026",
     added:"01.11.2026",
-    title:"Hitzeresistenz im Alter: Frailty, Energiearmut und soziale Ressourcen als Schutzfaktoren",
-    sum:"Narrative Übersichtsarbeit zu Faktoren, die ältere Menschen bei Hitzestress schützen oder gefährden – analysiert adaptive Kapazität als Verbindung zwischen persönlichen Ressourcen und kontextuellen Bedingungen (Wohnsituation, Energieaffordabilität, soziale Unterstützung).",
-    result:"Frailty, eingeschränkte Intrinsic Capacity, schlechte Wohnverhältnisse, Energiearmut (\"Cooling Poverty\") und soziale Isolation erhöhen die Hitzemortalität im Alter messbar. Adaptive Kapazität – die Mobilisierbarkeit von persönlichen und kontextuellen Ressourcen – bestimmt den Schutz. Die Arbeit plädiert für ein hitzeadaptiertes geriatrisches Assessment und gezielte Präventionspolitik für alternde Bevölkerungsgruppen.",
-    transfer:"Großbritannien, konzeptueller Rahmen auf Hitzevulnerabilität übertragbar auf DACH-Länder mit zunehmenden Extremwetterereignissen"
+    title:"Kommunale Altenpflege und Lebenszufriedenheit: Mechanismus über soziale Anpassung",
+    sum:"Querschnittsstudie mit 676 älteren Erwachsenen in China: Zusammenhang zwischen kommunalen Altenpflegediensten und Lebenszufriedenheit, Mediator-Rolle der sozialen Anpassung.",
+    result:"Kommunale Altenpflegedienste signifikant positiv korreliert mit Lebenszufriedenheit älterer Menschen. Soziale Anpassung mediiert diese Beziehung teilweise: indirekter Effekt 33,82 % des Gesamteffekts. Community care über soziale Anpassung verbunden mit besserer Lebenszufriedenheit und erfolgreicherem Altern.",
+    transfer:"China, andere Versorgungsstrukturen, aber Mechanismus über soziale Integration für internationale Alternsforschung relevant."
   },
   {
-    journal:"Rev Med Suisse", year:"2026", pmid:"42958975",
-    author:"Perriard C et al.", pubdate:"28.10.2026",
-    added:"30.10.2026",
-    title:"Subkutane Verabreichung in der Geriatrie: evidenzbasierte Alternativen zur IV-Gabe",
-    sum:"Schweizer Übersichtsarbeit zu subkutaner Arzneimittelgabe in der Geriatrie als Alternative bei schwierigem Venenzugang oder unangemessener IV-Fortführung – systematische Bewertung der verfügbaren Evidenz und Empfehlungen zur klinischen Praxis.",
-    result:"Subkutane Route ist einfach, minimal-invasiv und üblicherweise gut verträglich. Mehrere IV-zulassungs-exklusive Medikamente können subkutan in spezifischen klinischen Situationen gegeben werden. Ohne formale Marktzulassung für diese Route obliegt Nutzen-Risiko-Bewertung und klinische Überwachung dem Arzt. Evidence-Based-Praxis empfohlen, Anwendung besonders häufig in Geriatrie und Palliative Care.",
-    transfer:"Schweizer Gesundheitssystem, DACH-übertragbar; Regulierung subkutaner Off-Label-Gabe in allen drei Ländern ähnlich"
-  },
-  {
-    journal:"Cardiovasc Diabetol", year:"2026", pmid:"42958256",
-    author:"Xiong H et al.", pubdate:"16.10.2026",
-    added:"30.10.2026",
-    title:"Kombinierter Frailty-Metabolismus-Index prognostiziert CKM-Syndrom-Progression",
-    sum:"CHARLS-Kohortenstudie (China) mit 3.473 Personen zu Vorhersagekraft des kombinierten TyG-Frailty-Index (TyG-FI) für Progression des kardiovaskulär-nieralen-metabolischen (CKM) Syndroms über durchschnittlich 4 Jahre.",
-    result:"Baseline TyG-FI mit Stadium-4-Progression assoziiert: HR 1,33 (95%-KI 1,20–1,47). Kumulative TyG-FI über beide Messzeitpunkte: OR 1,83 (1,62–2,06) für Stadium 4, OR 1,42 (1,29–1,56) für Stadien 3–4. Höchstes vs. niedrigstes TyG-FI-Tertil: OR 12,40 (7,43–20,67) für Stadium 4. AUC für Stadium 4 0,67, für Stadien 3–4 0,57.",
-    transfer:"China, validiert in anderen CHARLS-Populationen; Einfachheit des Indexes hilfreich für Ressourcen begrenzte Settings"
-  },
-  {
-    journal:"Front Public Health", year:"2026", pmid:"42964144",
-    author:"Miller LR", pubdate:"16.10.2026",
-    added:"31.10.2026",
-    title:"Kumulative Diskriminierung prägt Altern von sexuellen Minderheiten messbar negativ",
-    sum:"Qualitative Lebensverlaufsstudie mit älteren (55+) sexuellen Minderheiten zu lebenslanger struktureller Ungleichheit und deren Auswirkungen auf Altern im späten Leben – Interviews mit Fokus auf Lebensherausforderungen und Bewältigungsressourcen.",
-    result:"Drei distinkte Herausforderungen identifiziert: (1) ökonomische Marginalisierung, (2) Misstrauen gegenüber Medizin und Ablehnung von Langzeitpflege-Einrichtungen, (3) Suizidgedanken und -intentionen. Gleichzeitig einzigartige Bewältigungsressourcen: communitybasierte Careansätze und gegenseitige Unterstützung. Lebenslange Akkumulation von Nachteil reduzierbar durch Aufmerksamkeit auf kumulierte Ungleichheit.",
-    transfer:"USA, Struktur auch in DACH-Ländern relevant; Altersversorgung für LGBTQ+-Personen untererforscht"
-  },
-  {
-    journal:"Cerebellum", year:"2026", pmid:"42726414",
-    author:"Rafaelian A et al.", pubdate:"11.09.2026",
-    added:"11.09.2026",
-    title:"Zerebellares Volumen sinkt mit dem Alter deutlich und kontinuierlich",
-    sum:"Retrospektive Multicenter-Studie an 1.280 erwachsenen Patienten mit Schlaganfall in 11 deutschen Universitätskliniken zu alterstypischen Volumenveränderungen der hinteren Schädelgrube und ihrer Strukturen mittels MRT/CT-Analyse.",
-    result:"Zerebellumvolumen sank progressiv von 136 cm³ (IQR 123,6–147,2) in jüngeren Altersgruppen auf 115,2 cm³ (IQR 107,4–131,1) in älteren (p&lt;0,001). Liquorraum im hinteren Schädel (PCF-CSFv) nahm zu. Männer hatten in den meisten Altersgruppen größere Volumina als Frauen (nach Bonferroni-Korrektur p&lt;0,001). PCF-CSFv unterschied sich nicht signifikant zwischen Geschlechtern (p-korrigiert=0,438).",
-    transfer:"Deutsche Klinikdaten, 11 Universitätskliniken, normative Referenzdaten für klinische Interpretation"
-  },
-  {
-    journal:"J Clin Anesth", year:"2026", pmid:"42721535",
-    author:"Duan W et al.", pubdate:"09.09.2026",
-    added:"10.09.2026",
-    title:"Kumulative chirurgische Belastung beschleunigt biologisches Altern messbar",
-    sum:"UK-Biobank-Studie zu Assoziation zwischen Anzahl und Zeitpunkt von Operationen und biologischem Alterungsmarker (PhenoAge Acceleration) bei 472.279 Erwachsenen.",
-    result:"Jede zusätzliche Operation innerhalb von 1 Jahr war mit 0,46 Jahren höherer PhenoAge-Akzeleration assoziiert (95%-KI 0,43–0,49), innerhalb von 3 Jahren mit 0,26 Jahren (0,24–0,27) und 5 Jahren mit 0,20 Jahren (0,19–0,21). Assoziation war stärker nach Operationen mit hohem Stress und bei Personen mit Frailty oder hoher Komorbiditätslast. Effekt auf Telomerlänge war minimal.",
-    transfer:"UK Biobank, Effekt auf biologisches Altern als Surrogatmarker; klinische Langzeitfolgen noch unklar"
-  },
-  {
-    journal:"BMC Geriatr", year:"2026", pmid:"42958059",
-    author:"Wang Z et al.", pubdate:"03.08.2026",
-    added:"30.10.2026",
-    title:"Netzwerkanalyse: Lebenszufriedenheit hub-artig mit Frailty und Schlaf verbunden",
-    sum:"Querschnittstudie an 1.107 älteren Patienten (97,4% mit Multimorbidität) zu Item-Level-Netzwerkstrukturen von Frailty (FRAIL), Schlafqualität (PSQI) und Lebenszufriedenheit (SWLS), stratifiziert nach Komorbiditätslast.",
-    result:"Lebenszufriedenheits-Items zeigten hohe Knotenstärke und Bridge-Zentralität. Schlaf-Items (besonders Einschlaflatenz, Schlafmittel, Tagesschläfrigkeit) prominent in Zentralitätsindizes. Frailty-Knoten verbunden mit SWLS-Knoten über negative Kanten. Netzwerkstabilität akzeptabel (Bootstrap-Verfahren). Bei ≥5 chronischen Erkrankungen stärker ausgeprägte negative Querkommunikations-Verbindungen (deskriptiv, keine formalen Vergleichstests durchgeführt).",
-    transfer:"China, geriatrisches Multimorbidität-Setting; Konzept der Netzwerk-Multimorbidität adaptierbar auf deutsche Altenpflege"
+    journal:"BMC Health Serv Res", year:"2026", pmid:"42968093",
+    author:"Zeng L et al.", pubdate:"30.07.2026",
+    added:"01.11.2026",
+    title:"Notaufnahmen für Ältere: Fachkräfte berichten über Versorgungsbarrieren",
+    sum:"Qualitative Studie mit 52 Fachkräften (Ärzte, Pflegekräfte, Therapeuten, Assistenten) aus drei Notaufnahmen in Sydney: Erfahrungen bei der Versorgung älterer Patienten mittels Interviews und Fokusgruppe.",
+    result:"Fünf Hauptthemen identifiziert: (1) Patientenkomplexität erschwert Versorgung, (2) organisatorische Zwänge, (3) Personalprobleme, (4) ungeeignete physische Umgebung für Geriatrie, (5) Übergangsprobleme zwischen Abteilungen. Fachkräfte berichten Zeitdruck, Ressourcenmangel, schlechte räumliche Ausstattung und Mismatch zwischen Notaufnahme-Modell und Bedarfen Älterer.",
+    transfer:"Australien, aber Erkenntnisse zu ED-Herausforderungen für geriatrische Patienten international übertragbar."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2303,7 +2294,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "02.11.2026";
+const NEWS_STAND = "03.11.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
