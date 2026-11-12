@@ -2214,71 +2214,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "11. Nov. 2026, 05:01 Uhr";
+const SNAP_DATE = "12. Nov. 2026, 05:22 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Neurology", year:"2026", pmid:"43008257",
-    author:"You VS et al.", pubdate:"08.12.2026",
+    journal:"PLoS One", year:"2026", pmid:"43013530",
+    author:"Battaglia S et al.", pubdate:"11.11.2026",
+    added:"11.11.2026",
+    title:"Notaufnahmeüberlastung in Sizilien: Alter und Diagnose verlängern die Wartezeit",
+    sum:"Analyse von 10.077 Notaufnahme-Patienten in 16 sicilianischen Kliniken 2019 mit Fokus auf Faktoren der Verweildauer bis Entlassung oder stationäre Aufnahme.",
+    result:"Älter werdende Patienten: Mit jedem zusätzlichen Altersjahr sank die Entlassungswahrscheinlichkeit um 2 % (HR 0,98, 95%-KI 0,977–0,983) und stieg die Hospitalisierungswahrscheinlichkeit um 0,4 % (HR 1,004, 95%-KI 1,001–1,007). Zirkulatorische und respiratorische Erkrankungen zeigten längste Wartezeiten; erhebliche Unterschiede zwischen Kliniken deuten auf organisatorische Engpässe hin.",
+    transfer:"Italien, vergleichbares Gesundheitssystem; ED-Versorgung relevant für deutsche Notaufnahme-Organisation"
+  },
+  {
+    journal:"JMIR Hum Factors", year:"2026", pmid:"43002657",
+    author:"Flemm C et al.", pubdate:"09.11.2026",
+    added:"09.11.2026",
+    title:"eHealth-Kompetenz im Krankenhaus: Frailty mindert kritische Gesundheitsinformationen-Bewertung",
+    sum:"244 geriatrische Patienten (77,2 J.) in Bochum wurden zu eHealth-Literalität (GR-eHEALS), kognitiver Funktion (MoCA), Frailty (CFS) und Depression (DIA-S) befragt.",
+    result:"Frailty war signifikant mit schwächerer kritischer Bewertung von Gesundheitsinformationen verbunden (B=-1,372, 95%-KI -2,554 bis -0,189). Kognitive Funktion und Bildung zeigten keine signifikanten Assoziationen. Ferner: höheres Alter korrelierte mit niedrigeren eHealth-Literacy-Werten in beiden Subskalen.",
+    transfer:"Deutschland, Klinikdaten; direkt auf deutsche geriatrische Stationen übertragbar"
+  },
+  {
+    journal:"Isr J Health Policy Res", year:"2026", pmid:"42989403",
+    author:"Semyonov-Tal K et al.", pubdate:"06.11.2026",
+    added:"05.11.2026",
+    title:"Patientensicherheit in Altenpflegeeinrichtungen: Wirksamkeit von Regulierung",
+    sum:"Qualitative Inhaltsanalyse von 147 israelischen Vorschriften zu Geriatrie mit Fokus auf Sicherheitsziele als Organisationsnorm.",
+    result:"Drei Themenschwerpunkte identifiziert: Patientensicherheit, Mitarbeitersicherheit, Risikomanagement. Befunde zeigen: gut formulierte Regulierungen dienen als operative Instrumente zur Verbesserung nicht-medizinischer Aspekte der Versorgung und zur Förderung organisationaler Sicherheitsziele.",
+    transfer:"Israel; Regulierungsrahmen und Governance-Prinzipien auf deutsches System übertragbar"
+  },
+  {
+    journal:"Rev Med Suisse", year:"2026", pmid:"43012158",
+    author:"Tahar A et al.", pubdate:"Nov. 2026",
+    added:"11.11.2026",
+    title:"Frailty-Screening in der Hausarztpraxis: frühe Identifikation vor Pflegebedürftigkeit",
+    sum:"Narrative Übersicht mit Fokus auf praktische, validierte Werkzeuge zur Frailty-Erkennung in der ambulanten Versorgung durch Hausärzte und deren Rolle in präventiven Interventionen.",
+    result:"Frailty ist ein geriatrisches Syndrom der dynamischen Vulnerabilität, das mit validierten Instrumenten screening-bar ist. Hausärzte spielen zentrale Rolle: Sie können frühe Vulnerabilitätszeichen erkennen und geeignete Interventionen, Versorgungsleistungen und Ressourcen einleiten für Erhalt der Selbstständigkeit zu Hause.",
+    transfer:"Schweiz; Hausarzt-zentrierte Prävention direkt auf deutsches Versorgungsmodell übertragbar"
+  },
+  {
+    journal:"Nurs Open", year:"2026", pmid:"43009720",
+    author:"Wang S et al.", pubdate:"Nov. 2026",
     added:"10.11.2026",
-    title:"Gangalter-Lücke vorhersagt kognitiven Verfall und Demenzrisiko unabhängig von Gehgeschwindigkeit",
-    sum:"Prospektive Kohortenstudie mit 5.794 Personen aus Rochester, Minnesota entwickelte ein Maschinenlern-Modell, das biologisches Alter anhand von Gangmetriken vorhersagt und dessen Abweichung vom chronologischen Alter testet.",
-    result:"Eine Lücke von 1 Jahr zwischen Gangalter und chronologischem Alter war mit 7% erhöhtem jährlichem Risiko für kognitiven Verfall assoziiert (HR 1,07; 95%-KI 1,03–1,13). Gangalter-Lücke war aussagekräftiger als Gehgeschwindigkeit allein (HR 0,99; 95%-KI 0,98–1,00) zur Unterscheidung normaler von kognitiv beeinträchtigten Gruppen.",
-    transfer:"USA, Methode prinzipiell übertragbar, aber Kohorte &gt;90% kaukasisch; Replikation in diverseren Populationen nötig"
+    title:"Frailty nach Schlaganfall: Stärkegrad und Angehörigen-Belastung stark korreliert",
+    sum:"Querschnittstudie mit 323 Schlaganfall-Patienten (≥65 J.) und deren Angehörigen-Pflegepersonen: Messung von Frailty (Tilburg Frailty Indicator) und Pflegerlast (Caregiver Burden Inventory).",
+    result:"Tilburg-Frailty-Summe korrelierte positiv mit Pflegerlast-Summe (r=0,647, p&lt;0,001). Im multivariablen Modell: getrennt wohnend und &lt;12 h Pflege/Tag (vs. &gt;18 h) mit niedrigerer Last; &lt;6 h Schlaf/Nacht mit höherer Last assoziiert. Modell erklärt 79,8 % der Varianz in Pflegerlast.",
+    transfer:"China; Frailty-Messung und Angehörigenbelastung international valide, aber kulturelle Kontexte unterschiedlich"
   },
   {
-    journal:"Ren Fail", year:"2026", pmid:"43003794",
-    author:"Wu CF et al.", pubdate:"09.11.2026",
-    added:"09.11.2026",
-    title:"Kihon-Checkliste plus Wadenmessung ermöglicht einfaches Gebrechlichkeits-Screening in Dialyse",
-    sum:"Diagnostische Genauigkeitsstudie an 200 Hämodialysepatienten verglich die Kihon-Checkliste (KCL) allein und kombiniert mit Wadhenumfang (CC) zur Gebrechlichkeitserkennung.",
-    result:"KCL allein erreichte AUC 0,923 (80,0% Sensitivität, 91,3% Spezifität). Hinzufügen von CC verbesserte die AUC auf 0,953 (95%-KI 0,928–0,979) mit verbesserter Sensitivität (86,7%), Reklassifikation (cNRI 0,850; IDI 0,085; beide p&lt;0,001) und erhaltener Spezifität (91,3%). Interne Validierung zeigte AUC 0,942.",
-    transfer:"Taiwan; einfache Methode auf Deutschland übertragbar, ambulante Infrastruktur unterschiedlich"
-  },
-  {
-    journal:"JAMA Netw Open", year:"2026", pmid:"43002398",
-    author:"Wu Q et al.", pubdate:"02.11.2026",
-    added:"09.11.2026",
-    title:"Soziale Benachteiligung im Wohngebiet beschleunigt Lungenfunktionsverfall und erhöht Sterblichkeit",
-    sum:"Prospektive Kohortenstudie an 2.362 aktuellen und ehemaligen Rauchern (Alter 40–75 Jahre) in New Mexico prüfte Assoziationen zwischen Nachbarschafts-Benachteiligung (Social Vulnerability Index, Social Deprivation Index) und Lungenfunktion, Lebensqualität und Gesamtsterblichkeit.",
-    result:"Ein IQR-Anstieg im Social Deprivation Index war mit niedrigerem Basis-FEV1 assoziiert (β −0,09 L; 95%-KI −0,13 bis −0,06). Höherer SVI war mit schnellerem jährlichem FEV1-Verfall assoziiert (β −3,11 mL/Jahr; 95%-KI −5,86 bis −0,36), schlechterer Lebensqualität (SGRQ +4,46; 95%-KI 3,26–5,65) und höherer Gesamtsterblichkeit (HR 1,28; 95%-KI 1,08–1,53). Rauchen und Ernährung medierten 4,4%–31,0% und 4,5%–17,0% dieser Assoziationen.",
-    transfer:"USA; Konzept der Nachbarschafts-Benachteiligung auf Deutschland übertragbar, Umsetzung und Maßnahmen kontextabhängig"
-  },
-  {
-    journal:"JMIR Aging", year:"2026", pmid:"42954140",
-    author:"Blotenberg I et al.", pubdate:"27.10.2026",
-    added:"29.10.2026",
-    title:"Digitale Lernaufgaben in Kurztests erfassen kognitiven Verfall bei Älteren in weniger als 3 Jahren",
-    sum:"Längsschnittstudie an 209 kognitiv unbeeinflussten älteren Erwachsenen (Durchschnittsalter 73,6 Jahre) testete, ob wiederholte digitale Multiday-Lernaufgaben (Boston Remote Assessment for Neurocognitive Health) über kurze Zeiträume kognitiven Verfall nachweisen.",
-    result:"Spitzenleistung verlangsamte sich um 0,04 Sekunden pro Jahr (95%-kredibles Intervall 0,02–0,06; ~2% jährlich). Höheres Alter war assoziiert mit langsamerer Spitzenleistung (+0,19 Sekunden pro +1 SD Alter), steilerer jährlicher Verlangsamung (+0,036 s/Jahr), höherer Variabilität (+0,043 s), reduziertem Lernen zwischen Testintervallen und mehr Vergessen.",
-    transfer:"USA, Harvard-Kohorte; Methode als Toolbox auf Deutschland übertragbar, externe Validierung ausstehend"
-  },
-  {
-    journal:"Dent Med Probl", year:"2026", pmid:"42842199",
-    author:"Pylińska-Dąbrowska D et al.", pubdate:"Sept. 2026",
-    added:"07.10.2026",
-    title:"Zahnlosigkeit ohne Prothese erhöht Gebrechlichkeit und funktionelle Verletzlichkeit deutlich",
-    sum:"Querschnittsstudie an 5.457 polnischen Personen ab 60 Jahren (PolSenior2-Studie) verband Zahnstatus und Protheseneinsatz mit Gebrechlichkeit und Verletzlichkeit (VES-13).",
-    result:"Zahnlosigkeit war mit erhöhten Chancen für Gebrechlichkeit assoziiert (OR 1,47; 95%-KI 1,08–2,01) und funktionelle Verletzlichkeit (OR 1,38; 95%-KI 1,10–1,74). Protheseneinsatz korrelierte mit niedrigeren Chancen beider Outcomes. Ein klarer Gradient zeigte sich über die Zahnstatus-Kategorien von funktionellem Zahnbestand bis unbehandelte Zahnlosigkeit.",
-    transfer:"Polen, EU-Raum mit vergleichbarer Zahngesundheitsversorgung und geriatrischen Strukturen"
-  },
-  {
-    journal:"BMC Geriatr", year:"2026", pmid:"43004194",
-    author:"Kars TU et al.", pubdate:"12.08.2026",
-    added:"09.11.2026",
-    title:"Niedriges Hämoglobin korreliert mit Gebrechlichkeit und funktioneller Abhängigkeit im Alter",
-    sum:"Querschnittsstudie an 432 älteren Patienten in der Türkei untersuchte die Assoziationen zwischen Hämoglobinkonzentration und geriatrischem Assessment.",
-    result:"Pro 1 g/dL höheres Hämoglobin waren die Chancen für Gebrechlichkeit um 35% niedriger (OR 0,653; 95%-KI 0,481–0,889), für IADL-Abhängigkeit um 26% (OR 0,738; 95%-KI 0,598–0,911) und für Mangelernährungsrisiko um 13% (OR 0,871; 95%-KI 0,771–0,985) nach Adjustierung für Alter, Geschlecht und Eisenmangel reduziert.",
-    transfer:"Türkei, deutschsprachiger Raum vergleichbar bei geriatrischer Diagnostik und Laborkliniken"
-  },
-  {
-    journal:"Zhonghua Nan Ke Xue", year:"2025", pmid:"43001709",
-    author:"Lü Y et al.", pubdate:"Dez. 2025",
-    added:"09.11.2026",
-    title:"Seneszenzgene vorhersagen Prostatakrebsrückfall nach Androgen-Ablation mit klinischem Nutzen",
-    sum:"Retrospektive Analyse von Einzelzell-Transkriptomik (GSE137829) und TCGA-PRAD-Daten entwickelte ein Seneszenz-bezogenes Risikomodell (SRRS) zur Vorhersage biochemischen Rezidivs bei Prostatakrebspatienten.",
-    result:"Das SRRS-Modell unterschied Patienten mit unterschiedlichen Prognosen signifikant mit AUC-Werten für 1-, 3-, 5-Jahres-Überlebensvorhersage von 0,801, 0,801 und 0,789. Das Schlüsselgen HTRA2 mit hoher Expression war mit schlechterer Prognose, höheren Tumorstadien und Gleason-Scores assoziiert. HTRA2 korrelierte mit erhöhter regulatorischer T-Zell-Infiltration (immunsuppressives Profil) und gesteigerter Docetaxel/Vorinostat-Sensitivität.",
-    transfer:"China; methodisch übertragbar auf deutsches Prostatakrebsregister, aber validierung in europäischen Kohorten erforderlich"
+    journal:"Eur Geriatr Med", year:"2026", pmid:"42711542",
+    author:"Ekman U et al.", pubdate:"08.09.2026",
+    added:"09.09.2026",
+    title:"Demenz-Biomarker im hohen Alter: schwache Vorhersagekraft jenseits 80 Jahren",
+    sum:"Querschnittsanalyse von 676 Patienten aus Stockholmer Gedächtnissprechstunden (141 Alzheimer-Demenz, 403 leichte kognitive Beeinträchtigung, 132 subjektive kogn. Beeinträchtigung) zum Zusammenhang zwischen ATN-Biomarkern und Gedächtnisleistung.",
+    result:"Signifikante Wechselwirkung zwischen Alter und Aβ42: Mit höherem Alter schwächte sich die negative Auswirkung abnormaler Aβ42 auf verzögerten Abruf ab (β=0,22, p&lt;0,001). Ab 80 Jahren zeigten ATN-Biomarker schwächere Assoziationen mit episodischem Gedächtnis; fragliche klinische Berechtigung von CSF-Tests in dieser Altersgruppe.",
+    transfer:"Schweden; kritische Frage zur Biomarker-Interpretation im höchsten Alter relevant für deutsches Gedächtnis-Assessment"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2303,7 +2294,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "11.11.2026";
+const NEWS_STAND = "12.11.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
