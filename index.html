@@ -2302,62 +2302,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "17. Nov. 2026, 05:01 Uhr";
+const SNAP_DATE = "18. Nov. 2026, 05:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Eur J Trauma Emerg Surg", year:"2026", pmid:"43037679",
-    author:"Gonçalves Pereira M et al.", pubdate:"16.11.2026",
+    journal:"J Cachexia Sarcopenia Muscle", year:"2026", pmid:"43040786",
+    author:"Chen JY et al.", pubdate:"Dez. 2026",
+    added:"17.11.2026",
+    title:"Frailty nach akutem Nierenschaden: Mortalität und kardiovaskuläre Komplikationen verdreifacht",
+    sum:"Nationale Kohortenstudie mit 18.525 Überlebenden nach dialysepflichtiger akuter Nierenverletzung (AKI-D) zur Assoziation von Frailty mit langfristigen Ergebnissen über Median 2,35 Jahre Nachbeobachtung.",
+    result:"Mittelschwere bis schwere Frailty war mit erhöhter Gesamtmortalität assoziiert (aHR 1,17, 95%-KI 1,09–1,25) im Vergleich zu Fit-Gruppe. Für MACE: moderate-schwere Frailty sHR 1,37 (95%-KI 1,22–1,53). Für MAKE: sHR 1,13 (95%-KI 1,04–1,22). Kumulative Mortalität stieg von 22% auf 55% über fünf Jahre.",
+    transfer:"Taiwan-Daten, aber Frailty-Assessment und Post-Akutverlauf-Prognose universal; deutsche Nierenersatztherapie-Kohorten vergleichbar."
+  },
+  {
+    journal:"Front Public Health", year:"2026", pmid:"43041241",
+    author:"Huang L et al.", pubdate:"02.11.2026",
+    added:"17.11.2026",
+    title:"mHealth für Frailty-Prävention: Motivation, Fähigkeit und Handlungsanreize sind kritisch",
+    sum:"Qualitative Studie mit 15 älteren Menschen mit Pre-Frailty/Frailty und 10 Community Healthcare Professionals mittels semi-strukturierter Interviews zur Identifikation von Barrieren und Anforderungen für mHealth-Implementation in der Community-Frailty-Prävention.",
+    result:"Sieben empirisch abgeleitete Subthemen organisierten sich in drei Fogg-Behavior-Model-Domänen: (1) Motivation behindert durch begrenzte Frailty-Bewusstsein und mangelndes Vertrauen in digitale Gesundheitsinformation; (2) Multilevel-Fähigkeitshindernisse auf Individuum- und Primärversorgungsebene; (3) mHealth-Engagement abhängig von Handlungsanreizen und sozialer Unterstützung. Altersgerechtes Design, vertrauenswürdige Information und familiäre/professionelle Unterstützung essenziell.",
+    transfer:"China-Studie, aber Implementation Science-Erkenntnisse zu mHealth-Barrieren (Design, Vertrauen, digitale Kompetenz) weltweit übertragbar."
+  },
+  {
+    journal:"Nurs Open", year:"2026", pmid:"43040575",
+    author:"Shi J et al.", pubdate:"Nov. 2026",
     added:"16.11.2026",
-    title:"Frailty und Organdysfunktion als unabhängige Prädiktoren für Sterblichkeit nach schwerem Trauma",
-    sum:"Retrospektive Kohortenstudie bei 457 kritisch kranken Traumapatienten in portugiesischen Intensivstationen, davon 72% männlich, Median 61 Jahre; untersucht die prognostische Aussagekraft von Frailty-Assessment und Organversagen.",
-    result:"11,0% ICU- und 15,3% Krankenhaussterblichkeit. SAPS II zeigte beste Diskriminierung für Sterblichkeit (AUC 0,874), gefolgt von TRISS (0,758) und Clinical Frailty Scale (0,702). Frailty, SAPS II und SOFA am ersten Tag waren unabhängig mit Sterblichkeit assoziiert (p&lt;0,05). Sowohl Organdysfunktion als auch Frailty tragen zur Mortalitätsprognose bei.",
-    transfer:"Portugiesische Daten, europäisches System mit vergleichbarer Dokumentation."
+    title:"Sitzdauer, körperliche Aktivität und Sozialengagement mit Frailty-Risiko bei älteren Erwachsenen",
+    sum:"Querschnittstudie mit 3.279 älteren Erwachsenen auf dem Land zur Assoziation von 23 Lebensstilfaktoren mit Frailty mittels Lasso-Regression und logistischer Regression.",
+    result:"Ein Lebensstil-Index aus vier Faktoren (Sitzdauer, Trainingszeit, aktuelle Ereignisse, nachbarschaftliche Kontakte) war positiv mit Frailty und vier deren Subdimensionen assoziiert (Exhaustion, Weakness, Slowness, geringe physische Aktivität), aber nicht mit unbeabsichtigtem Gewichtsverlust. Keine nichtlineare Beziehung detektiert. Soziales Engagement war signifikanter Schutzfaktor.",
+    transfer:"China-Studie, aber Lebensstil-Dimensionen (Aktivität, Sitzdauer, Sozialengagement) universell relevant für europäische Praxis."
   },
   {
-    journal:"Clin Interv Aging", year:"2026", pmid:"43036725",
-    author:"Hartutik S et al.", pubdate:"11.11.2026",
+    journal:"Nat Med", year:"2026", pmid:"42834228",
+    author:"Fillingim M et al.", pubdate:"05.10.2026",
+    added:"05.10.2026",
+    title:"Schmerzprävalenz über die Lebensdauer: Frauen, niedrige Länder, Modifikation durch Lebensstil",
+    sum:"Harmonisierung von Selbstbericht-Schmerzdaten aus 902 bevölkerungsbasierten Datenquellen in 118 Ländern (n=6.125.459) zur Etablierung globaler Referenztrajektorien von Schmerzprävalenz über die Lebensdauer.",
+    result:"Schmerzprävalenz reichte von ~2% (Gesichtsschmerz) bis 40% (Rückenschmerz), konsistent höher bei Frauen über alle 11 anatomischen Orte (RR-Spanne 1,08–1,83). Steilster Anstieg vor Alter 55 Jahren. In niedrig-HDI-Ländern 30,6 Prozentpunkte höhere Spätalter-Prävalenz als in hoch-HDI-Ländern. 18,3% der Schmerzlast attributierbar drei Risikofaktoren (Rauchen, Adipositas, niedriges Einkommen), Varianz 12,6% (Sub-Sahara) bis 27,1% (Osteuropa).",
+    transfer:"Globales Datenkonsortium mit 118 Ländern; deutsche Schmerzepidemiologie durch Plattform benchmarkbar – high implementation validity."
+  },
+  {
+    journal:"BMC Public Health", year:"2026", pmid:"43040460",
+    author:"Wang C et al.", pubdate:"21.08.2026",
     added:"16.11.2026",
-    title:"Nicht-medikamentöse Intervention gegen Frailty bei älteren Diabetespatienten: Übersicht und Lücken",
-    sum:"Systematischer Review von 9 Studien zu nicht-pharmakologischen Interventionen bei älteren Diabetespatient*innen mit Frailty; unterteilt in bewegungsbasierte, verhaltensbasierte und multimodale Ansätze.",
-    result:"Bewegungsintervention zeigten Verbesserungen in physischen und funktionellen Outcomes; verhaltensbasierte Interventionen zeigten unterschiedliche Effekte auf Stoffwechsel-Outcomes; multimodale Interventionen adressierten multiple Domänen (physisch, metabolisch, psychosozial). Heterogenität in Populationen, Interventionen und Messgrößen begrenzt direkte Vergleiche. Überlegenheit einer Kategorie nicht nachgewiesen; künftige Studien sollten Frailty-Kriterien standardisieren und Outcomes transparenter berichten.",
-    transfer:"Internationale Evidenz, für deutsche Versorgung wegen Heterogenität noch keine spezifische Aussage möglich."
+    title:"Finanzielle Abhängigkeit von erwachsenen Kindern beschleunigt kognitiven Verfall im Alter",
+    sum:"Längsschnittstudie mit 36.187 Beobachtungen aus vier Erhebungswellen der China Health and Retirement Longitudinal Study zur Assoziation zwischen Ausmaß der finanziellen Abhängigkeit von Kindern und kognitiver Leistung bei älteren Menschen.",
+    result:"Höhere finanzielle Abhängigkeit war mit schlechterer kognitiver Leistung assoziiert (Q4 &gt;75% Abhängigkeit: β = -0,248, p &lt; 0,001). Ein kritischer Schwellenwert von etwa 50% Abhängigkeit zeigte beschleunigten kognitiven Verfall. Soziale Isolation mediierte 4,74% der Gesamtassoziation. Cognitive Decline-Gruppe zeigte 50% niedrigeres Mortalitätsrisiko als Cognitive Maintenance/Improvement-Gruppe (HR = 0,50).",
+    transfer:"China-Daten, aber sozioökonomische Mechanismus transnational relevant – Abhängigkeit und soziale Isolation als Risikofaktoren universell."
   },
   {
-    journal:"Circulation", year:"2026", pmid:"43006184",
-    author:"Mejia OAV et al.", pubdate:"17.11.2026",
-    added:"10.11.2026",
-    title:"Operative Verfahren bei Bypassoperation: weniger Unterschied bei älteren, gebrechlichen Patienten",
-    sum:"Randomisierte Studie mit 508 Patienten ≥60 Jahre, klassifiziert als prefrail oder frail, vergleicht Off-Pump- vs. On-Pump-CABG bezüglich Morbidität, Sterblichkeit und Lebensqualität über 1 Jahr.",
-    result:"Primärer Composite-Endpunkt (Tod, MI, Schlaganfall, Nierenversagen, ARDS, Reöffnung) in 10,9% (OPCAB) vs. 16,0% (ONCAB), Unterschied nicht signifikant (RR 1,47 [95%-KI 0,94–2,31], p=0,09). Wundinfektion seltener unter OPCAB (3,5% vs. 8,0%, p=0,04). 1-Jahres-Überlebenswahrscheinlichkeit 96,1% (OPCAB) vs. 92,8% (ONCAB, p=0,099). Neurologische und Lebensqualitäts-Outcomes zeigten keinen signifikanten Unterschied.",
-    transfer:"Internationale Studie (Brasilien, USA, Europa), Ergebnisse für deutsche Kardiochirurgie relevant."
-  },
-  {
-    journal:"Pain", year:"2026", pmid:"42970306",
-    author:"Ahacic K et al.", pubdate:"01.12.2026",
-    added:"02.11.2026",
-    title:"Muskelskeletale Schmerzen: zwei divergente Lebensbahnen mit Schwerpunkt auf Erwerbstätigenphase",
-    sum:"Schwedische Längsschnittstudie mit 6328 Personen über 42 Jahre und 7 Erhebungswellen von Alter 15 bis 101 Jahren; identifiziert Lebenslaufmuster für Gelenk-, Rücken- und Schulterschmerzen mittels latenter Klassenanalyse.",
-    result:"Zwei distinkte Trajektorien in beiden Geschlechtern: (1) Low-Risk-Gruppe mit generell niedrigen Schmerzwerten, Anstieg erst nach Ruhestand; (2) High-Risk-Gruppe mit kontinuierlichem Anstieg während Erwerbsjahren, dann Rückgang. High-Risk-Gruppe doppelt so häufig bei Frauen (20%) wie bei Männern (9%). Muster deuten auf kumulativen Effekt von Arbeitsbedingungen und normales Altern hin.",
-    transfer:"Schwedische Bevölkerungsdaten, europäisches System, direktübertragbar auf Deutschland."
-  },
-  {
-    journal:"Age Ageing", year:"2026", pmid:"43038112",
-    author:"Malhotra C et al.", pubdate:"31.10.2026",
+    journal:"BMC Geriatr", year:"2026", pmid:"43040237",
+    author:"Yu H et al.", pubdate:"19.08.2026",
     added:"16.11.2026",
-    title:"Palliativversorgung älterer Menschen: integrierter Ansatz jenseits von Symptomkontrolle",
-    sum:"Redaktioneller Überblick zu Versorgungsmodellen und Ergebnissen der Palliativmedizin für ältere Erwachsene mit Multimorbidität, Frailty und Demenz; würdigt Komplexität von Präferenzen und Rolle von Angehörigen.",
-    result:"Belegt erhebliche Lücken: Mangel an Evidenz für integrierte Versorgungsansätze; Sterbeort als Qualitätsmesser unzureichend; wesentliche Rolle von Angehörigen sowohl als Betreuer als auch als Versorgungsempfänger. Erkannte Forschungsprioritäten: Kalibrierung mit Leistungserbringern, Nutzung von Patient*innen- und Angehörigenprioritäten als Erfolgsmesser, Fragen von Feasibility, Equity und Kosten.",
-    transfer:"Britische Perspektive, Erkenntnisse zur Gestaltung integrierter Versorgung in DACH-Ländern einsetzbar."
+    title:"Hörverlust und soziale Isolation beschleunigen Frailty-Progression bei älteren Menschen",
+    sum:"Längsschnittstudie mit 4.068 Teilnehmenden aus China (CHARLS) und 9.769 aus USA (HRS) zur Assoziation von Hörverlust und sozialer Isolation mit Übergängen zwischen Frailty-Stadien über 7–8 Jahre.",
+    result:"Hörverlust war mit erhöhter Pre-Frail-zu-Frail-Progression assoziiert (CHARLS HR 1,21, 95%-KI 1,05–1,41; HRS HR 1,21, 95%-KI 1,10–1,34) und reduzierter Erholung. Soziale Isolation zeigte Assoziation mit non-frail-zu-pre-frail-Progression (CHARLS HR 1,25) und reduzierter Erholung. Beide Expositionen kombiniert zeigten höchstes Progressionsrisiko (CHARLS HR 1,67).",
+    transfer:"Harmonisierte Daten aus zwei Ländern, universelle Mechanismen – hohe Übertragbarkeit für deutsche Screeningprogramme."
   },
   {
-    journal:"Alzheimers Dement", year:"2026", pmid:"42805938",
-    author:"Mostafaei S et al.", pubdate:"Okt. 2026",
-    added:"28.09.2026",
-    title:"Polygener Risiko und biologisches Alter verbessern Demenzprognose in Mittelalter und später",
-    sum:"UK Biobank Studie mit 16.215 demenzfreien Probanden (Median-Follow-up 10,08 Jahre) kombiniert ADRD-Polygenic-Risk-Score mit biologischen Altersmarkern (klinisch, Telomer, Protein, Metabolom) zur Risikovorhersage.",
-    result:"Vollständiges integriertes Modell: AUC 0,90, AUPRC 0,24. PRS stärkster Prädiktor (sHR 2,24, 95%-KI 2,02–2,48), gefolgt von ProtAge (sHR 2,01, 95%-KI 1,13–3,58). Top-Risikoquartil zeigte 16,73-fach erhöhte Inzidenz (95%-KI 6,49–43,11). External Validation in TwinGene: AUC 0,757, AUPRC 0,223.",
-    transfer:"UK Biobank und schwedische Daten, deutsches System ähnlich strukturiert."
+    journal:"BMC Endocr Disord", year:"2026", pmid:"43035664",
+    author:"Li Y et al.", pubdate:"19.08.2026",
+    added:"15.11.2026",
+    title:"Insulinresistenz beschleunigt biologisches Alter über Lipidprofile",
+    sum:"Querschnittstudie mit 7.626 US-Teilnehmenden (NHANES) zur Assoziation zwischen Insulinresistenz (eGDR) und Phenotypic Age Acceleration mit Mediatorenanalyse für AIP und UHR.",
+    result:"Jede Einheit höhere eGDR war mit 0,74-Jahres-Reduktion in PhenoAge Acceleration assoziiert (95%-KI -0,94 bis -0,54). AIP mediierte 2,18% des Effekts (p=0,03), UHR mediierte 7,04% (p&lt;0,0001). Assoziation war stärker bei höherer Bildung, aktuellem Rauchen und Hyperlipidämie.",
+    transfer:"NHANES-Studie, aber Insulinresistenz und Lipidprofile weltweit standardisiert messbar – hohe Generalisierbarkeit."
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2382,7 +2391,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "17.11.2026";
+const NEWS_STAND = "18.11.2026";
 const NEWS = [
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
   {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
