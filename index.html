@@ -2302,71 +2302,62 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "18. Nov. 2026, 05:01 Uhr";
+const SNAP_DATE = "19. Nov. 2026, 05:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"J Cachexia Sarcopenia Muscle", year:"2026", pmid:"43040786",
-    author:"Chen JY et al.", pubdate:"Dez. 2026",
+    journal:"Int J Qual Stud Health Well-being", year:"2026", pmid:"43049458",
+    author:"Vik ML et al.", pubdate:"31.12.2026",
+    added:"18.11.2026",
+    title:"Versorgungsfragmentierung behindert gesundes Altern: Qualitative Studie zu UN-Prioritäten",
+    sum:"Qualitative Studie in Zentralwest-Deutschland mit älteren Erwachsenen, Fachpersonal und Entscheidungsträgern zur Wahrnehmung von gesundem Altern und Versorgungsstrukturen.",
+    result:"Vier Themen: Älter werden wurde als individuelle Verantwortung in fragmentierten Strukturen erlebt; altersfreundliche Umgebungen ermöglichen sinnvolles Leben; Altersdiskriminierung wurde erkannt, aber weniger personal erfahren; integrierte Versorgung wirkte besonders zu Hause fragmentiert mit informeller Unterstützung zur Lückenfüllung. Schlüsselbefund: UN-Dekaden-Prioritäten spiegeln sich ungleich wider, strukturelle Unterstützung ist unterentwickelt.",
+    transfer:"Deutschland, direkte Daten aus Zentralwest-Deutschland zur Versorgungsrealität"
+  },
+  {
+    journal:"JAMA Netw Open", year:"2026", pmid:"43050189",
+    author:"Vankee-Lin F et al.", pubdate:"02.11.2026",
+    added:"18.11.2026",
+    title:"Kombiniertes Training verlangsamt Hirnatrophie bei leichter kognitiver Beeinträchtigung",
+    sum:"Sekundäranalyse einer randomisierten Studie mit 146 Patienten mit amnestischer leichter kognitiver Beeinträchtigung zu Effekten von kombiniertem Ausdauer- und kognitiven Training auf Hirnatrophie und weiße-Substanz-Hyperintensitäten über 18 Monate.",
+    result:"Kombiniertes Training (ACT) zeigte günstigere Veränderung der Alzheimer-Signatur für Kortexdicke (ADSCT) gegenüber Speed-of-Processing-Training (Unterschied −0,060 mm, 95%-KI −0,117 bis −0,004; p=0,04) und Stretching (−0,066 mm, p=0,02). Jede zusätzliche Trainings-Session im ACT-Arm korrelierte mit verbessertem ADSCT (0,022 mm pro Session; p=0,03). Weiße-Substanz-Hyperintensitäten zeigten keine signifikanten Unterschiede in Primäranalyse.",
+    transfer:"USA durchgeführt, aber Intervention und Biomarker-Endpunkte unabhängig vom System übertragbar"
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"43046910",
+    author:"Feng H et al.", pubdate:"31.10.2026",
+    added:"18.11.2026",
+    title:"Schmerz-Lebenserwartung: Muskuloskeletale Schmerzen belegen 11,8–37,7 % der restlichen Lebensjahre",
+    sum:"Longitudinale Kohortenstudie mit 77.649 Teilnehmern aus 18 Europäischen Ländern (SHARE-Wellen 5–9) zur Quantifizierung von Jahren mit moderaten bis schweren muskuloskeletalen Schmerzen ab Alter 60.",
+    result:"Moderate bis schwere muskuloskeletale Schmerzerwartung reichte von 2,81 Jahren (Niederlande) bis 8,85 Jahren (Frankreich), entsprechend 11,8–37,7 % der restlichen Lebenserwartung. Höher bei Frauen, mit Arthritis/rheumatischen Erkrankungen sowie bei niedrigerem Einkommen und Bildungsstand. Schmerzlast verteilt sich ungleich und beeinflusst erheblich die gewonnenen Lebensjahre im Alter.",
+    transfer:"17 europäische Länder inkl. DACH-Raum, SHARE-Daten, Ergebnisse direkt auf deutsches Gesundheitssystem übertragbar"
+  },
+  {
+    journal:"Nutrients", year:"2026", pmid:"43030179",
+    author:"Büntzel SK et al.", pubdate:"28.10.2026",
+    added:"14.11.2026",
+    title:"Muskelmasse, Kraft und Ernährung: drei unabhängige Dimensionen der Frailty",
+    sum:"Querschnittsstudie mit 116 älteren Krebspatienten (≥65 Jahre) zur Frage, ob CT-gemessene Muskelmasse, Handgriffstärke und Ernährungsverhalten überlappende oder getrennte Vulnerabilitätsdimensionen darstellen.",
+    result:"CT-definierte niedrige Muskelmasse in 55,2 % (häufiger bei Männern, p&lt;0,01). Skeletal Muscle Index korrelierte NICHT mit Handgriffstärke (rho=0,03; p=0,784). Handgriffstärke assoziiert mit G8-Score (p&lt;0,001) und Mobilitätseinschränkung (p=0,001), aber nicht mit CT-Muskelmasse. Ernährungsverhalten zeigte keine Assoziation mit Muskelmasse. Befund: Morphologie, Funktion und Verhalten sind teilweise unabhängige Frailty-Dimensionen.",
+    transfer:"Deutschland: Single-Center-Studie in Göttingen; Methode und Befund geriatrisch-onkologisch relevant"
+  },
+  {
+    journal:"BMC Geriatr", year:"2026", pmid:"43046150",
+    author:"Tanaka H et al.", pubdate:"20.08.2026",
     added:"17.11.2026",
-    title:"Frailty nach akutem Nierenschaden: Mortalität und kardiovaskuläre Komplikationen verdreifacht",
-    sum:"Nationale Kohortenstudie mit 18.525 Überlebenden nach dialysepflichtiger akuter Nierenverletzung (AKI-D) zur Assoziation von Frailty mit langfristigen Ergebnissen über Median 2,35 Jahre Nachbeobachtung.",
-    result:"Mittelschwere bis schwere Frailty war mit erhöhter Gesamtmortalität assoziiert (aHR 1,17, 95%-KI 1,09–1,25) im Vergleich zu Fit-Gruppe. Für MACE: moderate-schwere Frailty sHR 1,37 (95%-KI 1,22–1,53). Für MAKE: sHR 1,13 (95%-KI 1,04–1,22). Kumulative Mortalität stieg von 22% auf 55% über fünf Jahre.",
-    transfer:"Taiwan-Daten, aber Frailty-Assessment und Post-Akutverlauf-Prognose universal; deutsche Nierenersatztherapie-Kohorten vergleichbar."
+    title:"Smartphone-Kompetenz schützt vor Frailty: Digitale Fähigkeiten unabhängig assoziiert",
+    sum:"Querschnittsstudie mit 308 älteren Smartphone-Nutzern (≥65 Jahre) in Osaka, Japan, zur Assoziation von Gerätebeherrschung, digitaler Partizipation und Frailty mittels Kihon Checklist.",
+    result:"18,5 % Frailty-Prävalenz. Höhere Smartphone-Kompetenz war unabhängig mit niedrigerem Frailty-Risiko assoziiert (adjustierte Odds Ratio pro Punktanstieg: signifikant); stärkere Einsamkeit mit höherem Risiko. Digitale Partizipation selbst zeigte keine unabhängige Assoziation. Schlüsselbefund: operative Fähigkeit, nicht nur Nutzung, schützt vor funktionellem Niedergang.",
+    transfer:"Japan, aber technologie- und altersunabhängige Fragestellung; übertragbar auf digitale Inklusion in der Prävention"
   },
   {
-    journal:"Front Public Health", year:"2026", pmid:"43041241",
-    author:"Huang L et al.", pubdate:"02.11.2026",
+    journal:"BMC Geriatr", year:"2026", pmid:"43045984",
+    author:"Chen R et al.", pubdate:"20.08.2026",
     added:"17.11.2026",
-    title:"mHealth für Frailty-Prävention: Motivation, Fähigkeit und Handlungsanreize sind kritisch",
-    sum:"Qualitative Studie mit 15 älteren Menschen mit Pre-Frailty/Frailty und 10 Community Healthcare Professionals mittels semi-strukturierter Interviews zur Identifikation von Barrieren und Anforderungen für mHealth-Implementation in der Community-Frailty-Prävention.",
-    result:"Sieben empirisch abgeleitete Subthemen organisierten sich in drei Fogg-Behavior-Model-Domänen: (1) Motivation behindert durch begrenzte Frailty-Bewusstsein und mangelndes Vertrauen in digitale Gesundheitsinformation; (2) Multilevel-Fähigkeitshindernisse auf Individuum- und Primärversorgungsebene; (3) mHealth-Engagement abhängig von Handlungsanreizen und sozialer Unterstützung. Altersgerechtes Design, vertrauenswürdige Information und familiäre/professionelle Unterstützung essenziell.",
-    transfer:"China-Studie, aber Implementation Science-Erkenntnisse zu mHealth-Barrieren (Design, Vertrauen, digitale Kompetenz) weltweit übertragbar."
-  },
-  {
-    journal:"Nurs Open", year:"2026", pmid:"43040575",
-    author:"Shi J et al.", pubdate:"Nov. 2026",
-    added:"16.11.2026",
-    title:"Sitzdauer, körperliche Aktivität und Sozialengagement mit Frailty-Risiko bei älteren Erwachsenen",
-    sum:"Querschnittstudie mit 3.279 älteren Erwachsenen auf dem Land zur Assoziation von 23 Lebensstilfaktoren mit Frailty mittels Lasso-Regression und logistischer Regression.",
-    result:"Ein Lebensstil-Index aus vier Faktoren (Sitzdauer, Trainingszeit, aktuelle Ereignisse, nachbarschaftliche Kontakte) war positiv mit Frailty und vier deren Subdimensionen assoziiert (Exhaustion, Weakness, Slowness, geringe physische Aktivität), aber nicht mit unbeabsichtigtem Gewichtsverlust. Keine nichtlineare Beziehung detektiert. Soziales Engagement war signifikanter Schutzfaktor.",
-    transfer:"China-Studie, aber Lebensstil-Dimensionen (Aktivität, Sitzdauer, Sozialengagement) universell relevant für europäische Praxis."
-  },
-  {
-    journal:"Nat Med", year:"2026", pmid:"42834228",
-    author:"Fillingim M et al.", pubdate:"05.10.2026",
-    added:"05.10.2026",
-    title:"Schmerzprävalenz über die Lebensdauer: Frauen, niedrige Länder, Modifikation durch Lebensstil",
-    sum:"Harmonisierung von Selbstbericht-Schmerzdaten aus 902 bevölkerungsbasierten Datenquellen in 118 Ländern (n=6.125.459) zur Etablierung globaler Referenztrajektorien von Schmerzprävalenz über die Lebensdauer.",
-    result:"Schmerzprävalenz reichte von ~2% (Gesichtsschmerz) bis 40% (Rückenschmerz), konsistent höher bei Frauen über alle 11 anatomischen Orte (RR-Spanne 1,08–1,83). Steilster Anstieg vor Alter 55 Jahren. In niedrig-HDI-Ländern 30,6 Prozentpunkte höhere Spätalter-Prävalenz als in hoch-HDI-Ländern. 18,3% der Schmerzlast attributierbar drei Risikofaktoren (Rauchen, Adipositas, niedriges Einkommen), Varianz 12,6% (Sub-Sahara) bis 27,1% (Osteuropa).",
-    transfer:"Globales Datenkonsortium mit 118 Ländern; deutsche Schmerzepidemiologie durch Plattform benchmarkbar – high implementation validity."
-  },
-  {
-    journal:"BMC Public Health", year:"2026", pmid:"43040460",
-    author:"Wang C et al.", pubdate:"21.08.2026",
-    added:"16.11.2026",
-    title:"Finanzielle Abhängigkeit von erwachsenen Kindern beschleunigt kognitiven Verfall im Alter",
-    sum:"Längsschnittstudie mit 36.187 Beobachtungen aus vier Erhebungswellen der China Health and Retirement Longitudinal Study zur Assoziation zwischen Ausmaß der finanziellen Abhängigkeit von Kindern und kognitiver Leistung bei älteren Menschen.",
-    result:"Höhere finanzielle Abhängigkeit war mit schlechterer kognitiver Leistung assoziiert (Q4 &gt;75% Abhängigkeit: β = -0,248, p &lt; 0,001). Ein kritischer Schwellenwert von etwa 50% Abhängigkeit zeigte beschleunigten kognitiven Verfall. Soziale Isolation mediierte 4,74% der Gesamtassoziation. Cognitive Decline-Gruppe zeigte 50% niedrigeres Mortalitätsrisiko als Cognitive Maintenance/Improvement-Gruppe (HR = 0,50).",
-    transfer:"China-Daten, aber sozioökonomische Mechanismus transnational relevant – Abhängigkeit und soziale Isolation als Risikofaktoren universell."
-  },
-  {
-    journal:"BMC Geriatr", year:"2026", pmid:"43040237",
-    author:"Yu H et al.", pubdate:"19.08.2026",
-    added:"16.11.2026",
-    title:"Hörverlust und soziale Isolation beschleunigen Frailty-Progression bei älteren Menschen",
-    sum:"Längsschnittstudie mit 4.068 Teilnehmenden aus China (CHARLS) und 9.769 aus USA (HRS) zur Assoziation von Hörverlust und sozialer Isolation mit Übergängen zwischen Frailty-Stadien über 7–8 Jahre.",
-    result:"Hörverlust war mit erhöhter Pre-Frail-zu-Frail-Progression assoziiert (CHARLS HR 1,21, 95%-KI 1,05–1,41; HRS HR 1,21, 95%-KI 1,10–1,34) und reduzierter Erholung. Soziale Isolation zeigte Assoziation mit non-frail-zu-pre-frail-Progression (CHARLS HR 1,25) und reduzierter Erholung. Beide Expositionen kombiniert zeigten höchstes Progressionsrisiko (CHARLS HR 1,67).",
-    transfer:"Harmonisierte Daten aus zwei Ländern, universelle Mechanismen – hohe Übertragbarkeit für deutsche Screeningprogramme."
-  },
-  {
-    journal:"BMC Endocr Disord", year:"2026", pmid:"43035664",
-    author:"Li Y et al.", pubdate:"19.08.2026",
-    added:"15.11.2026",
-    title:"Insulinresistenz beschleunigt biologisches Alter über Lipidprofile",
-    sum:"Querschnittstudie mit 7.626 US-Teilnehmenden (NHANES) zur Assoziation zwischen Insulinresistenz (eGDR) und Phenotypic Age Acceleration mit Mediatorenanalyse für AIP und UHR.",
-    result:"Jede Einheit höhere eGDR war mit 0,74-Jahres-Reduktion in PhenoAge Acceleration assoziiert (95%-KI -0,94 bis -0,54). AIP mediierte 2,18% des Effekts (p=0,03), UHR mediierte 7,04% (p&lt;0,0001). Assoziation war stärker bei höherer Bildung, aktuellem Rauchen und Hyperlipidämie.",
-    transfer:"NHANES-Studie, aber Insulinresistenz und Lipidprofile weltweit standardisiert messbar – hohe Generalisierbarkeit."
+    title:"Immune-Frailty-Index vorhersagt Infektionen nach Nierentransplantation",
+    sum:"Prospektive Kohortenstudie mit 597 älteren Nierentransplantations-Empfängern (≥65 Jahre) zur Vorhersage postoperativer Infektionen und Abstoßung durch einen Immune Frailty Index (IFI) aus acht Routineparametern im ersten Monat.",
+    result:"Höherer IFI war mit höherem Infektionsrisiko assoziiert (adjustierte HR 1,31 pro SD, 95%-KI 1,17–1,47; p&lt;0,001). Composite-Endpunkt (Infektion oder Abstoßung) trat in 30,3 % auf (159 Infektionen, 41 Abstoßungen). C-Index stieg von 0,67 auf 0,72 durch IFI-Zusatz. Praktisches Screening im ersten postoperativen Monat zeigt Nutzen für geriatrisches Assessment nach Transplantation.",
+    transfer:"China durchgeführt; Assessment-Methode international einsetzbar, aber Validierung nötig"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2391,10 +2382,10 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "18.11.2026";
+const NEWS_STAND = "19.11.2026";
 const NEWS = [
+  {titel:"Geriatrische Standards in der Notfallreform: DGG sieht Lücken", datum:"2026-11-18", url:"https://www.monitor-versorgungsforschung.de/news/geriatrische-standards-in-der-notfallreform-dgg-sieht-luecken/"},
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
-  {titel:"Comic-Broschüre zu Demenz: Junge Geriatrie der DGG legt Heft vor", datum:"2026-09-18", url:"https://www.monitor-versorgungsforschung.de/news/comic-broschuere-zu-demenz-junge-geriatrie-der-dgg-legt-heft-vor/"},
 ];
 // === NEWS-BLOCK-ENDE ===
 
