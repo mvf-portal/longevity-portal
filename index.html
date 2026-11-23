@@ -2302,62 +2302,71 @@ const DB = [
 
 // Momentaufnahme neuester Studien (PubMed, nach Datum sortiert) — deutsche Zusammenfassungen
 // === STUDIES-BLOCK-START (taeglich 06:00 Uhr von GitHub Actions ersetzt) ===
-const SNAP_DATE = "22. Nov. 2026, 05:00 Uhr";
+const SNAP_DATE = "23. Nov. 2026, 05:01 Uhr";
 const SNAP_STATUS = "neu";
 const STUDIES = [
   {
-    journal:"Medicine (Baltimore)", year:"2026", pmid:"43063054",
-    author:"He L et al.", pubdate:"20.11.2026",
+    journal:"BMC Neurol", year:"2026", pmid:"43067664",
+    author:"Schnieder M et al.", pubdate:"21.11.2026",
+    added:"21.11.2026",
+    title:"Frailty-Risiko-Score sagt Sterblichkeit nach Schlaganfall-Thrombolyse voraus",
+    sum:"Deutsche Kohortenstudie untersuchte, ob der Hospital Frailty Risk Score (HFRS) die Einjahressterblichkeit von Patienten über 65 Jahren nach intravenöser Thrombolyse bei akutem ischämischem Schlaganfall vorhersagt.",
+    result:"Von 423 Patienten hatten 360 (85,2%) niedriges und 63 (14,9%) erhöhtes Frailty-Risiko (HFRS ≥ 5). Die Einjahressterblichkeit betrug 20,6% vs. 34,9% (p=0,016). Jeder Punkt HFRS-Anstieg war mit erhöhter Sterblichkeit assoziiert (Hazard Ratio 1,085, 95%-KI 1,015–1,160; p=0,017). Der HFRS verbesserte das prognostische Modell signifikant (p=0,028).",
+    transfer:"Deutsche Klinikeigene administrativ erhobene Daten, direkt auf deutsches Gesundheitssystem übertragbar"
+  },
+  {
+    journal:"Transl Psychiatry", year:"2026", pmid:"43052256",
+    author:"Barnes-Scheufler CV et al.", pubdate:"18.11.2026",
+    added:"18.11.2026",
+    title:"Psychose beschleunigt Gedächtnisverlust im Alter stärker als normales Altern",
+    sum:"Deutsche Querschnittstudie mit 189 Personen (20–61 Jahre) vergleich die altersbezogene Abnahme des Arbeitsgedächtnisses zwischen Menschen mit und ohne Psychose-Historie (Schizophrenie, bipolare Störung).",
+    result:"Menschen mit Psychose-Historie (HPS+, n=90) zeigten signifikant niedrigere Leistung in beiden Arbeitsgedächtnis-Tests (p=0,004 und p=0,006). Alter war in beiden Aufgaben signifikant (p&lt;0,001). Eine signifikante Psychose×Alter-Wechselwirkung trat nur bei der Aufmerksamkeitskontrolle auf (p=0,011), nicht bei reiner Kapazität. Psychose moderiert altersbezogene kognitive Verschlechterung von Aufmerksamkeit, nicht Speicherkapazität.",
+    transfer:"Deutschland – Goethe-Universität Frankfurt; europäischer Kontext, direkt übertragbar"
+  },
+  {
+    journal:"Health Aff Sch", year:"2026", pmid:"43066262",
+    author:"Mehta NK et al.", pubdate:"16.11.2026",
+    added:"21.11.2026",
+    title:"US-Lebenserwartung 2024 zurück auf Vorkrisenniveau – echte Verbesserung?",
+    sum:"US-Studie analysierte Mortalitätstrends 2019–2024 für 17 Todesursachen anhand amtlicher Sterbefallstatistiken, um zu bewerten, ob die Rückkehr zur Rekordhöhe von 79,0 Jahren echte Fortschritte oder nur Pandemieerholung abbildet.",
+    result:"Sterblichkeitsraten für Herzkrankheiten, Drogentodesfälle und die meisten anderen Ursachen stiegen während der Pandemie und kehrten bis 2024 zu Niveaus von 2019 zurück. Neurodegenerative Erkrankungen und Restkategorien blieben erhöht. Nur Krebs- und Atemwegserkrankungen sanken kontinuierlich. Die 2024er Rekordzahl spiegelt Rückkehr zu Vor-Pandemie-Mustern wider, nicht echte Verbesserungen.",
+    transfer:"USA mit grundlegend anderer Finanzierung und Pandemiepolitik; nur allgemeiner Methodik-Befund übertragbar, nicht die Zahlen"
+  },
+  {
+    journal:"Age Ageing", year:"2026", pmid:"43068455",
+    author:"Costello N et al.", pubdate:"31.10.2026",
+    added:"22.11.2026",
+    title:"Geschlechtsspezifische Unterschiede in Alltagsfunktionen zeigen kognitive Verfallsmuster",
+    sum:"Irische Kohortenstudie mit 8.074 Personen ≥50 Jahren untersuchte, ob Schwierigkeiten bei instrumentellen Aktivitäten des täglichen Lebens (IADL) mit kognitiven Verfallstrends assoziiert sind und ob diese Zusammenhänge geschlechtsspezifisch unterscheiden.",
+    result:"Drei kognitive Trajektorien wurden identifiziert: stabil hoch (47,5%), mittlere Abnahme (37,9%) und niedriger Start mit Abnahme (14,6%). IADL-Schwierigkeiten waren mit dem Cluster niedriger kognitiver Start assoziiert. Medikamentenmanagement-Schwierigkeiten waren bei Frauen mit tieferer, bei Männern mit mittlerer kognitiver Abnahme verknüpft; Finanzmanagement-Schwierigkeiten zeigten Geschlechtsdifferenzen nur bei Männern.",
+    transfer:"Irland – EU-Länder mit ähnlicher Versorgungsstruktur; kulturelle Unterschiede in Geschlechterrollen können Übertragung begrenzen"
+  },
+  {
+    journal:"Curr Heart Fail Rep", year:"2026", pmid:"42925369",
+    author:"Hahad O et al.", pubdate:"24.10.2026",
+    added:"24.10.2026",
+    title:"Umwelt und Lebensbedingungen treiben Herzinsuffizienz im Alter stärker als bekannte Risikofaktoren",
+    sum:"Deutsche Übersichtsarbeit fasst Evidenz zusammen, wie Luftverschmutzung, Lärm, Temperaturextreme, Toxine, künstliches Licht und soziale Faktoren Herzinsuffizienz bei älteren Menschen triggern und wie diese den biologischen Altern beschleunigen.",
+    result:"Epidemiologische Studien zeigen, dass chronische Umweltbelastungen Herzinsuffizienz-Inzidenz und Morbidität bei älteren Patienten mit Multimorbidität erheblich beeinflussen. Mechanismen umfassen oxidativen Stress, Inflammaging, Mitochondrienddysfunktion, Seneszenz und epigenetische Veränderungen. Eine Verschiebung von organspezifischen zu systemischen, lebenslangen Perspektiven wird gefordert, mit Fokus auf Reduktion schädlicher Expositionen und Förderung von Grünflächen und körperlicher Aktivität.",
+    transfer:"Deutschland/Mainz – Originalarbeit europäisch konzipiert; Exposom-Perspektive auf Herzinsuffizienz im Alter direkt relevant"
+  },
+  {
+    journal:"Nat Commun", year:"2026", pmid:"43039924",
+    author:"Rousset RZ et al.", pubdate:"17.10.2026",
+    added:"16.11.2026",
+    title:"APOE-ε4-Träger zeigen beschleunigte Blutbiomarker-Veränderungen ab Mitte 50",
+    sum:"Niederländische Bevölkerungsstudie mit 5.913 Personen (30–80 Jahre, 64,1% Frauen) untersuchte, wie das APOE-ε4-Allel und Alter die Konzentration von Alzheimer-Plasma-Biomarkern beeinflussen.",
+    result:"Bei ε4-Trägern (29,8% der Stichprobe) wurde ein steilerer Abfall des Aβ-42/40-Verhältnisses nach Alter 50 beobachtet und steilere Anstiege von p-tau217 und GFAP nach Alter 55 bzw. 60 im Vergleich zu Nicht-Trägern. Eine separate Longitudinalstudie bestätigte, dass p-tau217-Änderungen bei ε4-Trägern AD-Pathologie reflektieren.",
+    transfer:"Niederlande mit vergleichbarem Sozialversicherungssystem; großer, repräsentativer Datensatz"
+  },
+  {
+    journal:"BMC Nephrol", year:"2026", pmid:"43064968",
+    author:"Hirano Y et al.", pubdate:"27.08.2026",
     added:"20.11.2026",
-    title:"Frailty prognostiziert Mortalität bei Prostatakrebsüberlebenden unabhängig vom Tumor",
-    sum:"Survey-gewichtete Analyse von 5.994 Prostatakrebsüberlebenden und 269.236 krebsfreien Männern (NHIS 1997–2018) zur Prüfung von Frailty als unabhängigem Mortalitätsprädiktor.",
-    result:"Präfrailty war mit 40% erhöhtem Mortalitätsrisiko assoziiert (HR 1,40; 95%-KI 1,34–1,47); Frailty mit 75% (HR 1,75; 95%-KI 1,54–1,99). Bei Männern &lt;60 Jahren war Frailty mit verdoppeltem Risiko assoziiert (HR 2,35; 95%-KI 1,46–3,79).",
-    transfer:"USA-Daten; Generalisierung auf Deutschland begrenzt wegen anderer Gesundheitssystemstruktur."
-  },
-  {
-    journal:"J Int Med Res", year:"2026", pmid:"43057700",
-    author:"Mo R et al.", pubdate:"19.11.2026",
-    added:"19.11.2026",
-    title:"Multimorbidität und Einsamkeit treiben Frailty-Progression über psychosoziale Pfade",
-    sum:"Cross-lagged-Panelmodell mit 2.671 chinesischen Älteren (2011–2015) zur Prüfung von bidirektionalen Assoziationen zwischen Multimorbidität, Einsamkeit und Frailty.",
-    result:"Multimorbidität und Frailty zeigten bidirektionale, aber kleine Assoziationen (Multimorbidität→Frailty: β=0,082, p&lt;0,001). Einsamkeit mediierte die Assoziation zwischen Multimorbidität und später Frailty teilweise (β=0,017; 95%-KI 0,010–0,035), was die Rolle psychosozialer Faktoren unterstreicht.",
-    transfer:"China; Pflegekontext und Sozialstrukturen unterscheiden sich von Deutschland erheblich."
-  },
-  {
-    journal:"Geriatr Gerontol Int", year:"2026", pmid:"43057859",
-    author:"Makizako H et al.", pubdate:"Nov. 2026",
-    added:"19.11.2026",
-    title:"Intrinsische Kapazität fördert Frailty-Remission bei Älteren nach fünf Jahren",
-    sum:"Längsschnittstudie mit 253 Älteren, die über 5 Jahre (2019–2024) beobachtet wurden, um den Einfluss der intrinsischen Kapazität auf Frailty-Prävention und -Remission zu untersuchen.",
-    result:"Von 250 robusten/präfrailen Teilnehmern zeigten 47 (18,8%) Frailty-Progression. Von 125 präfrailen/frailen Teilnehmern zeigten 41 (32,8%) Remission. Komplette intrinsische Kapazität war kein Präventiväquivalent für Progression (adjustierte OR 0,63; 95%-KI 0,28–1,46), aber ein signifikanter Remissions-Promotor (adjustierte OR 2,88; 95%-KI 1,01–8,17).",
-    transfer:"Japan; Methode ICOPE-Tool weltweit anerkannt, aber kulturelle Unterschiede in Aging-Definition."
-  },
-  {
-    journal:"BMC Public Health", year:"2026", pmid:"43058625",
-    author:"Liu Z et al.", pubdate:"26.08.2026",
-    added:"19.11.2026",
-    title:"Depression und Lebensstil prägen Frailty-Risiko unterschiedlich nach Lebenslauf",
-    sum:"Längsschnittanalyse von 3.171 CHARLS- und 6.402 ELSA-Teilnehmern zur Untersuchung von Depressivität, Lebensstil und deren gemeinsamen Effekten auf Frailty-Entwicklung.",
-    result:"Depressive Symptome erhöhten das Frailty-Risiko (CHARLS: HR 1,117; ELSA: HR 1,313). Gesunder Lebensstil senkte es (HR 0,865 bzw. 0,735). Zwischen-Personen-Unterschiede (ICC 0,30–0,70) waren deutlich größer als innerhalb-persönliche temporale Effekte, was stabile individuelle Unterschiede nahelegt.",
-    transfer:"China und England; Kohorten-Harmonisierung demonstriert länderübergreifende Muster, aber Generalisierbarkeit auf Deutschland begrenzt."
-  },
-  {
-    journal:"BMC Geriatr", year:"2026", pmid:"43058506",
-    author:"Pinardi E et al.", pubdate:"25.08.2026",
-    added:"19.11.2026",
-    title:"Prognosefähigkeit multiprofessioneller Einschätzungen bei schwerer Gebrechlichkeit im Krankenhaus",
-    sum:"Prospektive Beobachtungsstudie zur Bewertung der Übereinstimmung von Kurzfrist-Überlebensprognosen durch multiprofessionelle Teams bei hospitalisierten älteren Menschen mit schwerer Frailty.",
-    result:"Bei 117 Patienten (Durchschnittsalter 86,4 Jahre) betrug die prognostische Übereinstimmung zwischen Fachleuten κ=0,475 (1 Monat) und κ=0,528 (3 Monate). Die multiprofessionelle Schätzung erreichte eine Gesamtgenauigkeit von 60,7%, mit positiv-prädiktivem Wert von 72,3% für Überleben &gt;3 Monate. Präsentes Delir reduzierte die Genauigkeit signifikant (OR 0,38; 95%-KI 0,16–0,88).",
-    transfer:"Italienische Klinikdaten; Methoden sind auf deutsches Akutsetting übertragbar, jedoch kleine Stichprobe."
-  },
-  {
-    journal:"Transplantation", year:"2026", pmid:"43055123",
-    author:"Xiong J et al.", pubdate:"01.12.2026",
-    added:"19.11.2026",
-    title:"Biologische Altersbeschleunigung prognostiziert Transplantatversagen bei Nierentransplantation",
-    sum:"Prospektive Kohortenstudie mit 688 stabilen Nierentransplantatempfängern zur Prüfung von biologischem Alter als Prädiktor für Transplantatversagen und Mortalität über Median 36 Monate.",
-    result:"Biologische Altersbeschleunigung (Median 4,4 Jahre) war mit Transplantatversagen (HR 1,07; 95%-KI 1,03–1,12 pro Jahr) und Mortalität (HR 1,10; 95%-KI 1,05–1,14) assoziiert. Optimale Schwellwerte: 6,68 Jahre für Versagen, 3,98 Jahre für Tod (log-rank p&lt;0,0001).",
-    transfer:"Niederlande; Nierentransplantationssystem ähnlich Deutschland, biologische Messungen replizierbar."
+    title:"Aging-Protein α-Klotho schützt vor Frailty-Progression nach Dialysestart",
+    sum:"Prospektive japanische Kohortenstudie mit 65 Dialyseneupatienten untersuchte, ob serum-Klotho-Spiegel beim Dialysestart mit Frailty-Progression nach 3 Monaten assoziiert sind.",
+    result:"Jeder Anstieg von 100 pg/mL Serum-Klotho war mit 20% reduziertem Risiko von Frailty-Progression assoziiert (Risikoverhältnis 0,80, 95%-KI 0,66–0,97; p=0,021). Diese Assoziation blieb in Sensitivitätsanalyse signifikant (RR 0,79; p=0,014). Die Studie war einkentrisch und klein (n=65).",
+    transfer:"Japan hat vergleichbare Lebenserwartung und Nierenersatztherapie-Strukturen; Befund zu End-Stage-Renal-Disease plausibel übertragbar"
   },
 ];
 // === STUDIES-BLOCK-ENDE ===
@@ -2382,7 +2391,7 @@ const ZUL_DIGA = 0;
 
 // Beitraege aus dem MVF-Archiv zum Thema — taeglich von scripts/newsfeed.py
 // === NEWS-BLOCK-START (taeglich von GitHub Actions ersetzt) ===
-const NEWS_STAND = "22.11.2026";
+const NEWS_STAND = "23.11.2026";
 const NEWS = [
   {titel:"Geriatrische Standards in der Notfallreform: DGG sieht Lücken", datum:"2026-11-18", url:"https://www.monitor-versorgungsforschung.de/news/geriatrische-standards-in-der-notfallreform-dgg-sieht-luecken/"},
   {titel:"Fitnessbänder mit Musik für Demenzkranke: AFI fördert mit 199.000 Euro", datum:"2026-10-05", url:"https://www.monitor-versorgungsforschung.de/news/fitnessbaender-mit-musik-fuer-demenzkranke-afi-foerdert-mit-199-000-euro/"},
